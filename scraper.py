@@ -193,14 +193,34 @@ async def scrape_buffstreams():
       soup = BeautifulSoup(html_content, "html.parser")
 
       seen_links = set()
-      links = soup.find_all("a", href=True)
       base_matches = []
 
-      for link in links:
-        href = link["href"]
+      # সরাসরি প্রতিটা ম্যাচ কার্ড খুঁজে বের করার লজিক (যা হোমপেজে দেখা যায়)
+      match_cards = []
+      for a_tag in soup.find_all("a", href=True):
+        href = a_tag["href"]
         if "/game/" not in href:
           continue
 
+        # প্রতিটি গেমের মূল কন্টেইনার বা কার্ড বক্সটি বের করা
+        card = a_tag.find_parent(
+            lambda tag: tag.name in ["div", "li", "article"]
+            and len(tag.find_all("img")) >= 2
+        )
+        if not card:
+          card = a_tag.find_parent(["div", "li", "tr"])
+        if not card:
+          card = a_tag.parent
+
+        if card and card not in match_cards:
+          match_cards.append(card)
+
+      for card in match_cards:
+        game_link = card.find("a", href=lambda h: h and "/game/" in h)
+        if not game_link:
+          continue
+
+        href = game_link["href"]
         if href.startswith("/"):
           channelPageLink = "https://www1.buffstreamss.sx" + href
         elif href.startswith("http"):
@@ -212,16 +232,7 @@ async def scrape_buffstreams():
           continue
         seen_links.add(channelPageLink)
 
-        # হোমপেজের নির্দিষ্ট ম্যাচ কার্ড বা কন্টেইনার
-        card = link.find_parent(
-            lambda tag: tag.name in ["div", "li", "tr"]
-            and len(tag.find_all("img")) >= 2
-        )
-        if not card:
-          card = link.find_parent(["div", "li", "tr", "article"])
-        if not card:
-          card = link.parent if link.parent else link
-
+        # ইভেন্ট টাইটেল (লিগ বা ক্যাটাগরি) বের করা
         eventTitle = "Live Sports Event"
         curr = card
         for _ in range(6):
@@ -267,7 +278,7 @@ async def scrape_buffstreams():
             team1Title = slug.replace("-", " ").title()
             team2Title = ""
 
-        # হোমপেজের কার্ড থেকে সরাসরি আলাদা আলাদা লোগো তোলার পদ্ধতি
+        # সুনির্দিষ্টভাবে এই কার্ডের ভেতর থাকা লোগোগুলো ফিল্টার করা
         card_imgs = card.find_all("img")
         valid_imgs = []
         for img in card_imgs:
@@ -287,7 +298,6 @@ async def scrape_buffstreams():
             if src not in valid_imgs:
               valid_imgs.append(src)
 
-        # হোমপেজের ওই নির্দিষ্ট কার্ডে টিমের নাম বা লোগো যেভাবে সাজানো থাকে সেই অনুযায়ী অ্যাসাইন করা
         team1Logo = ""
         team2Logo = ""
 
@@ -298,17 +308,11 @@ async def scrape_buffstreams():
           team1Logo = valid_imgs[0]
           team2Logo = valid_imgs[0]
 
-        # যদি হোমপেজের কার্ড থেকে ছবি না পাওয়া যায়, তবে টিম নামের ওপর ভিত্তি করে ডাইনামিক বা ডিফল্ট লোগো হ্যান্ডেল হবে
+        # ফলব্যাক লোগো
         if not team1Logo:
-          team1Logo = (
-              "https://v1.1cdnforall.online/storage/64/responsive-images/"
-              f"{team1Title.replace(' ', '_')}___preview_thumbnail_120_120.webp"
-          )
+          team1Logo = "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp"
         if not team2Logo:
-          team2Logo = (
-              "https://v1.1cdnforall.online/storage/64/responsive-images/"
-              f"{team2Title.replace(' ', '_')}___preview_thumbnail_120_120.webp"
-          )
+          team2Logo = "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp"
 
         matchTime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         isHot = (
@@ -357,12 +361,8 @@ if __name__ == "__main__":
     data = [{
         "eventTitle": "Live Stream | Streaming Event",
         "matchTime": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "team1Logo": (
-            "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp"
-        ),
-        "team2Logo": (
-            "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp"
-        ),
+        "team1Logo": "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp",
         "team1Title": "Team 1",
         "team2Title": "Team 2",
         "channelPageLink": "https://www1.buffstreamss.sx/",
