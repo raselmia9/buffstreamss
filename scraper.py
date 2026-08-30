@@ -105,7 +105,6 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
             except Exception as ex:
               print(f"Error capturing m3u8 from {s_page_link}: {ex}")
 
-            # শর্ত: যদি m3u8 লিংক পাওয়া যায়, তবেই streamLink-এ যুক্ত হবে, না হলে ডিসকার্ড হবে
             if detected_m3u8_link and ".m3u8" in detected_m3u8_link:
               final_stream_with_referer = (
                   f"{detected_m3u8_link}|Referer={correct_referer_url}"
@@ -122,26 +121,30 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
               "Stream links will be activated before 1 hr of starting time."
           ]
 
-        # যদি কোনো বৈধ m3u8 লিংক পাওয়া না যায়, তবে ফলব্যাক মেসেজ বসবে
+        # streamLink ফরম্যাটিং: একাধিক থাকলে `,)` দিয়ে জোড়া লাগবে, একটা থাকলে শুধু সেটাই বসবে
         if not stream_link_custom_list:
-          stream_link_custom_list = [
+          final_stream_output = (
               "Stream links will be activated before 1 hr of starting time."
-          ]
+          )
+        elif len(stream_link_custom_list) == 1:
+          final_stream_output = stream_link_custom_list[0]
+        else:
+          final_stream_output = ",)".join(stream_link_custom_list)
 
       except Exception as ex:
         print(f"Error processing match: {ex}")
         streaming_page_links = [
             "Stream links will be activated before 1 hr of starting time."
         ]
-        stream_link_custom_list = [
+        final_stream_output = (
             "Stream links will be activated before 1 hr of starting time."
         ]
 
     await page.close()
 
-    # ফাইনাল আউটপুট ট্যাগগুলো এসাইন করা
+    # ফাইনাল আউটপুট ট্যাগগুলো এসাইন করা (Streaming page link আগের মতোই লিস্ট থাকবে, streamLink আপনার কাস্টম স্ট্রিং হবে)
     match["Streaming page link"] = streaming_page_links
-    match["streamLink"] = stream_link_custom_list
+    match["streamLink"] = final_stream_output
 
     # পুরোনো অপ্রয়োজনীয় ট্যাগগুলো মুছে ফেলা
     for old_key in ["streamPages", "streaming", "streams", "স্ট্রিম পেজ"]:
@@ -312,9 +315,9 @@ if __name__ == "__main__":
         "Streaming page link": [
             "Stream links will be activated before 1 hr of starting time."
         ],
-        "streamLink": [
+        "streamLink": (
             "Stream links will be activated before 1 hr of starting time."
-        ],
+        ),
     }]
 
   output_file = "matches.json"
