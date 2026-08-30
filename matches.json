@@ -1,421 +1,257 @@
 [
     {
         "eventTitle": "MotoGP",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/1032/responsive-images/motogp___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1120/responsive-images/live___preview_thumbnail_120_120.webp",
         "team1Title": "Grand",
         "team2Title": "Aragon",
-        "streamLink": "https://www1.buffstreamss.sx/game/motogp-grand-prix-of-aragon",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/motogp-grand-prix-of-aragon",
         "isHot": true,
         "streams": [
             {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totwatch.php?value=do2"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://vivtops.st/channel2"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/motogp-m"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=30"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-32.php"
+                "channelName": "Main Stream",
+                "watchPageLink": "https://www1.buffstreamss.sx/game/motogp-grand-prix-of-aragon"
             }
         ]
     },
     {
         "eventTitle": "English Premier League",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp",
         "team1Title": "Sunderland",
         "team2Title": "Fulham",
-        "streamLink": "https://www1.buffstreamss.sx/game/sunderland-vs-fulham",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/sunderland-vs-fulham",
         "isHot": true,
         "streams": [
             {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totwatch.php?value=nsunderland"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://unxer123.gozo.st/games/sunderland-vs-fulham/"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://streame.center/embed/ch2.php"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://vivtops.st/channel19"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-sunderland-vs-fulham/1"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=7"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-sunderland-vs-fulham"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://elixx.info/aw/partizan.php"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://104game.click/player/1/131"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-15.php"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-36.php"
+                "channelName": "Main Stream",
+                "watchPageLink": "https://www1.buffstreamss.sx/game/sunderland-vs-fulham"
             }
         ]
     },
     {
         "eventTitle": "English Premier League",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp",
         "team1Title": "Leeds United",
         "team2Title": "Brentford",
-        "streamLink": "https://www1.buffstreamss.sx/game/leeds-united-vs-brentford",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/leeds-united-vs-brentford",
         "isHot": true,
         "streams": [
             {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totwatch.php?value=nleedsunited"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://unxer123.gozo.st/games/leeds-united-vs-brentford/"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://streame.center/embed/ch1.php"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://vivtops.st/channel18"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-leeds-united-vs-brentford/1"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=10"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-leeds-united-vs-brentford"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://elixx.info/aw/evalencia.php"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://104game.click/player/1/130"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-14.php"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-130.php"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-343.php"
+                "channelName": "Main Stream",
+                "watchPageLink": "https://www1.buffstreamss.sx/game/leeds-united-vs-brentford"
             }
         ]
     },
     {
         "eventTitle": "English Premier League",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp",
         "team1Title": "Chelsea",
         "team2Title": "Brighton And Hove Albion",
-        "streamLink": "https://www1.buffstreamss.sx/game/chelsea-vs-brighton-and-hove-albion",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/chelsea-vs-brighton-and-hove-albion",
         "isHot": true,
         "streams": [
             {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totwatch.php?value=nchelsea"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://unxer123.gozo.st/games/chelsea-vs-brighton-hove-albion/"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://streame.center/embed/ch3.php"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://vivtops.st/channel17"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-chelsea-vs-brighton-hove-albion/1"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=9"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-chelsea-vs-brighton-hove-albion"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://elixx.info/aw/ajaxw.php"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://104game.click/player/1/127"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-13.php"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-38.php"
+                "channelName": "Main Stream",
+                "watchPageLink": "https://www1.buffstreamss.sx/game/chelsea-vs-brighton-and-hove-albion"
             }
         ]
     },
     {
         "eventTitle": "English Premier League",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp",
         "team1Title": "Manchester United",
         "team2Title": "Ipswich Town",
-        "streamLink": "https://www1.buffstreamss.sx/game/manchester-united-vs-ipswich-town",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/manchester-united-vs-ipswich-town",
         "isHot": true,
         "streams": [
             {
                 "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/manchester-united-vs-ipswich-town"
+                "watchPageLink": "https://www1.buffstreamss.sx/game/manchester-united-vs-ipswich-town"
             }
         ]
     },
     {
         "eventTitle": "Ligue 1",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/1326/responsive-images/Paris-fc___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/123/responsive-images/Nice___preview_thumbnail_120_120.webp",
         "team1Title": "Paris Fc",
         "team2Title": "Nice",
-        "streamLink": "https://www1.buffstreamss.sx/game/paris-fc-vs-nice",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/paris-fc-vs-nice",
         "isHot": true,
         "streams": [
             {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totwatch.php?value=do39"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://streame.center/embed/ch7.php"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://vivtops.st/tv/channel.php?ch=bein-sports"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-paris-fc-vs-nice/1"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=39"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-paris-fc-vs-nice"
-            },
-            {
-                "channelName": "Live Channel",
-                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-425.php"
+                "channelName": "Main Stream",
+                "watchPageLink": "https://www1.buffstreamss.sx/game/paris-fc-vs-nice"
             }
         ]
     },
     {
         "eventTitle": "Ligue 1",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/1326/responsive-images/Paris-fc___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/123/responsive-images/Nice___preview_thumbnail_120_120.webp",
         "team1Title": "Rennes",
         "team2Title": "Le Mans",
-        "streamLink": "https://www1.buffstreamss.sx/game/rennes-vs-le-mans",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/rennes-vs-le-mans",
         "isHot": true,
         "streams": [
             {
                 "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/rennes-vs-le-mans"
+                "watchPageLink": "https://www1.buffstreamss.sx/game/rennes-vs-le-mans"
             }
         ]
     },
     {
         "eventTitle": "Ligue 1",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/1326/responsive-images/Paris-fc___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/123/responsive-images/Nice___preview_thumbnail_120_120.webp",
         "team1Title": "As Monaco",
         "team2Title": "Marseille",
-        "streamLink": "https://www1.buffstreamss.sx/game/as-monaco-vs-marseille",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/as-monaco-vs-marseille",
         "isHot": true,
         "streams": [
             {
                 "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/as-monaco-vs-marseille"
+                "watchPageLink": "https://www1.buffstreamss.sx/game/as-monaco-vs-marseille"
             }
         ]
     },
     {
         "eventTitle": "Bundesliga",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/81/responsive-images/Freiburg___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1664/responsive-images/Werder-Bremen___preview_thumbnail_120_120.webp",
         "team1Title": "Freiburg",
         "team2Title": "Werder Bremen",
-        "streamLink": "https://www1.buffstreamss.sx/game/freiburg-vs-werder-bremen",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/freiburg-vs-werder-bremen",
         "isHot": true,
         "streams": [
             {
                 "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/freiburg-vs-werder-bremen"
+                "watchPageLink": "https://www1.buffstreamss.sx/game/freiburg-vs-werder-bremen"
             }
         ]
     },
     {
         "eventTitle": "Bundesliga",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/81/responsive-images/Freiburg___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1664/responsive-images/Werder-Bremen___preview_thumbnail_120_120.webp",
         "team1Title": "Augsburg",
         "team2Title": "Schalke 04",
-        "streamLink": "https://www1.buffstreamss.sx/game/augsburg-vs-schalke-04",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/augsburg-vs-schalke-04",
         "isHot": true,
         "streams": [
             {
                 "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/augsburg-vs-schalke-04"
+                "watchPageLink": "https://www1.buffstreamss.sx/game/augsburg-vs-schalke-04"
             }
         ]
     },
     {
         "eventTitle": "La Liga",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/3/responsive-images/Real-Madrid___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1824/responsive-images/Malaga___preview_thumbnail_120_120.webp",
         "team1Title": "Real Madrid",
         "team2Title": "Malaga",
-        "streamLink": "https://www1.buffstreamss.sx/game/real-madrid-vs-malaga",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/real-madrid-vs-malaga",
         "isHot": true,
         "streams": [
             {
                 "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/real-madrid-vs-malaga"
+                "watchPageLink": "https://www1.buffstreamss.sx/game/real-madrid-vs-malaga"
             }
         ]
     },
     {
         "eventTitle": "La Liga",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/3/responsive-images/Real-Madrid___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1824/responsive-images/Malaga___preview_thumbnail_120_120.webp",
         "team1Title": "Deportivo De A Coruna",
         "team2Title": "Valencia",
-        "streamLink": "https://www1.buffstreamss.sx/game/deportivo-de-a-coruna-vs-valencia",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/deportivo-de-a-coruna-vs-valencia",
         "isHot": true,
         "streams": [
             {
                 "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/deportivo-de-a-coruna-vs-valencia"
+                "watchPageLink": "https://www1.buffstreamss.sx/game/deportivo-de-a-coruna-vs-valencia"
             }
         ]
     },
     {
         "eventTitle": "La Liga",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/3/responsive-images/Real-Madrid___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1824/responsive-images/Malaga___preview_thumbnail_120_120.webp",
         "team1Title": "Celta Vigo",
         "team2Title": "Athletic Bilbao",
-        "streamLink": "https://www1.buffstreamss.sx/game/celta-vigo-vs-athletic-bilbao",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/celta-vigo-vs-athletic-bilbao",
         "isHot": true,
         "streams": [
             {
                 "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/celta-vigo-vs-athletic-bilbao"
+                "watchPageLink": "https://www1.buffstreamss.sx/game/celta-vigo-vs-athletic-bilbao"
             }
         ]
     },
     {
         "eventTitle": "Serie A",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/114/responsive-images/Napoli___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/74/responsive-images/Como___preview_thumbnail_120_120.webp",
         "team1Title": "Napoli",
         "team2Title": "Como",
-        "streamLink": "https://www1.buffstreamss.sx/game/napoli-vs-como",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/napoli-vs-como",
         "isHot": true,
         "streams": [
             {
                 "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/napoli-vs-como"
+                "watchPageLink": "https://www1.buffstreamss.sx/game/napoli-vs-como"
             }
         ]
     },
     {
         "eventTitle": "Serie A",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/114/responsive-images/Napoli___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/74/responsive-images/Como___preview_thumbnail_120_120.webp",
         "team1Title": "Cagliari",
         "team2Title": "Inter Milan",
-        "streamLink": "https://www1.buffstreamss.sx/game/cagliari-vs-inter-milan",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/cagliari-vs-inter-milan",
         "isHot": true,
         "streams": [
             {
                 "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/cagliari-vs-inter-milan"
+                "watchPageLink": "https://www1.buffstreamss.sx/game/cagliari-vs-inter-milan"
             }
         ]
     },
     {
         "eventTitle": "Serie A",
-        "matchTime": "2026-08-30 12:04:15",
+        "matchTime": "2026-08-30 12:09:21",
         "team1Logo": "https://v1.1cdnforall.online/storage/114/responsive-images/Napoli___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/74/responsive-images/Como___preview_thumbnail_120_120.webp",
         "team1Title": "Lazio",
         "team2Title": "Genoa",
-        "streamLink": "https://www1.buffstreamss.sx/game/lazio-vs-genoa",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/lazio-vs-genoa",
         "isHot": true,
         "streams": [
             {
                 "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/lazio-vs-genoa"
+                "watchPageLink": "https://www1.buffstreamss.sx/game/lazio-vs-genoa"
             }
         ]
     }
