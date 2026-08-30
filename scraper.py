@@ -1,7 +1,8 @@
 import asyncio
-import json
-from datetime import datetime
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
+import json
 from playwright.async_api import async_playwright
 
 URL = "https://www1.buffstreamss.sx/"
@@ -24,6 +25,9 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
     c_link = match.get("channelPageLink")
     streaming_page_links = []
     stream_link_custom_list = []
+    extracted_match_time = match.get(
+        "matchTime"
+    )  # ডিফল্ট ফলব্যাক হোমপেজ টাইম
 
     if c_link:
       try:
@@ -33,6 +37,29 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
 
         sub_html = await page.content()
         sub_soup = BeautifulSoup(sub_html, "html.parser")
+
+        # ১. ভেতরের পেজের ওপর থেকে আসল UTC টাইম পার্স করে বাংলাদেশ সময়ে কনভার্ট করা
+        page_text = sub_soup.get_text()
+        import re
+
+        # ফরম্যাট যেমন: 2026-08-30 18:45:00 UTC খোঁজা
+        time_match = re.search(
+            r"(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2})\s*(?:UTC|GMT)?",
+            page_text,
+            re.IGNORECASE,
+        )
+        if time_match:
+          utc_time_str = time_match.group(1)
+          try:
+            # UTC টাইম অবজেক্ট তৈরি
+            dt_utc = datetime.strptime(utc_time_str, "%Y-%m-%d %H:%M:%S").replace(
+                tzinfo=timezone.utc
+            )
+            # বাংলাদেশ সময় (Asia/Dhaka) জোনে কনভার্ট করা (+6 hours)
+            dt_bd = dt_utc.astimezone(ZoneInfo("Asia/Dhaka"))
+            extracted_match_time = dt_bd.strftime("%Y-%m-%d %H:%M:%S")
+          except Exception as t_err:
+            print(f"Time conversion error: {t_err}")
 
         watch_anchors = sub_soup.find_all("a", href=True)
 
@@ -143,6 +170,7 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
     await page.close()
 
     # ফাইনাল আউটপুট ট্যাগগুলো এসাইন করা
+    match["matchTime"] = extracted_match_time
     match["Streaming page link"] = streaming_page_links
     match["streamLink"] = final_stream_output
 
