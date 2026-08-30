@@ -29,14 +29,7 @@ async def scrape_buffstreams():
       html_content = await page.content()
       soup = BeautifulSoup(html_content, "html.parser")
 
-      match_list = []
       seen_links = set()
-
-      # ওয়েবসাইটের সেকশনগুলো ধরে স্ক্র্যাপ করার লজিক
-      # সাধারণত প্রতিটি সেকশনে একটি হেডিং থাকে এবং তার নিচে ম্যাচের কার্ডগুলো থাকে
-      # আমরা পেজের সমস্ত ম্যাচ কার্ড বা লিগ সেকশন ট্র্যাক করব
-
-      # প্রতিটি ম্যাচ কার্ডকে টার্গেট করা যার মধ্যে এক্সটার্নাল লিংক বা গেমের লিংক আছে
       links = soup.find_all("a", href=True)
 
       for link in links:
@@ -55,84 +48,78 @@ async def scrape_buffstreams():
           continue
         seen_links.add(streamLink)
 
-        # কার্ডের প্যারেন্ট বা কন্টেইনার খোঁজা
-        card = link.find_parent(
-            "div",
-            class_=[
-                "card",
-                "item",
-                "match-item",
-                "bg-",
-                "rounded",
-                "flex",
-                "grid",
-            ],
-        )
+        # কার্ড বা কন্টেইনার এলিমেন্ট খুঁজে বের করা
+        card = link.find_parent("div", class_=["card", "item", "match-item"])
         if not card:
           card = link
 
-        # বর্তমান কার্ডের উপরে বা সেকশনের মধ্যে লিগ/ইভেন্ট নাম খোঁজা
+        # ১. সঠিক লিগ বা ইভেন্টের নাম খোঁজা (কার্ডের ওপরের সেকশন হেডিং থেকে)
         eventTitle = "Live Sports Event"
-        current = card
-        for _ in range(5):  # ওপরের দিকে কয়েক ধাপ চেক করা
-          if not current:
+        curr = card
+        for _ in range(5):
+          if not curr:
             break
-          # আগের ভাইবোন বা হেডিং ট্যাগ খুঁজব যেখানে লিগের নাম থাকতে পারে
-          prev_elem = current.find_previous(
-              ["h1", "h2", "h3", "h4", "div", "span"],
-              class_=True,
+          # ওপরের দিকে হেডিং বা সেকশন লেবেল খোঁজা
+          prev_elem = curr.find_previous(
+              ["h1", "h2", "h3", "h4", "div", "span"], class_=True
           )
           if prev_elem:
-            text_val = prev_elem.get_text(strip=True)
-            # যদি টেক্সটটি ছোট হয় এবং কোনো লিগ বা খেলার নাম হয়
+            t_text = prev_elem.get_text(strip=True)
             if (
-                text_val
-                and len(text_val) < 30
-                and "Starts" not in text_val
-                and "Live" not in text_val
+                t_text
+                and len(t_text) < 35
+                and "Starts" not in t_text
+                and "Live" not in t_text
+                and "1" not in t_text
             ):
-              eventTitle = text_val
+              eventTitle = t_text
               break
-          current = current.parent
+          curr = curr.parent
 
         card_text = card.get_text(separator=" ", strip=True)
 
-        # লোগো সংগ্রহ
-        imgs = card.find_all("img")
-        team1Logo = (
-            imgs[0].get("src", "")
-            if len(imgs) > 0
-            else "https://cricketvectors.akamaized.net/Teams/G2.png"
-        )
-        team2Logo = (
-            imgs[1].get("src", "")
-            if len(imgs) > 1
-            else "https://cricketvectors.akamaized.net/Teams/G5.png"
-        )
-
-        if team1Logo.startswith("/"):
-          team1Logo = "https://www1.buffstreamss.sx" + team1Logo
-        if team2Logo.startswith("/"):
-          team2Logo = "https://www1.buffstreamss.sx" + team2Logo
-
-        # URL থেকে টিম নাম বের করা (যেমন: /game/sunderland-vs-fulham)
+        # ২. URL থেকে টিম ১ ও টিম ২ এর নাম আলাদা করা
         slug = href.split("/game/")[-1]
         parts = slug.split("-vs-")
         if len(parts) == 2:
           team1Title = parts[0].replace("-", " ").title()
           team2Title = parts[1].replace("-", " ").title()
         else:
-          # টেক্সট থেকে আলাদা করার চেষ্টা
           team1Title = "Team 1"
           team2Title = "Team 2"
 
-        # যদি ইভেন্ট টাইটেল ডিফল্ট থাকে, তবে স্লাগ বা ইউআরএল থেকে সুন্দর নাম দেওয়া
-        if (
-            eventTitle == "Live Sports Event"
-            or len(eventTitle) < 3
-            or "Starts" in eventTitle
-        ):
-          eventTitle = "Live Stream Match"
+        # ৩. কার্ডের ভেতর থেকে সুনির্দিষ্টভাবে দুটি আলাদা লোগো সংগ্রহ করা
+        imgs = card.find_all("img")
+        team1Logo = ""
+        team2Logo = ""
+
+        # যদি কার্ডের ভেতর একাধিক ছবি থাকে, তবে প্রথম দুটি ছবি টিমগুলোর লোগো হিসেবে নেব
+        valid_img_sources = []
+        for img in imgs:
+          src = img.get("src", "")
+          if src and src not in valid_img_sources:
+            # যদি লিগের আইকন বা বাইরের লোগো না হয়
+            if "leagues" not in src and "icon" not in src:
+              valid_img_sources.append(src)
+
+        if len(valid_img_sources) >= 2:
+          team1Logo = valid_img_sources[0]
+          team2Logo = valid_img_sources[1]
+        elif len(imgs) >= 2:
+          team1Logo = imgs[0].get("src", "")
+          team2Logo = imgs[1].get("src", "")
+        elif len(imgs) == 1:
+          team1Logo = imgs[0].get("src", "")
+          team2Logo = imgs[0].get("src", "")
+        else:
+          team1Logo = "https://cricketvectors.akamaized.net/Teams/G2.png"
+          team2Logo = "https://cricketvectors.akamaized.net/Teams/G5.png"
+
+        # রিলাটিভ পাথ ফিক্স করা
+        if team1Logo.startswith("/"):
+          team1Logo = "https://www1.buffstreamss.sx" + team1Logo
+        if team2Logo.startswith("/"):
+          team2Logo = "https://www1.buffstreamss.sx" + team2Logo
 
         matchTime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         isHot = (
