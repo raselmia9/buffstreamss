@@ -25,9 +25,7 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
     c_link = match.get("channelPageLink")
     streaming_page_links = []
     stream_link_custom_list = []
-    extracted_match_time = match.get(
-        "matchTime"
-    )  # ডিফল্ট ফলব্যাক হোমপেজ টাইম
+    extracted_match_time = match.get("matchTime")
 
     if c_link:
       try:
@@ -38,11 +36,9 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
         sub_html = await page.content()
         sub_soup = BeautifulSoup(sub_html, "html.parser")
 
-        # ১. ভেতরের পেজের ওপর থেকে আসল UTC টাইম পার্স করে বাংলাদেশ সময়ে কনভার্ট করা
         page_text = sub_soup.get_text()
         import re
 
-        # ফরম্যাট যেমন: 2026-08-30 18:45:00 UTC খোঁজা
         time_match = re.search(
             r"(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2})\s*(?:UTC|GMT)?",
             page_text,
@@ -51,11 +47,9 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
         if time_match:
           utc_time_str = time_match.group(1)
           try:
-            # UTC টাইম অবজেক্ট তৈরি
             dt_utc = datetime.strptime(utc_time_str, "%Y-%m-%d %H:%M:%S").replace(
                 tzinfo=timezone.utc
             )
-            # বাংলাদেশ সময় (Asia/Dhaka) জোনে কনভার্ট করা (+6 hours)
             dt_bd = dt_utc.astimezone(ZoneInfo("Asia/Dhaka"))
             extracted_match_time = dt_bd.strftime("%Y-%m-%d %H:%M:%S")
           except Exception as t_err:
@@ -94,12 +88,10 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
                   channel_name = p
                   break
 
-            # Streaming page link যোগ করা
             formatted_page_entry = f"{channel_name},, {s_page_link}"
             if formatted_page_entry not in streaming_page_links:
               streaming_page_links.append(formatted_page_entry)
 
-            # m3u8 লিংক ক্যাপচার করার লজিক
             detected_m3u8_link = None
             correct_referer_url = s_page_link
 
@@ -142,13 +134,11 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
               if formatted_stream_entry not in stream_link_custom_list:
                 stream_link_custom_list.append(formatted_stream_entry)
 
-        # যদি কোনো স্ট্রিমিং পেজ না পাওয়া যায়
         if not streaming_page_links:
           streaming_page_links = [
               "Stream links will be activated before 1 hr of starting time."
           ]
 
-        # streamLink ফরম্যাটিং: একাধিক থাকলে `,)` দিয়ে জোড়া লাগবে, একটা থাকলে শুধু সেটাই বসবে
         if not stream_link_custom_list:
           final_stream_output = (
               "Stream links will be activated before 1 hr of starting time."
@@ -169,12 +159,10 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
 
     await page.close()
 
-    # ফাইনাল আউটপুট ট্যাগগুলো এসাইন করা
     match["matchTime"] = extracted_match_time
     match["Streaming page link"] = streaming_page_links
     match["streamLink"] = final_stream_output
 
-    # পুরোনো অপ্রয়োজনীয় ট্যাগগুলো মুছে ফেলা
     for old_key in ["streamPages", "streaming", "streams", "স্ট্রিম পেজ"]:
       if old_key in match:
         del match[old_key]
@@ -224,7 +212,10 @@ async def scrape_buffstreams():
           continue
         seen_links.add(channelPageLink)
 
-        card = link.find_parent("div", class_=["card", "item", "match-item"])
+        # প্রতিটি নির্দিষ্ট ম্যাচ কার্ড বা কন্টেইনার আলাদা করা
+        card = link.find_parent(
+            "div", class_=["card", "item", "match-item", "box"]
+        )
         if not card:
           card = link.parent if link.parent else link
 
@@ -273,19 +264,31 @@ async def scrape_buffstreams():
             team1Title = slug.replace("-", " ").title()
             team2Title = ""
 
-        imgs = card.find_all("img")
-        team1Logo = imgs[0].get("src", "") if len(imgs) >= 1 else ""
-        team2Logo = imgs[1].get("src", "") if len(imgs) >= 2 else team1Logo
+        # লোগো তোলার সঠিক লজিক: শুধুমাত্র এই কার্ডের ভেতরের ইমেজগুলো ফিল্টার করা
+        card_imgs = card.find_all("img")
+        team1Logo = ""
+        team2Logo = ""
+
+        valid_imgs = []
+        for img in card_imgs:
+          src = img.get("src", "")
+          if src and not src.endswith(".svg") and "icon" not in src.lower():
+            if src.startswith("/"):
+              src = "https://www1.buffstreamss.sx" + src
+            if src not in valid_imgs:
+              valid_imgs.append(src)
+
+        if len(valid_imgs) >= 2:
+          team1Logo = valid_imgs[0]
+          team2Logo = valid_imgs[1]
+        elif len(valid_imgs) == 1:
+          team1Logo = valid_imgs[0]
+          team2Logo = valid_imgs[0]
 
         if not team1Logo:
           team1Logo = "https://cricketvectors.akamaized.net/Teams/G2.png"
         if not team2Logo:
           team2Logo = "https://cricketvectors.akamaized.net/Teams/G5.png"
-
-        if team1Logo.startswith("/"):
-          team1Logo = "https://www1.buffstreamss.sx" + team1Logo
-        if team2Logo.startswith("/"):
-          team2Logo = "https://www1.buffstreamss.sx" + team2Logo
 
         matchTime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         isHot = (
