@@ -212,15 +212,13 @@ async def scrape_buffstreams():
           continue
         seen_links.add(channelPageLink)
 
-        # সুনির্দিষ্টভাবে প্রতিটি ম্যাচের নিজস্ব একক কার্ড বা রো (Row) বের করা
+        # প্রতিটি ম্যাচের নিজস্ব একেবারে ছোট এবং সুনির্দিষ্ট স্বতন্ত্র কার্ড খুঁজে বের করা
         card = link.find_parent(
-            lambda tag: tag.name in ["div", "li", "article"]
+            lambda tag: tag.name in ["div", "li"]
             and (
                 "card" in tag.get("class", [])
                 or "item" in tag.get("class", [])
                 or "match" in tag.get("class", [])
-                or len(tag.find_all("a", href=lambda h: h and "/game/" in h))
-                == 1
             )
         )
         if not card:
@@ -271,7 +269,7 @@ async def scrape_buffstreams():
             team1Title = slug.replace("-", " ").title()
             team2Title = ""
 
-        # লোগো তোলার সঠিক ও নিরাপদ লজিক: শুধুমাত্র এই নির্দিষ্ট কার্ডের ভেতরের ইমেজগুলো ফিল্টার করা
+        # একদম সুনির্দিষ্টভাবে শুধু এই একটি কার্ডের ভেতর থাকা লোগো ফিল্টার করা
         card_imgs = card.find_all("img")
         valid_imgs = []
         for img in card_imgs:
