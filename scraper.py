@@ -77,7 +77,7 @@ async def scrape_buffstreams():
 
         card_text = card.get_text(separator=" ", strip=True)
 
-        # ২. URL স্লাগ থেকে টিম নাম নির্ধারণের লজিক
+        # ২. URL স্লাগ থেকে টিম/ইভেন্ট নাম নির্ধারণের লজিক
         slug = href.split("/game/")[-1]
 
         if "-vs-" in slug:
@@ -85,39 +85,21 @@ async def scrape_buffstreams():
           team1Title = parts[0].replace("-", " ").title()
           team2Title = parts[1].replace("-", " ").title()
         else:
-          # আপনার নির্দেশ অনুযায়ী: স্লাগ থেকে প্রথমে ইভেন্টের নামটি কেটে বাদ দেওয়া (যেমন: motogp, grand-prix ইত্যাদি)
+          # শুধুমাত্র ইভেন্টের নামটুকু স্লাগের শুরু থেকে কেটে বাদ দেওয়া
           clean_slug = slug.lower()
+          event_lower = eventTitle.lower().replace(" ", "-")
 
-          # eventTitle-এর নামটিকে স্লাগ থেকে রিমুভ করা (যেমন 'motogp' বা অন্যান্য শব্দ)
-          event_words = eventTitle.lower().split()
-          for word in event_words:
-            clean_slug = clean_slug.replace(word, "")
+          if clean_slug.startswith(event_lower):
+            clean_slug = clean_slug[len(event_lower) :].strip("-")
 
-          # অতিরিক্ত কমন শব্দ বা হাইফেনগুলো পরিষ্কার করা
-          clean_slug = (
-              clean_slug.replace("grand-prix-of", "")
-              .replace("gp-of", "")
-              .replace("race", "")
-              .strip("-")
-          )
+          remaining_text = clean_slug.replace("-", " ").title()
 
-          slug_parts = [p for p in clean_slug.split("-") if p]
-
-          if len(slug_parts) >= 2:
-            team1Title = slug_parts[0].title()
-            team2Title = slug_parts[-1].title()
-          elif len(slug_parts) == 1:
-            team1Title = slug_parts[0].title()
-            team2Title = slug_parts[0].title()
+          if remaining_text:
+            team1Title = remaining_text
+            team2Title = ""  # সিঙ্গেল ইভেন্টের ক্ষেত্রে দ্বিতীয় ফিল্ডটি খালি রাখা
           else:
-            # যদি কাটার পর আর কিছু না থাকে, তবে পুরো স্লাগটাই ব্যবহার করবে
-            fallback_parts = [p for p in slug.split("-") if p]
-            team1Title = (
-                fallback_parts[0].title() if fallback_parts else "Team 1"
-            )
-            team2Title = (
-                fallback_parts[-1].title() if fallback_parts else "Team 2"
-            )
+            team1Title = slug.replace("-", " ").title()
+            team2Title = ""
 
         # ৩. কার্ডের ভেতরের লোগো সংগ্রহ করা
         imgs = card.find_all("img")
