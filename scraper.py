@@ -6,75 +6,104 @@ from playwright.async_api import async_playwright
 
 URL = "https://www1.buffstreamss.sx/"
 
-# একসাথে কতগুলো ট্যাব ওপেন করে কাজ করবে (গতি বাড়ানোর জন্য)
+# কাজের গতি বাড়ানোর জন্য কনকারেন্ট ট্যাব সংখ্যা
 MAX_CONCURRENT_TABS = 5
 
 
 async def scrape_stream_channels(browser, match, semaphore):
   async with semaphore:
     page = await browser.new_page()
-    s_link = match["streamLink"]
-    channels_list = []
+    # পরিবর্তিত ট্যাগ: channelPageLink ব্যবহার করা হচ্ছে
+    c_link = match["channelPageLink"]
+    streams_list = []
 
     try:
-      print(f"Visiting stream page: {s_link}")
-      await page.goto(s_link, timeout=30000)
+      print(f"Visiting channel page: {c_link}")
+      await page.goto(c_link, timeout=30000)
       await page.wait_for_timeout(2500)
 
       sub_html = await page.content()
       sub_soup = BeautifulSoup(sub_html, "html.parser")
 
-      # পেজের ভেতর থেকে সমস্ত 'Watch' বাটন বা লিংক খুঁজে বের করা
-      watch_anchors = sub_soup.find_all("a", href=True)
+      # চ্যানেল রো বা কার্ডগুলো খুঁজে বের করা যেখানে নাম ও ওয়াচ বাটন থাকে
+      # সাধারণত প্রতিটি চ্যানেলের জন্য একটি নির্দিষ্ট বক্স বা রো থাকে
+      channel_items = sub_soup.find_all(
+          "div", class_=["item", "card", "row", "flex", "channel"]
+      )
 
-      for a in watch_anchors:
-        text = a.get_text(strip=True)
-        if "Watch" in text or "watch" in text.lower():
-          w_href = a["href"]
-
-          if w_href.startswith("/"):
-            watch_link = "https://www1.buffstreamss.sx" + w_href
-          elif w_href.startswith("http"):
-            watch_link = w_href
-          else:
-            continue
-
-          # ওয়াচ বাটন বা লিংকের আশপাশ থেকে চ্যানেলের নামটি খুঁজে বের করা
-          parent = a.find_parent(
-              "div", class_=["item", "card", "row", "flex", "channel"]
+      if not channel_items:
+        # যদি নির্দিষ্ট ক্লাস না পাওয়া যায়, তবে 'Watch' বাটনগুলোর প্যারেন্ট ধরে খোঁজা
+        watch_btns = sub_soup.find_all(
+            ["a", "button"], string=lambda t: t and "Watch" in t
+        )
+        for w in watch_btns:
+          box = w.find_parent(
+              "div", class_=["flex", "item", "card", "box", "row"]
           )
+          if box and box not in channel_items:
+            channel_items.append(box)
+
+      for item in channel_items:
+        text_content = item.get_text(separator=" ", strip=True)
+        if "Watch" in text_content:
+          # সঠিক চ্যানেলের নাম বের করার লজিক
           channel_name = "Live Channel"
+          # সাধারণত টেক্সট এলিমেন্টগুলোতে চ্যানেলের নাম থাকে
+          name_elem = item.find(
+              ["span", "div", "p", "h4", "strong", "b"],
+              class_=lambda c: not c or "btn" not in str(c),
+          )
 
-          if parent:
-            for el in parent.find_all(
-                ["span", "div", "p", "h4", "strong", "b"]
+          if name_elem:
+            raw_name = name_elem.get_text(strip=True)
+            if (
+                raw_name
+                and raw_name.lower() != "watch"
+                and len(raw_name) < 40
+                and not raw_name.isdigit()
             ):
-              t_val = el.get_text(strip=True)
-              if (
-                  t_val
-                  and t_val.lower() != "watch"
-                  and len(t_val) < 35
-                  and not t_val.isdigit()
-              ):
-                channel_name = t_val
-                break
+              channel_name = raw_name
+          else:
+            # যদি সরাসরি না পাওয়া যায়, পুরো টেক্সট থেকে Watch শব্দটি বাদ দিয়ে নাম বের করা
+            cleaned_txt = (
+                text_content.replace("Watch", "").replace("WATCH", "").strip()
+            )
+            if cleaned_txt:
+              channel_name = cleaned_txt[:35]
 
-          # একই লিংক বারবার চলে আসলে তা এড়িয়ে চলা
-          if not any(c["watchLink"] == watch_link for c in channels_list):
-            channels_list.append({
-                "channelName": channel_name,
-                "watchLink": watch_link,
-            })
+          # ওয়াচ বাটন বা লিংকের ট্যাগ থেকে আসল লিংক বের করা
+          watch_tag = item.find("a", href=True)
+          if not watch_tag:
+            # যদি আইটেমের ভেতরে না থাকে, তবে পাশের বাটন চেক করা
+            watch_tag = item.find_next("a", href=True)
 
-      # যদি কোনো কারণে চ্যানেল বা ওয়াচ লিংক না পাওয়া যায়
-      if not channels_list:
-        channels_list.append({"channelName": "Main Stream", "watchLink": s_link})
+          if watch_tag:
+            w_href = watch_tag["href"]
+            if w_href.startswith("/"):
+              watch_link = "https://www1.buffstreamss.sx" + w_href
+            elif w_href.startswith("http"):
+              watch_link = w_href
+            else:
+              continue
 
-      match["streams"] = channels_list
+            # ডুপ্লিকেট এড়াতে চেক করা এবং পরিবর্তিত ট্যাগ 'watchPageLink' ব্যবহার করা
+            if not any(s["watchPageLink"] == watch_link for s in streams_list):
+              streams_list.append({
+                  "channelName": channel_name,
+                  "watchPageLink": watch_link,
+              })
+
+      # যদি কোনো কারণে চ্যানেল বা ওয়াচ লিংক লুপে না আসে
+      if not streams_list:
+        streams_list.append(
+            {"channelName": "Main Stream", "watchPageLink": c_link}
+        )
+
+      match["streams"] = streams_list
 
     except Exception as ex:
-      print(f"Error scraping stream page {s_link}: {ex}")
-      match["streams"] = [{"channelName": "Main Stream", "watchLink": s_link}]
+      print(f"Error scraping stream page {c_link}: {ex}")
+      match["streams"] = [{"channelName": "Main Stream", "watchPageLink": c_link}]
 
     finally:
       await page.close()
@@ -115,15 +144,15 @@ async def scrape_buffstreams():
           continue
 
         if href.startswith("/"):
-          streamLink = "https://www1.buffstreamss.sx" + href
+          channelPageLink = "https://www1.buffstreamss.sx" + href
         elif href.startswith("http"):
-          streamLink = href
+          channelPageLink = href
         else:
           continue
 
-        if streamLink in seen_links:
+        if channelPageLink in seen_links:
           continue
-        seen_links.add(streamLink)
+        seen_links.add(channelPageLink)
 
         card = link.find_parent("div", class_=["card", "item", "match-item"])
         if not card:
@@ -152,7 +181,7 @@ async def scrape_buffstreams():
 
         card_text = card.get_text(separator=" ", strip=True)
 
-        # URL স্লাগ থেকে টিম নাম নির্ধারণ (আপনার সর্বশেষ লজিক অনুযায়ী)
+        # URL স্লাগ থেকে টিম নাম নির্ধারণের লজিক
         slug = href.split("/game/")[-1]
 
         if "-vs-" in slug:
@@ -211,13 +240,13 @@ async def scrape_buffstreams():
             "team2Logo": team2Logo,
             "team1Title": team1Title,
             "team2Title": team2Title,
-            "streamLink": streamLink,
+            "channelPageLink": channelPageLink,  # পরিবর্তিত ট্যাগের নাম
             "isHot": isHot,
         })
 
       await page.close()
 
-      # ২. মাল্টি-ট্যাব (Concurrency) ব্যবহার করে খুব দ্রুত সব স্ট্রিম পেজ স্ক্যাপ করা
+      # ২. মাল্টি-ট্যাব ব্যবহার করে খুব দ্রুত দ্বিতীয় পেজ থেকে চ্যানেল ও ওয়াচ লিংকগুলো আনা
       print(
           f"Total matches found: {len(base_matches)}. Scraping streams using"
           " multi-tabs..."
@@ -250,11 +279,11 @@ if __name__ == "__main__":
         "team2Logo": "https://cricketvectors.akamaized.net/Teams/G5.png",
         "team1Title": "Team 1",
         "team2Title": "Team 2",
-        "streamLink": "https://www1.buffstreamss.sx/",
+        "channelPageLink": "https://www1.buffstreamss.sx/",
         "isHot": True,
         "streams": [{
             "channelName": "Main Stream",
-            "watchLink": "https://www1.buffstreamss.sx/",
+            "watchPageLink": "https://www1.buffstreamss.sx/",
         }],
     }]
 
