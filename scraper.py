@@ -32,6 +32,9 @@ async def scrape_buffstreams():
       seen_links = set()
       links = soup.find_all("a", href=True)
 
+      base_matches = []
+
+      # ১. প্রথম পেজ থেকে বেসিক ম্যাচ লিস্ট তৈরি করা
       for link in links:
         href = link["href"]
         if "/game/" not in href:
@@ -48,12 +51,10 @@ async def scrape_buffstreams():
           continue
         seen_links.add(streamLink)
 
-        # কার্ড বা কন্টেইনার এলিমেন্ট খুঁজে বের করা
         card = link.find_parent("div", class_=["card", "item", "match-item"])
         if not card:
           card = link.parent if link.parent else link
 
-        # ১. সঠিক লিগ বা ইভেন্টের নাম (eventTitle) বের করা
         eventTitle = "Live Sports Event"
         curr = card
         for _ in range(6):
@@ -77,7 +78,6 @@ async def scrape_buffstreams():
 
         card_text = card.get_text(separator=" ", strip=True)
 
-        # ২. URL স্লাগ থেকে নাম নির্ধারণের লজিক
         slug = href.split("/game/")[-1]
 
         if "-vs-" in slug:
@@ -85,14 +85,12 @@ async def scrape_buffstreams():
           team1Title = parts[0].replace("-", " ").title()
           team2Title = parts[1].replace("-", " ").title()
         else:
-          # ইভেন্টের নামটি স্লাগের শুরু থেকে কেটে বাদ দেওয়া
           clean_slug = slug.lower()
           event_lower = eventTitle.lower().replace(" ", "-")
 
           if clean_slug.startswith(event_lower):
             clean_slug = clean_slug[len(event_lower) :].strip("-")
 
-          # স্প্লিট করে প্রথম ও শেষ আইটেম নেওয়া (মাঝের অংশ বাদ)
           slug_parts = [p for p in clean_slug.split("-") if p]
 
           if len(slug_parts) >= 2:
@@ -105,7 +103,6 @@ async def scrape_buffstreams():
             team1Title = slug.replace("-", " ").title()
             team2Title = ""
 
-        # ৩. কার্ডের ভেতরের লোগো সংগ্রহ করা
         imgs = card.find_all("img")
         team1Logo = ""
         team2Logo = ""
@@ -120,7 +117,6 @@ async def scrape_buffstreams():
           team1Logo = "https://cricketvectors.akamaized.net/Teams/G2.png"
           team2Logo = "https://cricketvectors.akamaized.net/Teams/G5.png"
 
-        # রিলাটিভ পাথ ফিক্স করা
         if team1Logo.startswith("/"):
           team1Logo = "https://www1.buffstreamss.sx" + team1Logo
         if team2Logo.startswith("/"):
@@ -133,7 +129,7 @@ async def scrape_buffstreams():
             or "starts in" in card_text.lower()
         )
 
-        match_data = {
+        base_matches.append({
             "eventTitle": eventTitle,
             "matchTime": matchTime,
             "team1Logo": team1Logo,
@@ -142,9 +138,87 @@ async def scrape_buffstreams():
             "team2Title": team2Title,
             "streamLink": streamLink,
             "isHot": isHot,
-        }
+        })
 
-        match_list.append(match_data)
+      # ২. দ্বিতীয় পেজে (স্ট্রিম লিংকে) প্রবেশ করে চ্যানেল ও ওয়াচ লিংকগুলো সংগ্রহ করা
+      print(f"Total matches found: {len(base_matches)}. Scraping stream details...")
+
+      for match in base_matches:
+        s_link = match["streamLink"]
+        channels_list = []
+
+        try:
+          print(f"Visiting stream page: {s_link}")
+          await page.goto(s_link, timeout=30000)
+          await page.wait_for_timeout(3000)
+
+          sub_html = await page.content()
+          sub_soup = BeautifulSoup(sub_html, "html.parser")
+
+          # চ্যানেল কার্ড বা রো খুঁজে বের করা (যেখানে চ্যানেল নাম এবং ওয়াচ বাটন থাকে)
+          # সাধারণত প্রতিটি চ্যানেলের জন্য একটি নির্দিষ্ট রো বা কার্ড থাকে
+          channel_rows = sub_soup.find_all(
+              "div", class_=["channel-row", "item", "card", "row"]
+          )
+
+          if not channel_rows:
+            # যদি নির্দিষ্ট ক্লাস না পাওয়া যায়, তবে 'Watch' টেক্সটযুক্ত বাটন বা লিংকগুলোর প্যারেন্ট ধরে খোঁজা
+            watch_tags = sub_soup.find_all(
+                ["a", "button"], string=lambda t: t and "Watch" in t
+            )
+            for w in watch_tags:
+              parent_box = w.find_parent(
+                  "div", class_=["flex", "item", "card", "box", "row"]
+              )
+              if parent_box and parent_box not in channel_rows:
+                channel_rows.append(parent_box)
+
+          for row in channel_rows:
+            row_text = row.get_text(separator=" ", strip=True)
+            if "Watch" in row_text:
+              # চ্যানেলের নাম বের করা (যেমন TNT Sports 2 HD)
+              # সাধারণত ওয়াচ বাটনের পাশে বা ওপরে চ্যানেলের নাম লেখা থাকে
+              channel_name = "Live Channel"
+              
+              # হেডিং বা টেক্সট এলিমেন্ট থেকে নাম খোঁজা
+              text_elements = row.find_all(["span", "div", "p", "h4", "strong"])
+              for el in text_elements:
+                txt = el.get_text(strip=True)
+                if txt and txt != "Watch" and len(txt) < 30:
+                  channel_name = txt
+                  break
+
+              # ওয়াচ বাটন বা লিংকের ট্যাগ থেকে লিংক বের করা
+              watch_btn = row.find("a", href=True)
+              watch_link = ""
+              if watch_btn:
+                w_href = watch_btn["href"]
+                if w_href.startswith("/"):
+                  watch_link = "https://www1.buffstreamss.sx" + w_href
+                elif w_href.startswith("http"):
+                  watch_link = w_href
+
+              if watch_link:
+                channels_list.append({
+                    "channelName": channel_name,
+                    "watchLink": watch_link,
+                })
+
+          # যদি সাব-পেজ থেকে চ্যানেল বা ওয়াচ লিংক ডাইরেক্ট না পাওয়া যায়, তবে মূল স্ট্রিম লিংকটিই একটি চ্যানেল হিসেবে দিয়ে দেওয়া
+          if not channels_list:
+            channels_list.append(
+                {"channelName": "Main Stream", "watchLink": s_link}
+            )
+
+        except Exception as ex:
+          print(f"Error scraping stream page {s_link}: {ex}")
+          channels_list.append(
+              {"channelName": "Main Stream", "watchLink": s_link}
+          )
+
+        # মূল অবজেক্টে স্ট্রিম লিস্ট যুক্ত করে দেওয়া
+        match["streams"] = channels_list
+        match_list.append(match)
 
       await browser.close()
 
@@ -168,6 +242,10 @@ if __name__ == "__main__":
         "team2Title": "Team 2",
         "streamLink": "https://www1.buffstreamss.sx/",
         "isHot": True,
+        "streams": [{
+            "channelName": "Main Stream",
+            "watchLink": "https://www1.buffstreamss.sx/",
+        }],
     }]
 
   output_file = "matches.json"
