@@ -24,12 +24,11 @@ async def scrape_stream_channels(browser, match, semaphore):
       sub_html = await page.content()
       sub_soup = BeautifulSoup(sub_html, "html.parser")
 
-      # সঠিক লিংকের জন্য পেজের সব a ট্যাগ চেক করা (যেমনটি এর আগের কাজের স্ক্রিপ্টে ছিল)
+      # পেজের সব 'Watch' বাটন বা লিংক খুঁজে বের করা
       watch_anchors = sub_soup.find_all("a", href=True)
 
       for a in watch_anchors:
         text = a.get_text(strip=True)
-        # যেগুলোতে 'Watch' বাটন বা লিংক রয়েছে
         if "Watch" in text or "watch" in text.lower():
           w_href = a["href"]
 
@@ -40,35 +39,40 @@ async def scrape_stream_channels(browser, match, semaphore):
           else:
             continue
 
-          # এখন চ্যানেলের নামটি নিখুঁতভাবে তোলার জন্য এর আশপাশের প্যারেন্ট বা এলিমেন্ট চেক করা
+          # চ্যানেলের নাম নিখুঁতভাবে তোলার জন্য উন্নত লজিক
           channel_name = "Live Channel"
-          parent = a.find_parent(
-              "div", class_=["item", "card", "row", "flex", "channel"]
+          
+          # ওয়াচ বাটনের নিকটবর্তী প্যারেন্ট কন্টেইনার বা রো খোঁজা
+          row_container = a.find_parent(
+              lambda tag: tag.name in ["div", "li", "tr", "section"]
+              and len(tag.get_text(strip=True)) < 150
           )
 
-          if parent:
-            # প্যারেন্ট বক্স থেকে ছোট টেক্সট এলিমেন্টগুলো খুঁজব যেখানে চ্যানেলের নাম থাকতে পারে
-            for el in parent.find_all(
-                ["span", "div", "p", "h4", "strong", "b"]
-            ):
-              t_val = el.get_text(strip=True)
+          if row_container:
+            # কন্টেইনারের ভেতরের টেক্সটগুলোকে আলাদা করা
+            full_text = row_container.get_text(separator="|", strip=True)
+            parts = [p.strip() for p in full_text.split("|") if p.strip()]
+            
+            for p in parts:
+              # 'Watch' বা সংখ্যা বা খুব বড় টেক্সট বাদ দিয়ে চ্যানেলের নাম খুঁজে বের করা
               if (
-                  t_val
-                  and t_val.lower() != "watch"
-                  and len(t_val) < 40
-                  and not t_val.isdigit()
+                  p
+                  and p.lower() != "watch"
+                  and "watch" not in p.lower()
+                  and len(p) < 40
               ):
-                channel_name = t_val
+                channel_name = p
                 break
-          else:
-            # যদি প্যারেন্ট না পাওয়া যায়, বাটনের ঠিক আগের এলিমেন্ট বা টেক্সট চেক করা
-            prev_el = a.find_previous(["span", "div", "p", "strong"])
+          
+          # যদি কอนটেইনার থেকে না মিলে, তবে বাটনের আগের এলিমেন্ট চেক করা
+          if channel_name == "Live Channel":
+            prev_el = a.find_previous(["span", "div", "p", "strong", "h4"])
             if prev_el:
               p_val = prev_el.get_text(strip=True)
-              if p_val and p_val.lower() != "watch" and len(p_val) < 40:
+              if p_val and "watch" not in p_val.lower() and len(p_val) < 40:
                 channel_name = p_val
 
-          # ডুপ্লিকেট এড়িয়ে ওয়াচ পেজ লিংক এবং সঠিক নাম যুক্ত করা
+          # ডুপ্লিকেট এড়িয়ে ওয়াচ পেজ লিংক এবং চ্যানেলের নাম যুক্ত করা
           if not any(
               s["watchPageLink"] == watch_page_link for s in streams_list
           ):
