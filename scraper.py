@@ -10,6 +10,85 @@ URL = "https://www1.buffstreamss.sx/"
 MAX_CONCURRENT_TABS = 5
 
 
+async def scrape_final_streams(browser, match, semaphore):
+  async with semaphore:
+    page = await browser.new_page()
+
+    # ওয়েবসাইট যাতে বুঝতে পারে আমরা আসল গুগল ক্রোম ব্রাউজার ব্যবহার করছি
+    await page.set_extra_http_headers({
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,"
+            " like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        )
+    })
+
+    # বিজ্ঞাপন বা পপ-আপ নতুন ট্যাবে ওপেন হলে তা স্বয়ংক্রিয়ভাবে ক্লোজ করে মূল পেজ সুরক্ষিত রাখা
+    page.on("popup", lambda popup: asyncio.create_task(popup.close()))
+
+    updated_streams = []
+
+    # আগের 'streams' বা 'streamingPageLink' থেকে লিড নিয়ে কাজ করা
+    for stream in match.get("স্ট্রিম পেজ", match.get("streams", [])):
+      s_page_link = stream.get("streamingPageLink") or stream.get(
+          "watchPageLink"
+      )
+
+      if not s_page_link:
+        continue
+
+      streaming_links = []
+
+      try:
+        print(f"Visiting streaming page: {s_page_link}")
+        # অ্যাড-ব্লকার ছাড়াই পেজ লোড করা যাতে সাইট ব্লক না করে
+        await page.goto(s_page_link, timeout=30000, wait_until="domcontentloaded")
+        await page.wait_for_timeout(3000)
+
+        html_content = await page.content()
+        soup = BeautifulSoup(html_content, "html.parser")
+
+        # ১. iframe সোর্স চেক করা
+        iframes = soup.find_all("iframe", src=True)
+        for iframe in iframes:
+          i_src = iframe["src"]
+          if i_src and i_src not in streaming_links:
+            streaming_links.append(i_src)
+
+        # ২. ভিডিও বা সোর্স ট্যাগ চেক করা
+        videos = soup.find_all(["video", "source"], src=True)
+        for v in videos:
+          v_src = v["src"]
+          if v_src and v_src not in streaming_links:
+            streaming_links.append(v_src)
+
+        # যদি সরাসরি কোনো ভিডিও লিংক না পাওয়া যায়, তবে পেজ লিংকটিকেই ফলব্যাক হিসেবে রাখা
+        if not streaming_links:
+          streaming_links.append(s_page_link)
+
+        # আপনার নির্দেশ অনুযায়ী 'স্ট্রিম পেজ' ও 'স্ট্রিমিং' ট্যাগের নাম দিয়ে ডেটা সাজানো
+        updated_streams.append({
+            "channelName": stream.get("channelName", "Live Channel"),
+            "streamingPageLink": s_page_link,
+            "স্ট্রিমিং": streaming_links,  # ফাইনাল ভিডিও স্ট্রিমিং লিংকগুলো এই ট্যাগে থাকবে
+        })
+
+      except Exception as ex:
+        print(f"Error scraping streaming page {s_page_link}: {ex}")
+        updated_streams.append({
+            "channelName": stream.get("channelName", "Live Channel"),
+            "streamingPageLink": s_page_link,
+            "স্ট্রিমিং": [s_page_link],
+        })
+
+    # মূল ট্যাগের নাম 'স্ট্রিম পেজ' করা হলো
+    match["স্ট্রিম পেজ"] = updated_streams
+    if "streams" in match:
+      del match["streams"]  # পুরোনো ট্যাগটি রিমুভ করে দেওয়া
+
+    await page.close()
+    return match
+
+
 async def scrape_stream_channels(browser, match, semaphore):
   async with semaphore:
     page = await browser.new_page()
@@ -24,7 +103,6 @@ async def scrape_stream_channels(browser, match, semaphore):
       sub_html = await page.content()
       sub_soup = BeautifulSoup(sub_html, "html.parser")
 
-      # পেজের সব 'Watch' বাটন বা লিংক খুঁজে বের করা
       watch_anchors = sub_soup.find_all("a", href=True)
 
       for a in watch_anchors:
@@ -39,22 +117,17 @@ async def scrape_stream_channels(browser, match, semaphore):
           else:
             continue
 
-          # চ্যানেলের নাম নিখুঁতভাবে তোলার জন্য উন্নত লজিক
           channel_name = "Live Channel"
-          
-          # ওয়াচ বাটনের নিকটবর্তী প্যারেন্ট কন্টেইনার বা রো খোঁজা
           row_container = a.find_parent(
               lambda tag: tag.name in ["div", "li", "tr", "section"]
               and len(tag.get_text(strip=True)) < 150
           )
 
           if row_container:
-            # কন্টেইনারের ভেতরের টেক্সটগুলোকে আলাদা করা
             full_text = row_container.get_text(separator="|", strip=True)
             parts = [p.strip() for p in full_text.split("|") if p.strip()]
-            
+
             for p in parts:
-              # 'Watch' বা সংখ্যা বা খুব বড় টেক্সট বাদ দিয়ে চ্যানেলের নাম খুঁজে বের করা
               if (
                   p
                   and p.lower() != "watch"
@@ -63,8 +136,7 @@ async def scrape_stream_channels(browser, match, semaphore):
               ):
                 channel_name = p
                 break
-          
-          # যদি কอนটেইনার থেকে না মিলে, তবে বাটনের আগের এলিমেন্ট চেক করা
+
           if channel_name == "Live Channel":
             prev_el = a.find_previous(["span", "div", "p", "strong", "h4"])
             if prev_el:
@@ -72,26 +144,28 @@ async def scrape_stream_channels(browser, match, semaphore):
               if p_val and "watch" not in p_val.lower() and len(p_val) < 40:
                 channel_name = p_val
 
-          # ডুপ্লিকেট এড়িয়ে ওয়াচ পেজ লিংক এবং চ্যানেলের নাম যুক্ত করা
           if not any(
-              s["watchPageLink"] == watch_page_link for s in streams_list
+              s["streamingPageLink"] == watch_page_link for s in streams_list
           ):
             streams_list.append({
                 "channelName": channel_name,
-                "watchPageLink": watch_page_link,
+                "streamingPageLink": watch_page_link,
             })
 
-      # যদি কোনো লিংক না পাওয়া যায়
       if not streams_list:
         streams_list.append(
-            {"channelName": "Main Stream", "watchPageLink": c_link}
+            {"channelName": "Main Stream", "streamingPageLink": c_link}
         )
 
-      match["streams"] = streams_list
+      # সাময়িকভাবে 'স্ট্রিম পেজ' ট্যাগে রাখা হচ্ছে, যা পরে ফাইনাল ফাংশনে আপডেট হবে
+      match["স্ট্রিম পেজ"] = streams_list
 
     except Exception as ex:
       print(f"Error scraping stream page {c_link}: {ex}")
-      match["streams"] = [{"channelName": "Main Stream", "watchPageLink": c_link}]
+      match["স্ট্রিম পেজ"] = [{
+          "channelName": "Main Stream",
+          "streamingPageLink": c_link,
+      }]
 
     finally:
       await page.close()
@@ -125,7 +199,6 @@ async def scrape_buffstreams():
       links = soup.find_all("a", href=True)
       base_matches = []
 
-      # ১. প্রথম পেজ থেকে বেসিক ম্যাচ লিস্ট তৈরি করা
       for link in links:
         href = link["href"]
         if "/game/" not in href:
@@ -168,8 +241,6 @@ async def scrape_buffstreams():
           curr = curr.parent
 
         card_text = card.get_text(separator=" ", strip=True)
-
-        # URL স্লাগ থেকে টিম নাম নির্ধারণের লজিক
         slug = href.split("/game/")[-1]
 
         if "-vs-" in slug:
@@ -179,10 +250,8 @@ async def scrape_buffstreams():
         else:
           clean_slug = slug.lower()
           event_lower = eventTitle.lower().replace(" ", "-")
-
           if clean_slug.startswith(event_lower):
             clean_slug = clean_slug[len(event_lower) :].strip("-")
-
           slug_parts = [p for p in clean_slug.split("-") if p]
 
           if len(slug_parts) >= 2:
@@ -196,17 +265,12 @@ async def scrape_buffstreams():
             team2Title = ""
 
         imgs = card.find_all("img")
-        team1Logo = ""
-        team2Logo = ""
+        team1Logo = imgs[0].get("src", "") if len(imgs) >= 1 else ""
+        team2Logo = imgs[1].get("src", "") if len(imgs) >= 2 else team1Logo
 
-        if len(imgs) >= 2:
-          team1Logo = imgs[0].get("src", "")
-          team2Logo = imgs[1].get("src", "")
-        elif len(imgs) == 1:
-          team1Logo = imgs[0].get("src", "")
-          team2Logo = imgs[0].get("src", "")
-        else:
+        if not team1Logo:
           team1Logo = "https://cricketvectors.akamaized.net/Teams/G2.png"
+        if not team2Logo:
           team2Logo = "https://cricketvectors.akamaized.net/Teams/G5.png"
 
         if team1Logo.startswith("/"):
@@ -234,18 +298,27 @@ async def scrape_buffstreams():
 
       await page.close()
 
-      # ২. মাল্টি-ট্যাব ব্যবহার করে খুব দ্রুত দ্বিতীয় পেজ থেকে চ্যানেল ও ওয়াচ পেজ লিংকগুলো আনা
+      # ধাপ ২: চ্যানেল পেজ থেকে 'streamingPageLink' সংগ্রহ করা
       print(
-          f"Total matches found: {len(base_matches)}. Scraping streams using"
-          " multi-tabs..."
+          f"Total matches found: {len(base_matches)}. Scraping stream"
+          " channels..."
       )
       semaphore = asyncio.Semaphore(MAX_CONCURRENT_TABS)
-
       tasks = [
           scrape_stream_channels(browser, match, semaphore)
           for match in base_matches
       ]
       match_list = await asyncio.gather(*tasks)
+
+      # ধাপ ৩: মাল্টি-ট্যাব ব্যবহার করে 'streamingPageLink' থেকে ফাইনাল ভিডিও লিংক বের করা
+      print(
+          "Scraping final streaming links into 'স্ট্রিমিং' using multi-tabs..."
+      )
+      final_tasks = [
+          scrape_final_streams(browser, match, semaphore)
+          for match in match_list
+      ]
+      match_list = await asyncio.gather(*final_tasks)
 
       await browser.close()
 
@@ -261,7 +334,7 @@ if __name__ == "__main__":
 
   if not data:
     data = [{
-        "eventTitle": "Live Stream | Buffstreams Event",
+        "eventTitle": "Live Stream | Streaming Event",
         "matchTime": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "team1Logo": "https://cricketvectors.akamaized.net/Teams/G2.png",
         "team2Logo": "https://cricketvectors.akamaized.net/Teams/G5.png",
@@ -269,9 +342,10 @@ if __name__ == "__main__":
         "team2Title": "Team 2",
         "channelPageLink": "https://www1.buffstreamss.sx/",
         "isHot": True,
-        "streams": [{
+        "স্ট্রিম পেজ": [{
             "channelName": "Main Stream",
-            "watchPageLink": "https://www1.buffstreamss.sx/",
+            "streamingPageLink": "https://www1.buffstreamss.sx/",
+            "স্ট্রিমিং": ["https://www1.buffstreamss.sx/"],
         }],
     }]
 
