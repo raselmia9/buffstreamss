@@ -77,7 +77,7 @@ async def scrape_buffstreams():
 
         card_text = card.get_text(separator=" ", strip=True)
 
-        # ২. URL স্লাগ থেকে টিম নাম নির্ধারণের লজিক (ভার্সেস থাকলে একরকম, না থাকলে আপনার নতুন নিয়ম অনুযায়ী)
+        # ২. URL স্লাগ থেকে টিম নাম নির্ধারণের লজিক (ক্লিনিসহ)
         slug = href.split("/game/")[-1]
 
         if "-vs-" in slug:
@@ -85,10 +85,15 @@ async def scrape_buffstreams():
           team1Title = parts[0].replace("-", " ").title()
           team2Title = parts[1].replace("-", " ").title()
         else:
-          # আপনার দেওয়া নিয়ম: স্পেস বা হাইফেন দিয়ে স্প্লিট করে প্রথম ও শেষ আইটেম নেওয়া
-          slug_parts = [
-              p for p in slug.split("-") if p
-          ]  # খালি অংশ বাদ দিয়ে লিস্ট তৈরি
+          # ইভেন্টের নাম বা অতিরিক্ত অংশ কেটে ফেলে তারপর স্প্লিট করা
+          clean_slug = (
+              slug.replace("grand-prix-of-", "")
+              .replace("gp-of-", "")
+              .replace("race-", "")
+          )
+
+          slug_parts = [p for p in clean_slug.split("-") if p]
+
           if len(slug_parts) >= 2:
             team1Title = slug_parts[0].title()
             team2Title = slug_parts[-1].title()
@@ -166,6 +171,6 @@ if __name__ == "__main__":
 
   output_file = "matches.json"
   with open(output_file, "w", encoding="utf-8") as f:
-    json.dump(data, f, indent=4, ensure_ascii=False)
+    json.dump(data, f, indent=4, ensure_async=False)
 
   print(f"Successfully saved {len(data)} items to {output_file}.")
