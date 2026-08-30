@@ -1,795 +1,350 @@
 [
     {
         "eventTitle": "MotoGP",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/1032/responsive-images/motogp___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1120/responsive-images/live___preview_thumbnail_120_120.webp",
         "team1Title": "Grand",
         "team2Title": "Aragon",
         "channelPageLink": "https://www1.buffstreamss.sx/game/motogp-grand-prix-of-aragon",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "TNT Sports 2 HD",
-                "streamingPageLink": "https://hitcast.st/totwatch.php?value=do2",
-                "স্ট্রিমিং": [
-                    "https://executeandship.com/premiumcr.php?player=desktop&live=do2",
-                    "/chat.php",
-                    "https://t.dtscout.com/idg/?su=6D001788093220A51091DD9418FDBDD3",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotwatch.php&qs=value%3Ddo2&rdn=hitcast.st&rpn=%2Ftotwatch.php&rqs=value%3Ddo2&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.0368714318104586&stid=CgsoEGqUIyUAAAAJMpprAw%253D%253D&tt=t.dhj&dhjLcy=1788093221644&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotwatch.php&qs=value%3Ddo2&rdn=hitcast.st&rpn=%2Ftotwatch.php&rqs=value%3Ddo2&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "https://tags.crwdcntrl.net/lt/shared/2/lt.iframe.html?c=3825"
-                ]
-            },
-            {
-                "channelName": "TNT Sports 2 HD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://vivtops.st/channel2",
-                "স্ট্রিমিং": [
-                    "https://vivtops.st/channel2",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel2&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel2&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.28397390672660094&stid=CgsqVmqUIyUAAAAJCE4uAw%253D%253D&tt=t.dhj&dhjLcy=1788093225506&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel2&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel2&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "TNT Sports 2 HD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/motogp-m",
-                "স্ট্রিমিং": [
-                    "https://trend48.st/event/motogp-m",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fmotogp-m&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fmotogp-m&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.08475043902357693&stid=CgsqVmqUIyUAAAAJCE4uAw%253D%253D&tt=t.dhj&dhjLcy=1788093229460&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fmotogp-m&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fmotogp-m&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "TNT Sports 2 HD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=30",
-                "স্ট্রিমিং": [
-                    "https://s3.vertex.st/ch?id=30",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D30&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D30&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.11035316432574582&stid=CgsqVmqUIyUAAAAJCE4uAw%253D%253D&tt=t.dhj&dhjLcy=1788093233151&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D30&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D30&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "TNT Sports 2 FHD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-32.php",
-                "স্ট্রিমিং": [
-                    "https://daddylive1.cx/my/stream-32.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-32.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-32.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.045723104527087166&stid=CgsqVmqUIyUAAAAJCE4uAw%253D%253D&tt=t.dhj&dhjLcy=1788093236705&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-32.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-32.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            }
+        "Streaming page link": [
+            "https://hitcast.st/totwatch.php?value=do2",
+            "https://hitcast.st/totview.php?src=https://vivtops.st/channel2",
+            "https://hitcast.st/totview.php?src=https://trend48.st/event/motogp-m",
+            "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=30",
+            "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-32.php"
+        ],
+        "streamLink": [
+            "TNT Sports 2 HD,, https://executeandship.com/premiumcr.php?player=desktop&live=do2",
+            "TNT Sports 2 HD,, https://vivtops.st/channel2",
+            "TNT Sports 2 HD,, https://trend48.st/event/motogp-m",
+            "TNT Sports 2 HD,, https://s3.vertex.st/ch?id=30",
+            "TNT Sports 2 FHD,, https://daddylive1.cx/my/stream-32.php"
         ]
     },
     {
         "eventTitle": "English Premier League",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp",
         "team1Title": "Sunderland",
         "team2Title": "Fulham",
         "channelPageLink": "https://www1.buffstreamss.sx/game/sunderland-vs-fulham",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "Sky Sport 7 NZ",
-                "streamingPageLink": "https://hitcast.st/totwatch.php?value=nsunderland",
-                "স্ট্রিমিং": [
-                    "https://executeandship.com/premiumcr.php?player=desktop&live=nsunderland",
-                    "/chat.php",
-                    "https://t.dtscout.com/idg/?su=6D001788093221D4FC7E8C99EC02EC88",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotwatch.php&qs=value%3Dnsunderland&rdn=hitcast.st&rpn=%2Ftotwatch.php&rqs=value%3Dnsunderland&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.06428902453441321&stid=Cgsg0WqUIyUAAAAJbIMBAw%253D%253D&tt=t.dhj&dhjLcy=1788093221645&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotwatch.php&qs=value%3Dnsunderland&rdn=hitcast.st&rpn=%2Ftotwatch.php&rqs=value%3Dnsunderland&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "https://tags.crwdcntrl.net/lt/shared/2/lt.iframe.html?c=3825"
-                ]
-            },
-            {
-                "channelName": "Sky Sport 7 NZ HD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://unxer123.gozo.st/games/sunderland-vs-fulham/",
-                "স্ট্রিমিং": [
-                    "https://unxer123.gozo.st/games/sunderland-vs-fulham/",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Funxer123.gozo.st%2Fgames%2Fsunderland-vs-fulham%2F&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Funxer123.gozo.st%2Fgames%2Fsunderland-vs-fulham%2F&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.3075371594677032&stid=CgsoEGqUIyUAAAAJMpqAAw%253D%253D&tt=t.dhj&dhjLcy=1788093225018&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Funxer123.gozo.st%2Fgames%2Fsunderland-vs-fulham%2F&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Funxer123.gozo.st%2Fgames%2Fsunderland-vs-fulham%2F&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports+",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://streame.center/embed/ch2.php",
-                "স্ট্রিমিং": [
-                    "https://streame.center/embed/ch2.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch2.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch2.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.37201352993698045&stid=CgsoEGqUIyUAAAAJMpqAAw%253D%253D&tt=t.dhj&dhjLcy=1788093228887&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch2.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch2.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sport 7 NZ",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://vivtops.st/channel19",
-                "স্ট্রিমিং": [
-                    "https://vivtops.st/channel19",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel19&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel19&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.07515634655488213&stid=CgsoEGqUIyUAAAAJMpqAAw%253D%253D&tt=t.dhj&dhjLcy=1788093232722&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel19&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel19&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sport+",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-sunderland-vs-fulham/1",
-                "স্ট্রিমিং": [
-                    "https://embed.st/embed/admin/ppv-sunderland-vs-fulham/1",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-sunderland-vs-fulham%2F1&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-sunderland-vs-fulham%2F1&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.6479749468409535&stid=CgsoEGqUIyUAAAAJMpqAAw%253D%253D&tt=t.dhj&dhjLcy=1788093235948&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-sunderland-vs-fulham%2F1&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-sunderland-vs-fulham%2F1&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sport 7 NZ",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=7",
-                "স্ট্রিমিং": [
-                    "https://s3.vertex.st/ch?id=7",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D7&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D7&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.7914321303458953&stid=CgsoEGqUIyUAAAAJMpqAAw%253D%253D&tt=t.dhj&dhjLcy=1788093239912&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D7&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D7&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sport 7 NZ",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-sunderland-vs-fulham",
-                "স্ট্রিমিং": [
-                    "https://trend48.st/event/ppv-sunderland-vs-fulham",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-sunderland-vs-fulham&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-sunderland-vs-fulham&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.07811638560943601&stid=CgsoEGqUIyUAAAAJMpqAAw%253D%253D&tt=t.dhj&dhjLcy=1788093243363&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-sunderland-vs-fulham&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-sunderland-vs-fulham&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sport 7 NZ",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://elixx.info/aw/partizan.php",
-                "স্ট্রিমিং": [
-                    "https://elixx.info/aw/partizan.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Felixx.info%2Faw%2Fpartizan.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Felixx.info%2Faw%2Fpartizan.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.2052270511661436&stid=CgsoEGqUIyUAAAAJMpqAAw%253D%253D&tt=t.dhj&dhjLcy=1788093246876&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Felixx.info%2Faw%2Fpartizan.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Felixx.info%2Faw%2Fpartizan.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sport 7 NZ",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://104game.click/player/1/131",
-                "স্ট্রিমিং": [
-                    "https://104game.click/player/1/131",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2F104game.click%2Fplayer%2F1%2F131&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2F104game.click%2Fplayer%2F1%2F131&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.10277458735817935&stid=CgsoEGqUIyUAAAAJMpqAAw%253D%253D&tt=t.dhj&dhjLcy=1788093251056&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2F104game.click%2Fplayer%2F1%2F131&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2F104game.click%2Fplayer%2F1%2F131&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Hub Premier 3 FHD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-15.php",
-                "স্ট্রিমিং": [
-                    "https://daddylive1.cx/my/stream-15.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-15.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-15.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.26274946477703587&stid=CgsoEGqUIyUAAAAJMpqAAw%253D%253D&tt=t.dhj&dhjLcy=1788093254653&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-15.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-15.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports+ FHD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-36.php",
-                "স্ট্রিমিং": [
-                    "https://daddylive1.cx/my/stream-36.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-36.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-36.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.8194907431888745&stid=CgsoEGqUIyUAAAAJMpqAAw%253D%253D&tt=t.dhj&dhjLcy=1788093258058&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-36.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-36.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            }
+        "Streaming page link": [
+            "https://hitcast.st/totwatch.php?value=do7",
+            "https://hitcast.st/totview.php?src=https://unxer123.gozo.st/games/sunderland-vs-fulham/",
+            "https://hitcast.st/totview.php?src=https://streame.center/embed/ch2.php",
+            "https://hitcast.st/totview.php?src=https://vivtops.st/channel19",
+            "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-sunderland-vs-fulham/1",
+            "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=7",
+            "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-sunderland-vs-fulham",
+            "https://hitcast.st/totview.php?src=https://elixx.info/aw/partizan.php",
+            "https://hitcast.st/totview.php?src=https://104game.click/player/1/131",
+            "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-15.php",
+            "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-36.php"
+        ],
+        "streamLink": [
+            "Sky Sport 7 NZ,, https://executeandship.com/premiumcr.php?player=desktop&live=do7",
+            "Sky Sport 7 NZ HD,, https://unxer123.gozo.st/games/sunderland-vs-fulham/",
+            "Sky Sports+,, https://streame.center/embed/ch2.php",
+            "Sky Sport 7 NZ,, https://vivtops.st/channel19",
+            "Sky Sport+,, https://embed.st/embed/admin/ppv-sunderland-vs-fulham/1",
+            "Sky Sport 7 NZ,, https://s3.vertex.st/ch?id=7",
+            "Sky Sport 7 NZ,, https://trend48.st/event/ppv-sunderland-vs-fulham",
+            "Sky Sport 7 NZ,, https://elixx.info/aw/partizan.php",
+            "Sky Sport 7 NZ,, https://104game.click/player/1/131",
+            "Hub Premier 3 FHD,, https://daddylive1.cx/my/stream-15.php",
+            "Sky Sports+ FHD,, https://daddylive1.cx/my/stream-36.php"
         ]
     },
     {
         "eventTitle": "English Premier League",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp",
         "team1Title": "Leeds United",
         "team2Title": "Brentford",
         "channelPageLink": "https://www1.buffstreamss.sx/game/leeds-united-vs-brentford",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "Sky Sports PL",
-                "streamingPageLink": "https://hitcast.st/totwatch.php?value=nleedsunited",
-                "স্ট্রিমিং": [
-                    "https://executeandship.com/premiumcr.php?player=desktop&live=nleedsunited",
-                    "/chat.php",
-                    "https://t.dtscout.com/idg/?su=6D00178809322163BA559BB5AEAE30F4",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotwatch.php&qs=value%3Dnleedsunited&rdn=hitcast.st&rpn=%2Ftotwatch.php&rqs=value%3Dnleedsunited&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.8317819451051378&stid=CgsoEGqUIyUAAAAJMpr6Aw%253D%253D&tt=t.dhj&dhjLcy=1788093221632&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotwatch.php&qs=value%3Dnleedsunited&rdn=hitcast.st&rpn=%2Ftotwatch.php&rqs=value%3Dnleedsunited&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "https://tags.crwdcntrl.net/lt/shared/2/lt.iframe.html?c=3825"
-                ]
-            },
-            {
-                "channelName": "USA Network HD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://unxer123.gozo.st/games/leeds-united-vs-brentford/",
-                "স্ট্রিমিং": [
-                    "https://unxer123.gozo.st/games/leeds-united-vs-brentford/",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Funxer123.gozo.st%2Fgames%2Fleeds-united-vs-brentford%2F&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Funxer123.gozo.st%2Fgames%2Fleeds-united-vs-brentford%2F&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.29426826446924315&stid=CgsoEGqUIyUAAAAJMps6Aw%253D%253D&tt=t.dhj&dhjLcy=1788093224768&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Funxer123.gozo.st%2Fgames%2Fleeds-united-vs-brentford%2F&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Funxer123.gozo.st%2Fgames%2Fleeds-united-vs-brentford%2F&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "USA Network HD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://streame.center/embed/ch1.php",
-                "স্ট্রিমিং": [
-                    "https://streame.center/embed/ch1.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch1.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch1.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.5061195641325338&stid=CgsoEGqUIyUAAAAJMps6Aw%253D%253D&tt=t.dhj&dhjLcy=1788093228641&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch1.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch1.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "USA Network HD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://vivtops.st/channel18",
-                "স্ট্রিমিং": [
-                    "https://vivtops.st/channel18",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel18&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel18&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.009413183776803002&stid=CgsoEGqUIyUAAAAJMps6Aw%253D%253D&tt=t.dhj&dhjLcy=1788093232097&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel18&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel18&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports PL 720p",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-leeds-united-vs-brentford/1",
-                "স্ট্রিমিং": [
-                    "https://embed.st/embed/admin/ppv-leeds-united-vs-brentford/1",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-leeds-united-vs-brentford%2F1&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-leeds-united-vs-brentford%2F1&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.48615807600840477&stid=CgsoEGqUIyUAAAAJMps6Aw%253D%253D&tt=t.dhj&dhjLcy=1788093235410&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-leeds-united-vs-brentford%2F1&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-leeds-united-vs-brentford%2F1&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports PL",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=10",
-                "স্ট্রিমিং": [
-                    "https://s3.vertex.st/ch?id=10",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D10&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D10&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.04199722871997236&stid=CgsoEGqUIyUAAAAJMps6Aw%253D%253D&tt=t.dhj&dhjLcy=1788093240791&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D10&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D10&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports PL",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-leeds-united-vs-brentford",
-                "স্ট্রিমিং": [
-                    "https://trend48.st/event/ppv-leeds-united-vs-brentford",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-leeds-united-vs-brentford&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-leeds-united-vs-brentford&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.5522402110801681&stid=CgsoEGqUIyUAAAAJMps6Aw%253D%253D&tt=t.dhj&dhjLcy=1788093244585&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-leeds-united-vs-brentford&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-leeds-united-vs-brentford&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports PL",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://elixx.info/aw/evalencia.php",
-                "স্ট্রিমিং": [
-                    "https://elixx.info/aw/evalencia.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Felixx.info%2Faw%2Fevalencia.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Felixx.info%2Faw%2Fevalencia.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.5680256117887459&stid=CgsoEGqUIyUAAAAJMps6Aw%253D%253D&tt=t.dhj&dhjLcy=1788093248406&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Felixx.info%2Faw%2Fevalencia.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Felixx.info%2Faw%2Fevalencia.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports PL",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://104game.click/player/1/130",
-                "স্ট্রিমিং": [
-                    "https://104game.click/player/1/130",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2F104game.click%2Fplayer%2F1%2F130&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2F104game.click%2Fplayer%2F1%2F130&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.2841004760035004&stid=CgsoEGqUIyUAAAAJMps6Aw%253D%253D&tt=t.dhj&dhjLcy=1788093252484&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2F104game.click%2Fplayer%2F1%2F130&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2F104game.click%2Fplayer%2F1%2F130&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Hub Premier 2 FHD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-14.php",
-                "স্ট্রিমিং": [
-                    "https://daddylive1.cx/my/stream-14.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-14.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-14.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.7726894674046993&stid=CgsoEGqUIyUAAAAJMps6Aw%253D%253D&tt=t.dhj&dhjLcy=1788093256098&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-14.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-14.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports PL FHD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-130.php",
-                "স্ট্রিমিং": [
-                    "https://daddylive1.cx/my/stream-130.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-130.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-130.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.5759160074317904&stid=CgsoEGqUIyUAAAAJMps6Aw%253D%253D&tt=t.dhj&dhjLcy=1788093259581&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-130.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-130.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "USA Network FHD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-343.php",
-                "স্ট্রিমিং": [
-                    "https://daddylive1.cx/my/stream-343.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-343.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-343.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.5341303440880714&stid=CgsoEGqUIyUAAAAJMps6Aw%253D%253D&tt=t.dhj&dhjLcy=1788093262869&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-343.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-343.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            }
+        "Streaming page link": [
+            "https://hitcast.st/totwatch.php?value=nleedsunited",
+            "https://hitcast.st/totview.php?src=https://unxer123.gozo.st/games/leeds-united-vs-brentford/",
+            "https://hitcast.st/totview.php?src=https://streame.center/embed/ch1.php",
+            "https://hitcast.st/totview.php?src=https://vivtops.st/channel18",
+            "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-leeds-united-vs-brentford/1",
+            "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=10",
+            "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-leeds-united-vs-brentford",
+            "https://hitcast.st/totview.php?src=https://elixx.info/aw/evalencia.php",
+            "https://hitcast.st/totview.php?src=https://104game.click/player/1/130",
+            "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-14.php",
+            "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-130.php",
+            "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-343.php"
+        ],
+        "streamLink": [
+            "Sky Sports PL,, https://executeandship.com/premiumcr.php?player=desktop&live=nleedsunited",
+            "USA Network HD,, https://unxer123.gozo.st/games/leeds-united-vs-brentford/",
+            "USA Network HD,, https://streame.center/embed/ch1.php",
+            "USA Network HD,, https://vivtops.st/channel18",
+            "Sky Sports PL 720p,, https://embed.st/embed/admin/ppv-leeds-united-vs-brentford/1",
+            "Sky Sports PL,, https://s3.vertex.st/ch?id=10",
+            "Sky Sports PL,, https://trend48.st/event/ppv-leeds-united-vs-brentford",
+            "Sky Sports PL,, https://elixx.info/aw/evalencia.php",
+            "Sky Sports PL,, https://104game.click/player/1/130",
+            "Hub Premier 2 FHD,, https://daddylive1.cx/my/stream-14.php",
+            "Sky Sports PL FHD,, https://daddylive1.cx/my/stream-130.php",
+            "USA Network FHD,, https://daddylive1.cx/my/stream-343.php"
         ]
     },
     {
         "eventTitle": "English Premier League",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp",
         "team1Title": "Chelsea",
         "team2Title": "Brighton And Hove Albion",
         "channelPageLink": "https://www1.buffstreamss.sx/game/chelsea-vs-brighton-and-hove-albion",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "Sky Sports Main Event",
-                "streamingPageLink": "https://hitcast.st/totwatch.php?value=nchelsea",
-                "স্ট্রিমিং": [
-                    "https://executeandship.com/premiumcr.php?player=desktop&live=nchelsea",
-                    "/chat.php",
-                    "https://t.dtscout.com/idg/?su=6D001788093221AF604FFFE970E1183B",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotwatch.php&qs=value%3Dnchelsea&rdn=hitcast.st&rpn=%2Ftotwatch.php&rqs=value%3Dnchelsea&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.14102536269655896&stid=CgsqVmqUIyUAAAAJCE4RAw%253D%253D&tt=t.dhj&dhjLcy=1788093221725&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotwatch.php&qs=value%3Dnchelsea&rdn=hitcast.st&rpn=%2Ftotwatch.php&rqs=value%3Dnchelsea&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "https://tags.crwdcntrl.net/lt/shared/2/lt.iframe.html?c=3825"
-                ]
-            },
-            {
-                "channelName": "Sky Sports Main Event",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://unxer123.gozo.st/games/chelsea-vs-brighton-hove-albion/",
-                "স্ট্রিমিং": [
-                    "https://unxer123.gozo.st/games/chelsea-vs-brighton-hove-albion/",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Funxer123.gozo.st%2Fgames%2Fchelsea-vs-brighton-hove-albion%2F&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Funxer123.gozo.st%2Fgames%2Fchelsea-vs-brighton-hove-albion%2F&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.5603043310519966&stid=CgsqVmqUIyUAAAAJCE4RAw%253D%253D&tt=t.dhj&dhjLcy=1788093225158&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Funxer123.gozo.st%2Fgames%2Fchelsea-vs-brighton-hove-albion%2F&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Funxer123.gozo.st%2Fgames%2Fchelsea-vs-brighton-hove-albion%2F&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports Main Event",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://streame.center/embed/ch3.php",
-                "স্ট্রিমিং": [
-                    "https://streame.center/embed/ch3.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch3.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch3.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.7480310467281257&stid=CgsqVmqUIyUAAAAJCE4RAw%253D%253D&tt=t.dhj&dhjLcy=1788093229128&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch3.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch3.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports Main Event",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://vivtops.st/channel17",
-                "স্ট্রিমিং": [
-                    "https://vivtops.st/channel17",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel17&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel17&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.0847556878090765&stid=CgsqVmqUIyUAAAAJCE4RAw%253D%253D&tt=t.dhj&dhjLcy=1788093232769&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel17&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fvivtops.st%2Fchannel17&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports Main Event",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-chelsea-vs-brighton-hove-albion/1",
-                "স্ট্রিমিং": [
-                    "https://embed.st/embed/admin/ppv-chelsea-vs-brighton-hove-albion/1",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-chelsea-vs-brighton-hove-albion%2F1&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-chelsea-vs-brighton-hove-albion%2F1&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.07718277561987064&stid=CgsqVmqUIyUAAAAJCE4RAw%253D%253D&tt=t.dhj&dhjLcy=1788093236356&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-chelsea-vs-brighton-hove-albion%2F1&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-chelsea-vs-brighton-hove-albion%2F1&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports Main Event",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=9",
-                "স্ট্রিমিং": [
-                    "https://s3.vertex.st/ch?id=9",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D9&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D9&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.3940129520506206&stid=CgsqVmqUIyUAAAAJCE4RAw%253D%253D&tt=t.dhj&dhjLcy=1788093240261&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D9&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D9&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports Main Event",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-chelsea-vs-brighton-hove-albion",
-                "স্ট্রিমিং": [
-                    "https://trend48.st/event/ppv-chelsea-vs-brighton-hove-albion",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-chelsea-vs-brighton-hove-albion&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-chelsea-vs-brighton-hove-albion&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.9109093604354139&stid=CgsqVmqUIyUAAAAJCE4RAw%253D%253D&tt=t.dhj&dhjLcy=1788093244037&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-chelsea-vs-brighton-hove-albion&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-chelsea-vs-brighton-hove-albion&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports Main Event",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://elixx.info/aw/ajaxw.php",
-                "স্ট্রিমিং": [
-                    "https://elixx.info/aw/ajaxw.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Felixx.info%2Faw%2Fajaxw.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Felixx.info%2Faw%2Fajaxw.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.8920336400611655&stid=CgsqVmqUIyUAAAAJCE4RAw%253D%253D&tt=t.dhj&dhjLcy=1788093247541&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Felixx.info%2Faw%2Fajaxw.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Felixx.info%2Faw%2Fajaxw.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports Main Event",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://104game.click/player/1/127",
-                "স্ট্রিমিং": [
-                    "https://104game.click/player/1/127",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2F104game.click%2Fplayer%2F1%2F127&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2F104game.click%2Fplayer%2F1%2F127&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.10375070897262417&stid=CgsqVmqUIyUAAAAJCE4RAw%253D%253D&tt=t.dhj&dhjLcy=1788093251975&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2F104game.click%2Fplayer%2F1%2F127&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2F104game.click%2Fplayer%2F1%2F127&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Hub Premier 4 FHD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-13.php",
-                "স্ট্রিমিং": [
-                    "https://daddylive1.cx/my/stream-13.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-13.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-13.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.38776738221918894&stid=CgsqVmqUIyUAAAAJCE4RAw%253D%253D&tt=t.dhj&dhjLcy=1788093255360&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-13.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-13.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "Sky Sports Main Event FHD",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-38.php",
-                "স্ট্রিমিং": [
-                    "https://daddylive1.cx/my/stream-38.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-38.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-38.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.4270523437828142&stid=CgsqVmqUIyUAAAAJCE4RAw%253D%253D&tt=t.dhj&dhjLcy=1788093258712&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-38.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-38.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            }
+        "Streaming page link": [
+            "https://hitcast.st/totwatch.php?value=nchelsea",
+            "https://hitcast.st/totview.php?src=https://unxer123.gozo.st/games/chelsea-vs-brighton-hove-albion/",
+            "https://hitcast.st/totview.php?src=https://streame.center/embed/ch3.php",
+            "https://hitcast.st/totview.php?src=https://vivtops.st/channel17",
+            "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-chelsea-vs-brighton-hove-albion/1",
+            "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=9",
+            "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-chelsea-vs-brighton-hove-albion",
+            "https://hitcast.st/totview.php?src=https://elixx.info/aw/ajaxw.php",
+            "https://hitcast.st/totview.php?src=https://104game.click/player/1/127",
+            "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-13.php",
+            "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-38.php"
+        ],
+        "streamLink": [
+            "Sky Sports Main Event,, https://executeandship.com/premiumcr.php?player=desktop&live=nchelsea",
+            "Sky Sports Main Event,, https://unxer123.gozo.st/games/chelsea-vs-brighton-hove-albion/",
+            "Sky Sports Main Event,, https://streame.center/embed/ch3.php",
+            "Sky Sports Main Event,, https://vivtops.st/channel17",
+            "Sky Sports Main Event,, https://embed.st/embed/admin/ppv-chelsea-vs-brighton-hove-albion/1",
+            "Sky Sports Main Event,, https://s3.vertex.st/ch?id=9",
+            "Sky Sports Main Event,, https://trend48.st/event/ppv-chelsea-vs-brighton-hove-albion",
+            "Sky Sports Main Event,, https://elixx.info/aw/ajaxw.php",
+            "Sky Sports Main Event,, https://104game.click/player/1/127",
+            "Hub Premier 4 FHD,, https://daddylive1.cx/my/stream-13.php",
+            "Sky Sports Main Event FHD,, https://daddylive1.cx/my/stream-38.php"
         ]
     },
     {
         "eventTitle": "English Premier League",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp",
         "team1Title": "Manchester United",
         "team2Title": "Ipswich Town",
         "channelPageLink": "https://www1.buffstreamss.sx/game/manchester-united-vs-ipswich-town",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "Main Stream",
-                "streamingPageLink": "https://www1.buffstreamss.sx/game/manchester-united-vs-ipswich-town",
-                "স্ট্রিমিং": [
-                    "https://www1.buffstreamss.sx/game/manchester-united-vs-ipswich-town"
-                ]
-            }
+        "Streaming page link": [
+            "https://www1.buffstreamss.sx/game/manchester-united-vs-ipswich-town"
+        ],
+        "streamLink": [
+            "Main Stream,, https://www1.buffstreamss.sx/game/manchester-united-vs-ipswich-town"
         ]
     },
     {
         "eventTitle": "Ligue 1",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/1326/responsive-images/Paris-fc___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/123/responsive-images/Nice___preview_thumbnail_120_120.webp",
         "team1Title": "Paris Fc",
         "team2Title": "Nice",
         "channelPageLink": "https://www1.buffstreamss.sx/game/paris-fc-vs-nice",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "beIN SPORTS USA",
-                "streamingPageLink": "https://hitcast.st/totwatch.php?value=do39",
-                "স্ট্রিমিং": [
-                    "https://executeandship.com/premiumcr.php?player=desktop&live=do39",
-                    "/chat.php",
-                    "https://t.dtscout.com/idg/?su=6D00178809322397F1B83A9F5E56ADED",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotwatch.php&qs=value%3Ddo39&rdn=hitcast.st&rpn=%2Ftotwatch.php&rqs=value%3Ddo39&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.5368616175969194&stid=CgsoEGqUIycAAAAJMpudAw%253D%253D&tt=t.dhj&dhjLcy=1788093224031&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotwatch.php&qs=value%3Ddo39&rdn=hitcast.st&rpn=%2Ftotwatch.php&rqs=value%3Ddo39&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "https://tags.crwdcntrl.net/lt/shared/2/lt.iframe.html?c=3825"
-                ]
-            },
-            {
-                "channelName": "beIN SPORTS USA",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://streame.center/embed/ch7.php",
-                "স্ট্রিমিং": [
-                    "https://streame.center/embed/ch7.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch7.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch7.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.1981277805664794&stid=CgsnuWqUIycAAAAJJc%252FTAw%253D%253D&tt=t.dhj&dhjLcy=1788093227252&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch7.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fstreame.center%2Fembed%2Fch7.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "beIN SPORTS USA",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://vivtops.st/tv/channel.php?ch=bein-sports",
-                "স্ট্রিমিং": [
-                    "https://vivtops.st/tv/channel.php?ch=bein-sports",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fvivtops.st%2Ftv%2Fchannel.php%3Fch%3Dbein-sports&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fvivtops.st%2Ftv%2Fchannel.php%3Fch%3Dbein-sports&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.9760499679250778&stid=CgsnuWqUIycAAAAJJc%252FTAw%253D%253D&tt=t.dhj&dhjLcy=1788093231148&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fvivtops.st%2Ftv%2Fchannel.php%3Fch%3Dbein-sports&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fvivtops.st%2Ftv%2Fchannel.php%3Fch%3Dbein-sports&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "beIN SPORTS USA",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-paris-fc-vs-nice/1",
-                "স্ট্রিমিং": [
-                    "https://embed.st/embed/admin/ppv-paris-fc-vs-nice/1",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-paris-fc-vs-nice%2F1&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-paris-fc-vs-nice%2F1&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.611535930224129&stid=CgsnuWqUIycAAAAJJc%252FTAw%253D%253D&tt=t.dhj&dhjLcy=1788093234849&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-paris-fc-vs-nice%2F1&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-paris-fc-vs-nice%2F1&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "beIN SPORTS USA",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=39",
-                "স্ট্রিমিং": [
-                    "https://s3.vertex.st/ch?id=39",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D39&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D39&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.23261077908909966&stid=CgsnuWqUIycAAAAJJc%252FTAw%253D%253D&tt=t.dhj&dhjLcy=1788093240222&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D39&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D39&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "beIN SPORTS USA",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-paris-fc-vs-nice",
-                "স্ট্রিমিং": [
-                    "https://trend48.st/event/ppv-paris-fc-vs-nice",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-paris-fc-vs-nice&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-paris-fc-vs-nice&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.7983861277935027&stid=CgsnuWqUIycAAAAJJc%252FTAw%253D%253D&tt=t.dhj&dhjLcy=1788093243719&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-paris-fc-vs-nice&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fppv-paris-fc-vs-nice&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "beIN SPORTS USA",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-425.php",
-                "স্ট্রিমিং": [
-                    "https://daddylive1.cx/my/stream-425.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-425.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-425.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.5542438309152056&stid=CgsnuWqUIycAAAAJJc%252FTAw%253D%253D&tt=t.dhj&dhjLcy=1788093246989&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-425.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-425.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            }
+        "Streaming page link": [
+            "https://hitcast.st/totwatch.php?value=do39",
+            "https://hitcast.st/totview.php?src=https://streame.center/embed/ch7.php",
+            "https://hitcast.st/totview.php?src=https://vivtops.st/tv/channel.php?ch=bein-sports",
+            "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-paris-fc-vs-nice/1",
+            "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=39",
+            "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-paris-fc-vs-nice",
+            "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-425.php"
+        ],
+        "streamLink": [
+            "beIN SPORTS USA,, https://executeandship.com/premiumcr.php?player=desktop&live=do39",
+            "beIN SPORTS USA,, https://streame.center/embed/ch7.php",
+            "beIN SPORTS USA,, https://vivtops.st/tv/channel.php?ch=bein-sports",
+            "beIN SPORTS USA,, https://embed.st/embed/admin/ppv-paris-fc-vs-nice/1",
+            "beIN SPORTS USA,, https://s3.vertex.st/ch?id=39",
+            "beIN SPORTS USA,, https://trend48.st/event/ppv-paris-fc-vs-nice",
+            "beIN SPORTS USA,, https://daddylive1.cx/my/stream-425.php"
         ]
     },
     {
         "eventTitle": "Ligue 1",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/1326/responsive-images/Paris-fc___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/123/responsive-images/Nice___preview_thumbnail_120_120.webp",
         "team1Title": "Rennes",
         "team2Title": "Le Mans",
         "channelPageLink": "https://www1.buffstreamss.sx/game/rennes-vs-le-mans",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "Main Stream",
-                "streamingPageLink": "https://www1.buffstreamss.sx/game/rennes-vs-le-mans",
-                "স্ট্রিমিং": [
-                    "https://www1.buffstreamss.sx/game/rennes-vs-le-mans"
-                ]
-            }
+        "Streaming page link": [
+            "https://www1.buffstreamss.sx/game/rennes-vs-le-mans"
+        ],
+        "streamLink": [
+            "Main Stream,, https://www1.buffstreamss.sx/game/rennes-vs-le-mans"
         ]
     },
     {
         "eventTitle": "Ligue 1",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/1326/responsive-images/Paris-fc___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/123/responsive-images/Nice___preview_thumbnail_120_120.webp",
         "team1Title": "As Monaco",
         "team2Title": "Marseille",
         "channelPageLink": "https://www1.buffstreamss.sx/game/as-monaco-vs-marseille",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "Main Stream",
-                "streamingPageLink": "https://www1.buffstreamss.sx/game/as-monaco-vs-marseille",
-                "স্ট্রিমিং": [
-                    "https://www1.buffstreamss.sx/game/as-monaco-vs-marseille"
-                ]
-            }
+        "Streaming page link": [
+            "https://www1.buffstreamss.sx/game/as-monaco-vs-marseille"
+        ],
+        "streamLink": [
+            "Main Stream,, https://www1.buffstreamss.sx/game/as-monaco-vs-marseille"
         ]
     },
     {
         "eventTitle": "Bundesliga",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/81/responsive-images/Freiburg___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1664/responsive-images/Werder-Bremen___preview_thumbnail_120_120.webp",
         "team1Title": "Freiburg",
         "team2Title": "Werder Bremen",
         "channelPageLink": "https://www1.buffstreamss.sx/game/freiburg-vs-werder-bremen",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "OneSoccer",
-                "streamingPageLink": "https://hitcast.st/totwatch.php?value=do5",
-                "স্ট্রিমিং": [
-                    "https://executeandship.com/premiumcr.php?player=desktop&live=do5",
-                    "/chat.php",
-                    "https://t.dtscout.com/idg/?su=6D0017880932483F0D194CD688B38E47",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotwatch.php&qs=value%3Ddo5&rdn=hitcast.st&rpn=%2Ftotwatch.php&rqs=value%3Ddo5&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.4958847211496078&stid=CgsoEGqUI0AAAAAJMqeOAw%253D%253D&tt=t.dhj&dhjLcy=1788093249087&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotwatch.php&qs=value%3Ddo5&rdn=hitcast.st&rpn=%2Ftotwatch.php&rqs=value%3Ddo5&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "OneSoccer",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://vivtops.st/tv/channel.php?ch=dazn-1-germany",
-                "স্ট্রিমিং": [
-                    "https://vivtops.st/tv/channel.php?ch=dazn-1-germany",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fvivtops.st%2Ftv%2Fchannel.php%3Fch%3Ddazn-1-germany&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fvivtops.st%2Ftv%2Fchannel.php%3Fch%3Ddazn-1-germany&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.13424548981819906&stid=CgsoEGqUI0AAAAAJMqeOAw%253D%253D&tt=t.dhj&dhjLcy=1788093251782&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fvivtops.st%2Ftv%2Fchannel.php%3Fch%3Ddazn-1-germany&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fvivtops.st%2Ftv%2Fchannel.php%3Fch%3Ddazn-1-germany&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "DAZN1",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-sc-freiburg-vs-werder-bremen/3",
-                "স্ট্রিমিং": [
-                    "https://embed.st/embed/admin/ppv-sc-freiburg-vs-werder-bremen/3",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-sc-freiburg-vs-werder-bremen%2F3&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-sc-freiburg-vs-werder-bremen%2F3&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.5977650702307067&stid=CgsoEGqUI0AAAAAJMqeOAw%253D%253D&tt=t.dhj&dhjLcy=1788093255196&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-sc-freiburg-vs-werder-bremen%2F3&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fembed.st%2Fembed%2Fadmin%2Fppv-sc-freiburg-vs-werder-bremen%2F3&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "OneSoccer",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=5",
-                "স্ট্রিমিং": [
-                    "https://s3.vertex.st/ch?id=5",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D5&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D5&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.15491601829494117&stid=CgsoEGqUI0AAAAAJMqeOAw%253D%253D&tt=t.dhj&dhjLcy=1788093258614&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D5&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fs3.vertex.st%2Fch%3Fid%3D5&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "DAZN1",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/m-freiburg-vs-werder-bremen-0830",
-                "স্ট্রিমিং": [
-                    "https://trend48.st/event/m-freiburg-vs-werder-bremen-0830",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fm-freiburg-vs-werder-bremen-0830&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fm-freiburg-vs-werder-bremen-0830&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.5818556865770739&stid=CgsoEGqUI0AAAAAJMqeOAw%253D%253D&tt=t.dhj&dhjLcy=1788093261972&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fm-freiburg-vs-werder-bremen-0830&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Ftrend48.st%2Fevent%2Fm-freiburg-vs-werder-bremen-0830&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            },
-            {
-                "channelName": "DAZN1",
-                "streamingPageLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-426.php",
-                "স্ট্রিমিং": [
-                    "https://daddylive1.cx/my/stream-426.php",
-                    "/chat.php",
-                    "//pxdrop.lijit.com/a/t_.htm?ver=1.2087.1179&cid=c026&cls=sync#cls=sync&dmn=hitcast.st&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2087.1179&ell=d&cck=ljt_reader&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-426.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-426.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL",
-                    "//t.sharethis.com/a/t_.htm?ver=1.2087.23428&cid=c010&cls=C#cid=c010&cls=C&rnd=0.7014134268009582&stid=CgsoEGqUI0AAAAAJMqeOAw%253D%253D&tt=t.dhj&dhjLcy=1788093265313&lbl=pxcel&flbl=pxcel&ll=d&ver=1.2087.23428&ell=d&cck=__stid&dmn=hitcast.st&pn=%2Ftotview.php&qs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-426.php&rdn=hitcast.st&rpn=%2Ftotview.php&rqs=src%3Dhttps%3A%2F%2Fdaddylive1.cx%2Fmy%2Fstream-426.php&ipaddr=NjQuMjM2LjE0MS4yMTQ%3D&cc=US&cont=NA&rc=IL"
-                ]
-            }
+        "Streaming page link": [
+            "https://hitcast.st/totwatch.php?value=do5",
+            "https://hitcast.st/totview.php?src=https://vivtops.st/tv/channel.php?ch=dazn-1-germany",
+            "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-sc-freiburg-vs-werder-bremen/3",
+            "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=5",
+            "https://hitcast.st/totview.php?src=https://trend48.st/event/m-freiburg-vs-werder-bremen-0830",
+            "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-426.php"
+        ],
+        "streamLink": [
+            "OneSoccer,, https://executeandship.com/premiumcr.php?player=desktop&live=do5",
+            "OneSoccer,, https://vivtops.st/tv/channel.php?ch=dazn-1-germany",
+            "DAZN1,, https://embed.st/embed/admin/ppv-sc-freiburg-vs-werder-bremen/3",
+            "OneSoccer,, https://s3.vertex.st/ch?id=5",
+            "DAZN1,, https://trend48.st/event/m-freiburg-vs-werder-bremen-0830",
+            "DAZN1,, https://daddylive1.cx/my/stream-426.php"
         ]
     },
     {
         "eventTitle": "Bundesliga",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/81/responsive-images/Freiburg___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1664/responsive-images/Werder-Bremen___preview_thumbnail_120_120.webp",
         "team1Title": "Augsburg",
         "team2Title": "Schalke 04",
         "channelPageLink": "https://www1.buffstreamss.sx/game/augsburg-vs-schalke-04",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "Main Stream",
-                "streamingPageLink": "https://www1.buffstreamss.sx/game/augsburg-vs-schalke-04",
-                "স্ট্রিমিং": [
-                    "https://www1.buffstreamss.sx/game/augsburg-vs-schalke-04"
-                ]
-            }
+        "Streaming page link": [
+            "https://www1.buffstreamss.sx/game/augsburg-vs-schalke-04"
+        ],
+        "streamLink": [
+            "Main Stream,, https://www1.buffstreamss.sx/game/augsburg-vs-schalke-04"
         ]
     },
     {
         "eventTitle": "La Liga",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/3/responsive-images/Real-Madrid___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1824/responsive-images/Malaga___preview_thumbnail_120_120.webp",
         "team1Title": "Real Madrid",
         "team2Title": "Malaga",
         "channelPageLink": "https://www1.buffstreamss.sx/game/real-madrid-vs-malaga",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "Main Stream",
-                "streamingPageLink": "https://www1.buffstreamss.sx/game/real-madrid-vs-malaga",
-                "স্ট্রিমিং": [
-                    "https://www1.buffstreamss.sx/game/real-madrid-vs-malaga"
-                ]
-            }
+        "Streaming page link": [
+            "https://www1.buffstreamss.sx/game/real-madrid-vs-malaga"
+        ],
+        "streamLink": [
+            "Main Stream,, https://www1.buffstreamss.sx/game/real-madrid-vs-malaga"
         ]
     },
     {
         "eventTitle": "La Liga",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/3/responsive-images/Real-Madrid___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1824/responsive-images/Malaga___preview_thumbnail_120_120.webp",
         "team1Title": "Deportivo De A Coruna",
         "team2Title": "Valencia",
         "channelPageLink": "https://www1.buffstreamss.sx/game/deportivo-de-a-coruna-vs-valencia",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "Main Stream",
-                "streamingPageLink": "https://www1.buffstreamss.sx/game/deportivo-de-a-coruna-vs-valencia",
-                "স্ট্রিমিং": [
-                    "https://www1.buffstreamss.sx/game/deportivo-de-a-coruna-vs-valencia"
-                ]
-            }
+        "Streaming page link": [
+            "https://www1.buffstreamss.sx/game/deportivo-de-a-coruna-vs-valencia"
+        ],
+        "streamLink": [
+            "Main Stream,, https://www1.buffstreamss.sx/game/deportivo-de-a-coruna-vs-valencia"
         ]
     },
     {
         "eventTitle": "La Liga",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/3/responsive-images/Real-Madrid___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1824/responsive-images/Malaga___preview_thumbnail_120_120.webp",
         "team1Title": "Celta Vigo",
         "team2Title": "Athletic Bilbao",
         "channelPageLink": "https://www1.buffstreamss.sx/game/celta-vigo-vs-athletic-bilbao",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "Main Stream",
-                "streamingPageLink": "https://www1.buffstreamss.sx/game/celta-vigo-vs-athletic-bilbao",
-                "স্ট্রিমিং": [
-                    "https://www1.buffstreamss.sx/game/celta-vigo-vs-athletic-bilbao"
-                ]
-            }
+        "Streaming page link": [
+            "https://www1.buffstreamss.sx/game/celta-vigo-vs-athletic-bilbao"
+        ],
+        "streamLink": [
+            "Main Stream,, https://www1.buffstreamss.sx/game/celta-vigo-vs-athletic-bilbao"
         ]
     },
     {
         "eventTitle": "Serie A",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/114/responsive-images/Napoli___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/74/responsive-images/Como___preview_thumbnail_120_120.webp",
         "team1Title": "Napoli",
         "team2Title": "Como",
         "channelPageLink": "https://www1.buffstreamss.sx/game/napoli-vs-como",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "Main Stream",
-                "streamingPageLink": "https://www1.buffstreamss.sx/game/napoli-vs-como",
-                "স্ট্রিমিং": [
-                    "https://www1.buffstreamss.sx/game/napoli-vs-como"
-                ]
-            }
+        "Streaming page link": [
+            "https://www1.buffstreamss.sx/game/napoli-vs-como"
+        ],
+        "streamLink": [
+            "Main Stream,, https://www1.buffstreamss.sx/game/napoli-vs-como"
         ]
     },
     {
         "eventTitle": "Serie A",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/114/responsive-images/Napoli___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/74/responsive-images/Como___preview_thumbnail_120_120.webp",
         "team1Title": "Cagliari",
         "team2Title": "Inter Milan",
         "channelPageLink": "https://www1.buffstreamss.sx/game/cagliari-vs-inter-milan",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "Main Stream",
-                "streamingPageLink": "https://www1.buffstreamss.sx/game/cagliari-vs-inter-milan",
-                "স্ট্রিমিং": [
-                    "https://www1.buffstreamss.sx/game/cagliari-vs-inter-milan"
-                ]
-            }
+        "Streaming page link": [
+            "https://www1.buffstreamss.sx/game/cagliari-vs-inter-milan"
+        ],
+        "streamLink": [
+            "Main Stream,, https://www1.buffstreamss.sx/game/cagliari-vs-inter-milan"
         ]
     },
     {
         "eventTitle": "Serie A",
-        "matchTime": "2026-08-30 12:33:24",
+        "matchTime": "2026-08-30 12:49:29",
         "team1Logo": "https://v1.1cdnforall.online/storage/114/responsive-images/Napoli___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/74/responsive-images/Como___preview_thumbnail_120_120.webp",
         "team1Title": "Lazio",
         "team2Title": "Genoa",
         "channelPageLink": "https://www1.buffstreamss.sx/game/lazio-vs-genoa",
         "isHot": true,
-        "স্ট্রিম পেজ": [
-            {
-                "channelName": "Main Stream",
-                "streamingPageLink": "https://www1.buffstreamss.sx/game/lazio-vs-genoa",
-                "স্ট্রিমিং": [
-                    "https://www1.buffstreamss.sx/game/lazio-vs-genoa"
-                ]
-            }
+        "Streaming page link": [
+            "https://www1.buffstreamss.sx/game/lazio-vs-genoa"
+        ],
+        "streamLink": [
+            "Main Stream,, https://www1.buffstreamss.sx/game/lazio-vs-genoa"
         ]
     }
 ]
