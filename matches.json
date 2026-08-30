@@ -1,7 +1,7 @@
 [
     {
         "eventTitle": "MotoGP",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/1032/responsive-images/motogp___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1120/responsive-images/live___preview_thumbnail_120_120.webp",
         "team1Title": "Grand",
@@ -10,14 +10,30 @@
         "isHot": true,
         "streams": [
             {
-                "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/motogp-grand-prix-of-aragon"
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totwatch.php?value=do2"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://vivtops.st/channel2"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/motogp-m"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=30"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-32.php"
             }
         ]
     },
     {
         "eventTitle": "English Premier League",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp",
         "team1Title": "Sunderland",
@@ -26,14 +42,54 @@
         "isHot": true,
         "streams": [
             {
-                "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/sunderland-vs-fulham"
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totwatch.php?value=nsunderland"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://unxer123.gozo.st/games/sunderland-vs-fulham/"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://streame.center/embed/ch2.php"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://vivtops.st/channel19"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-sunderland-vs-fulham/1"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=7"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-sunderland-vs-fulham"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://elixx.info/aw/partizan.php"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://104game.click/player/1/131"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-15.php"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-36.php"
             }
         ]
     },
     {
         "eventTitle": "English Premier League",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp",
         "team1Title": "Leeds United",
@@ -42,14 +98,58 @@
         "isHot": true,
         "streams": [
             {
-                "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/leeds-united-vs-brentford"
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totwatch.php?value=nleedsunited"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://unxer123.gozo.st/games/leeds-united-vs-brentford/"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://streame.center/embed/ch1.php"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://vivtops.st/channel18"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-leeds-united-vs-brentford/1"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=10"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-leeds-united-vs-brentford"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://elixx.info/aw/evalencia.php"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://104game.click/player/1/130"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-14.php"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-130.php"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-343.php"
             }
         ]
     },
     {
         "eventTitle": "English Premier League",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp",
         "team1Title": "Chelsea",
@@ -58,14 +158,54 @@
         "isHot": true,
         "streams": [
             {
-                "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/chelsea-vs-brighton-and-hove-albion"
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totwatch.php?value=nchelsea"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://unxer123.gozo.st/games/chelsea-vs-brighton-hove-albion/"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://streame.center/embed/ch3.php"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://vivtops.st/channel17"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-chelsea-vs-brighton-hove-albion/1"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=9"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-chelsea-vs-brighton-hove-albion"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://elixx.info/aw/ajaxw.php"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://104game.click/player/1/127"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-13.php"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-38.php"
             }
         ]
     },
     {
         "eventTitle": "English Premier League",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/64/responsive-images/Sunderland___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/111/responsive-images/Fulham___preview_thumbnail_120_120.webp",
         "team1Title": "Manchester United",
@@ -81,7 +221,7 @@
     },
     {
         "eventTitle": "Ligue 1",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/1326/responsive-images/Paris-fc___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/123/responsive-images/Nice___preview_thumbnail_120_120.webp",
         "team1Title": "Paris Fc",
@@ -90,14 +230,38 @@
         "isHot": true,
         "streams": [
             {
-                "channelName": "Main Stream",
-                "watchLink": "https://www1.buffstreamss.sx/game/paris-fc-vs-nice"
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totwatch.php?value=do39"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://streame.center/embed/ch7.php"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://vivtops.st/tv/channel.php?ch=bein-sports"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-paris-fc-vs-nice/1"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=39"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-paris-fc-vs-nice"
+            },
+            {
+                "channelName": "Live Channel",
+                "watchLink": "https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-425.php"
             }
         ]
     },
     {
         "eventTitle": "Ligue 1",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/1326/responsive-images/Paris-fc___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/123/responsive-images/Nice___preview_thumbnail_120_120.webp",
         "team1Title": "Rennes",
@@ -113,7 +277,7 @@
     },
     {
         "eventTitle": "Ligue 1",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/1326/responsive-images/Paris-fc___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/123/responsive-images/Nice___preview_thumbnail_120_120.webp",
         "team1Title": "As Monaco",
@@ -129,7 +293,7 @@
     },
     {
         "eventTitle": "Bundesliga",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/81/responsive-images/Freiburg___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1664/responsive-images/Werder-Bremen___preview_thumbnail_120_120.webp",
         "team1Title": "Freiburg",
@@ -145,7 +309,7 @@
     },
     {
         "eventTitle": "Bundesliga",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/81/responsive-images/Freiburg___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1664/responsive-images/Werder-Bremen___preview_thumbnail_120_120.webp",
         "team1Title": "Augsburg",
@@ -161,7 +325,7 @@
     },
     {
         "eventTitle": "La Liga",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/3/responsive-images/Real-Madrid___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1824/responsive-images/Malaga___preview_thumbnail_120_120.webp",
         "team1Title": "Real Madrid",
@@ -177,7 +341,7 @@
     },
     {
         "eventTitle": "La Liga",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/3/responsive-images/Real-Madrid___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1824/responsive-images/Malaga___preview_thumbnail_120_120.webp",
         "team1Title": "Deportivo De A Coruna",
@@ -193,7 +357,7 @@
     },
     {
         "eventTitle": "La Liga",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/3/responsive-images/Real-Madrid___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/1824/responsive-images/Malaga___preview_thumbnail_120_120.webp",
         "team1Title": "Celta Vigo",
@@ -209,7 +373,7 @@
     },
     {
         "eventTitle": "Serie A",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/114/responsive-images/Napoli___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/74/responsive-images/Como___preview_thumbnail_120_120.webp",
         "team1Title": "Napoli",
@@ -225,7 +389,7 @@
     },
     {
         "eventTitle": "Serie A",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/114/responsive-images/Napoli___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/74/responsive-images/Como___preview_thumbnail_120_120.webp",
         "team1Title": "Cagliari",
@@ -241,7 +405,7 @@
     },
     {
         "eventTitle": "Serie A",
-        "matchTime": "2026-08-30 11:54:22",
+        "matchTime": "2026-08-30 12:04:15",
         "team1Logo": "https://v1.1cdnforall.online/storage/114/responsive-images/Napoli___preview_thumbnail_120_120.webp",
         "team2Logo": "https://v1.1cdnforall.online/storage/74/responsive-images/Como___preview_thumbnail_120_120.webp",
         "team1Title": "Lazio",
