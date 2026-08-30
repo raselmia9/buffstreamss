@@ -5,12 +5,11 @@ from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 
 URL = "https://www1.buffstreamss.sx/"
-
 MAX_CONCURRENT_TABS = 5
 
 
 async def scrape_final_stream_and_format(browser, match, semaphore):
-  async "with" semaphore:
+  async with semaphore:  # সিনট্যাক্স এরর ঠিক করা হয়েছে
     page = await browser.new_page()
 
     await page.set_extra_http_headers({
@@ -22,10 +21,9 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
 
     page.on("popup", lambda popup: asyncio.create_task(popup.close()))
 
-    # প্রথমে চ্যানেল পেজ থেকে ওয়াচ/স্ট্রিম পেজ লিংকগুলো সংগ্রহ করা
     c_link = match.get("channelPageLink")
-    stream_pages_list = []
-    final_solid_streaming_link = ""
+    streaming_page_links = []
+    stream_link_custom_list = []
 
     if c_link:
       try:
@@ -69,68 +67,55 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
                   channel_name = p
                   break
 
-            if not any(
-                s["streamingPageLink"] == s_page_link for s in stream_pages_list
-            ):
-              stream_pages_list.append({
-                  "channelName": channel_name,
-                  "streamingPageLink": s_page_link,
-              })
+            # Streaming page link লিস্টে যোগ করা
+            if s_page_link not in streaming_page_links:
+              streaming_page_links.append(s_page_link)
 
-        if not stream_pages_list:
-          stream_pages_list.append(
-              {"channelName": "Main Stream", "streamingPageLink": c_link}
-          )
+            # target পেজে ঢুকে আসল ভিডিও লিংক বা সোর্স বের করা
+            try:
+              await page.goto(
+                  s_page_link, timeout=20000, wait_until="domcontentloaded"
+              )
+              await page.wait_for_timeout(2000)
+              s_html = await page.content()
+              s_soup = BeautifulSoup(s_html, "html.parser")
 
-        # এখন প্রথম ওয়াচ/স্ট্রিম পেজটিতে ঢুকে আসল সলিড ভিডিও লিংকটি বের করা (বিজ্ঞাপন ফিল্টার করে)
-        target_page_link = stream_pages_list[0]["streamingPageLink"]
-        print(f"Visiting streaming page to get solid link: {target_page_link}")
+              video_link = s_page_link
+              iframe = s_soup.find("iframe", src=True)
+              if iframe and iframe["src"]:
+                src_val = iframe["src"]
+                if "chat.php" not in src_val and "pxdrop" not in src_val:
+                  video_link = src_val
 
-        await page.goto(
-            target_page_link, timeout=30000, wait_until="domcontentloaded"
-        )
-        await page.wait_for_timeout(3000)
+              # আপনার চাওয়া কাস্টম ফরম্যাট: চ্যানেলের নাম,, ইউআরএল (রেফারেল সহ)
+              formatted_stream_entry = f"{channel_name},, {video_link}"
+              if formatted_stream_entry not in stream_link_custom_list:
+                stream_link_custom_list.append(formatted_stream_entry)
 
-        stream_html = await page.content()
-        stream_soup = BeautifulSoup(stream_html, "html.parser")
+            except Exception:
+              formatted_stream_entry = f"{channel_name},, {s_page_link}"
+              if formatted_stream_entry not in stream_link_custom_list:
+                stream_link_custom_list.append(formatted_stream_entry)
 
-        # ফালতু অ্যাড লিংক বা chat.php বাদ দিয়ে আসল ভিডিও/আইফ্রেম সোর্স খোঁজা
-        iframe = stream_soup.find("iframe", src=True)
-        if iframe and iframe["src"]:
-          src_val = iframe["src"]
-          if "chat.php" not in src_val and "pxdrop" not in src_val:
-            final_solid_streaming_link = src_val
-
-        if not final_solid_streaming_link:
-          video = stream_soup.find(["video", "source"], src=True)
-          if video and video["src"]:
-            final_solid_streaming_link = video["src"]
-
-        # যদি কোনো কারণে ফালতু লিংক ছাড়া না পাওয়া যায়, তবে টার্গেট পেজ লিংকটিকেই সলিড লিংক হিসেবে রাখা
-        if not final_solid_streaming_link:
-          final_solid_streaming_link = target_page_link
+        if not streaming_page_links:
+          streaming_page_links.append(c_link)
+          stream_link_custom_list.append(f"Main Stream,, {c_link}")
 
       except Exception as ex:
         print(f"Error processing match: {ex}")
-        final_solid_streaming_link = c_link
-        if not stream_pages_list:
-          stream_pages_list = [{
-              "channelName": "Main Stream",
-              "streamingPageLink": c_link,
-          }]
+        streaming_page_links = [c_link]
+        stream_link_custom_list = [f"Main Stream,, {c_link}"]
 
     await page.close()
 
-    # আপনার নির্দেশনা অনুযায়ী:
-    # ১. 'streamPages' ট্যাগের ভেতরে থাকবে চ্যানেল লিস্ট ও স্ট্রিমিং পেজ লিংকগুলো
-    match["streamPages"] = stream_pages_list
-    if "streams" in match:
-      del match["streams"]
-    if "স্ট্রিম পেজ" in match:
-      del match["স্ট্রিম পেজ"]
+    # আপনার নির্দেশনা অনুযায়ী নতুন ট্যাগগুলোর নাম ও ডেটা বসানো
+    match["Streaming page link"] = streaming_page_links
+    match["streamLink"] = stream_link_custom_list
 
-    # ২. মূল আইটেমের বাইরে আলাদা 'streaming' ট্যাগে সরাসরি সলিড লিংকটি বসে যাবে
-    match["streaming"] = final_solid_streaming_link
+    # পুরোনো অপ্রয়োজনীয় ট্যাগগুলো মুছে ফেলা
+    for old_key in ["streamPages", "streaming", "streams", "স্ট্রিম পেজ"]:
+      if old_key in match:
+        del match[old_key]
 
     return match
 
@@ -260,7 +245,6 @@ async def scrape_buffstreams():
 
       await page.close()
 
-      # মাল্টি-ট্যাব ব্যবহার করে একসাথে সব ম্যাচ প্রসেস করা
       print(
           f"Total matches found: {len(base_matches)}. Processing streams using"
           " multi-tabs..."
@@ -294,11 +278,8 @@ if __name__ == "__main__":
         "team2Title": "Team 2",
         "channelPageLink": "https://www1.buffstreamss.sx/",
         "isHot": True,
-        "streamPages": [{
-            "channelName": "Main Stream",
-            "streamingPageLink": "https://www1.buffstreamss.sx/",
-        }],
-        "streaming": "https://www1.buffstreamss.sx/",
+        "Streaming page link": ["https://www1.buffstreamss.sx/"],
+        "streamLink": ["Main Stream,, https://www1.buffstreamss.sx/"],
     }]
 
   output_file = "matches.json"
