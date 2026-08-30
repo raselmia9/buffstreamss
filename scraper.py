@@ -67,16 +67,16 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
                   channel_name = p
                   break
 
-            # ১. Streaming page link আগের নিয়মেই থাকবে (এটিতে হাত দেওয়া হয়নি)
+            # ১. Streaming page link ফরম্যাট: Channel Name,, Streaming Page URL
             formatted_page_entry = f"{channel_name},, {s_page_link}"
             if formatted_page_entry not in streaming_page_links:
               streaming_page_links.append(formatted_page_entry)
 
-            # ২. streamLink এর জন্য সরাসরি m3u8 লিংক ক্যাপচার করার লজিক
-            detected_m3u8_link = s_page_link  # ডিফল্ট ফলব্যাক
+            # ২. streamLink এর জন্য সঠিক m3u8 এবং সঠিক Referer ইউআরএল ক্যাপচার করা
+            detected_m3u8_link = s_page_link
+            correct_referer_url = s_page_link
 
             try:
-              # নেটওয়ার্ক রিকোয়েস্ট ট্র্যাক করে m3u8 লিংক ধরার জন্য ইভেন্ট লিসেনার
               found_links = []
 
               def handle_request(request):
@@ -90,42 +90,57 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
               await page.goto(
                   s_page_link, timeout=25000, wait_until="domcontentloaded"
               )
-              # ভিডিও প্লেয়ার বা স্ট্রিম লোড হওয়ার জন্য সময় দেওয়া যাতে m3u8 রিকোয়েস্ট জেনারেট হয়
               await page.wait_for_timeout(5000)
 
-              # যদি নেটওয়ার্ক রিকোয়েস্টে m3u8 পাওয়া যায়
               if found_links:
                 detected_m3u8_link = found_links[0]
               else:
-                # পেজের ভেতরে বা ফ্রেমের সোর্সে m3u8 আছে কিনা চেক করা
-                content = await page.content()
-                if ".m3u8" in content:
-                  # সাধারণ পার্সিং বা টেক্সট থেকে খোঁজা
-                  for line in content.split('"'):
-                    if ".m3u8" in line:
-                      detected_m3u8_link = line
-                      break
+                # আইফ্রেম বা ভিডিও সোর্স থেকে সঠিক পেজ লিংক বের করা
+                iframe_element = await page.query_selector("iframe")
+                if iframe_element:
+                  src_val = await iframe_element.get_attribute("src")
+                  if (
+                      src_val
+                      and "chat.php" not in src_val
+                      and "pxdrop" not in src_val
+                  ):
+                    if src_val.startswith("//"):
+                      correct_referer_url = "https:" + src_val
+                    elif src_val.startswith("/"):
+                      correct_referer_url = (
+                          "https://www1.buffstreamss.sx" + src_val
+                      )
+                    else:
+                      correct_referer_url = src_val
+                    detected_m3u8_link = correct_referer_url
 
             except Exception as ex:
               print(f"Error capturing m3u8 from {s_page_link}: {ex}")
 
-            # streamLink ফরম্যাট: Channel Name,, m3u8_link
-            formatted_stream_entry = f"{channel_name},, {detected_m3u8_link}"
+            # সঠিক m3u8 লিংকের সাথে সঠিক সঠিক Referer ইউআরএল যুক্ত করা
+            final_stream_with_referer = (
+                f"{detected_m3u8_link}|Referer={correct_referer_url}"
+            )
+
+            # streamLink ফরম্যাট: Channel Name,, m3u8_link|Referer=Correct_Url
+            formatted_stream_entry = (
+                f"{channel_name},, {final_stream_with_referer}"
+            )
             if formatted_stream_entry not in stream_link_custom_list:
               stream_link_custom_list.append(formatted_stream_entry)
 
         if not streaming_page_links:
           streaming_page_links.append(f"Main Stream,, {c_link}")
-          stream_link_custom_list.append(f"Main Stream,, {c_link}")
+          stream_link_custom_list.append(f"Main Stream,, {c_link}|Referer={c_link}")
 
       except Exception as ex:
         print(f"Error processing match: {ex}")
         streaming_page_links = [f"Main Stream,, {c_link}"]
-        stream_link_custom_list = [f"Main Stream,, {c_link}"]
+        stream_link_custom_list = [f"Main Stream,, {c_link}|Referer={c_link}"]
 
     await page.close()
 
-    # ফাইনাল এসাইনমেন্ট
+    # ফাইনাল আউটপุต ট্যাগগুলো এসাইন করা
     match["Streaming page link"] = streaming_page_links
     match["streamLink"] = stream_link_custom_list
 
@@ -298,7 +313,9 @@ if __name__ == "__main__":
         "Streaming page link": [
             "Main Stream,, https://www1.buffstreamss.sx/"
         ],
-        "streamLink": ["Main Stream,, https://www1.buffstreamss.sx/"],
+        "streamLink": [
+            "Main Stream,, https://www1.buffstreamss.sx/|Referer=https://www1.buffstreamss.sx/"
+        ],
     }]
 
   output_file = "matches.json"
