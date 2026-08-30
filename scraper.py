@@ -9,7 +9,7 @@ MAX_CONCURRENT_TABS = 5
 
 
 async def scrape_final_stream_and_format(browser, match, semaphore):
-  async with semaphore:  # সিনট্যাক্স এরর ঠিক করা হয়েছে
+  async with semaphore:
     page = await browser.new_page()
 
     await page.set_extra_http_headers({
@@ -67,48 +67,64 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
                   channel_name = p
                   break
 
-            # Streaming page link লিস্টে যোগ করা
-            if s_page_link not in streaming_page_links:
-              streaming_page_links.append(s_page_link)
+            # ১. Streaming page link ফরম্যাট: Channel Name,, Streaming Page URL
+            formatted_page_entry = f"{channel_name},, {s_page_link}"
+            if formatted_page_entry not in streaming_page_links:
+              streaming_page_links.append(formatted_page_entry)
 
-            # target পেজে ঢুকে আসল ভিডিও লিংক বা সোর্স বের করা
+            # ২. স্ট্রিমিং পেজে প্রবেশ করে আসল ভিডিও বা আইফ্রেম লিংক ক্যাপচার করা
+            video_link = s_page_link
             try:
               await page.goto(
-                  s_page_link, timeout=20000, wait_until="domcontentloaded"
+                  s_page_link, timeout=25000, wait_until="domcontentloaded"
               )
-              await page.wait_for_timeout(2000)
-              s_html = await page.content()
-              s_soup = BeautifulSoup(s_html, "html.parser")
+              # প্লেয়ার বা আইফ্রেম পুরোপুরি লোড হওয়ার জন্য পর্যাপ্ত সময় দেওয়া
+              await page.wait_for_timeout(4000)
 
-              video_link = s_page_link
-              iframe = s_soup.find("iframe", src=True)
-              if iframe and iframe["src"]:
-                src_val = iframe["src"]
-                if "chat.php" not in src_val and "pxdrop" not in src_val:
-                  video_link = src_val
+              # Playwright দিয়ে রেন্ডার হওয়া iframe ট্যাগ খোঁজা
+              iframe_element = await page.query_selector("iframe")
+              if iframe_element:
+                src_val = await iframe_element.get_attribute("src")
+                if (
+                    src_val
+                    and "chat.php" not in src_val
+                    and "pxdrop" not in src_val
+                    and "sharethis" not in src_val
+                ):
+                  if src_val.startswith("//"):
+                    video_link = "https:" + src_val
+                  elif src_val.startswith("/"):
+                    video_link = "https://www1.buffstreamss.sx" + src_val
+                  else:
+                    video_link = src_val
+              else:
+                # যদি iframe না থাকে, video বা source ট্যাগ চেক করা
+                video_element = await page.query_selector("video, source")
+                if video_element:
+                  v_src = await video_element.get_attribute("src")
+                  if v_src:
+                    video_link = v_src
 
-              # আপনার চাওয়া কাস্টম ফরম্যাট: চ্যানেলের নাম,, ইউআরএল (রেফারেল সহ)
-              formatted_stream_entry = f"{channel_name},, {video_link}"
-              if formatted_stream_entry not in stream_link_custom_list:
-                stream_link_custom_list.append(formatted_stream_entry)
+            except Exception as ex:
+              print(f"Error extracting video link from {s_page_link}: {ex}")
 
-            except Exception:
-              formatted_stream_entry = f"{channel_name},, {s_page_link}"
-              if formatted_stream_entry not in stream_link_custom_list:
-                stream_link_custom_list.append(formatted_stream_entry)
+            # ৩. streamLink ফরম্যাট: Channel Name,, Video URL
+            formatted_stream_entry = f"{channel_name},, {video_link}"
+            if formatted_stream_entry not in stream_link_custom_list:
+              stream_link_custom_list.append(formatted_stream_entry)
 
         if not streaming_page_links:
-          streaming_page_links.append(c_link)
+          streaming_page_links.append(f"Main Stream,, {c_link}")
           stream_link_custom_list.append(f"Main Stream,, {c_link}")
 
       except Exception as ex:
         print(f"Error processing match: {ex}")
-        streaming_page_links = [c_link]
+        streaming_page_links = [f"Main Stream,, {c_link}"]
         stream_link_custom_list = [f"Main Stream,, {c_link}"]
 
     await page.close()
 
-    # আপনার নির্দেশনা অনুযায়ী নতুন ট্যাগগুলোর নাম ও ডেটা বসানো
+    # ফাইনাল জেসন ট্যাগগুলোতে ডেটা এসাইন করা
     match["Streaming page link"] = streaming_page_links
     match["streamLink"] = stream_link_custom_list
 
@@ -278,7 +294,9 @@ if __name__ == "__main__":
         "team2Title": "Team 2",
         "channelPageLink": "https://www1.buffstreamss.sx/",
         "isHot": True,
-        "Streaming page link": ["https://www1.buffstreamss.sx/"],
+        "Streaming page link": [
+            "Main Stream,, https://www1.buffstreamss.sx/"
+        ],
         "streamLink": ["Main Stream,, https://www1.buffstreamss.sx/"],
     }]
 
