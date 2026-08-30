@@ -77,7 +77,7 @@ async def scrape_buffstreams():
 
         card_text = card.get_text(separator=" ", strip=True)
 
-        # ২. URL স্লাগ থেকে টিম/ইভেন্ট নাম নির্ধারণের লজিক
+        # ২. URL স্লাগ থেকে নাম নির্ধারণের লজিক
         slug = href.split("/game/")[-1]
 
         if "-vs-" in slug:
@@ -85,18 +85,22 @@ async def scrape_buffstreams():
           team1Title = parts[0].replace("-", " ").title()
           team2Title = parts[1].replace("-", " ").title()
         else:
-          # শুধুমাত্র ইভেন্টের নামটুকু স্লাগের শুরু থেকে কেটে বাদ দেওয়া
+          # ইভেন্টের নামটি স্লাগের শুরু থেকে কেটে বাদ দেওয়া
           clean_slug = slug.lower()
           event_lower = eventTitle.lower().replace(" ", "-")
 
           if clean_slug.startswith(event_lower):
             clean_slug = clean_slug[len(event_lower) :].strip("-")
 
-          remaining_text = clean_slug.replace("-", " ").title()
+          # স্প্লিট করে প্রথম ও শেষ আইটেম নেওয়া (মাঝের অংশ বাদ)
+          slug_parts = [p for p in clean_slug.split("-") if p]
 
-          if remaining_text:
-            team1Title = remaining_text
-            team2Title = ""  # সিঙ্গেল ইভেন্টের ক্ষেত্রে দ্বিতীয় ফিল্ডটি খালি রাখা
+          if len(slug_parts) >= 2:
+            team1Title = slug_parts[0].title()
+            team2Title = slug_parts[-1].title()
+          elif len(slug_parts) == 1:
+            team1Title = slug_parts[0].title()
+            team2Title = ""
           else:
             team1Title = slug.replace("-", " ").title()
             team2Title = ""
