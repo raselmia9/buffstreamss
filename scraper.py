@@ -138,11 +138,11 @@ async def scrape_final_stream_and_format(browser, match, semaphore):
         ]
         final_stream_output = (
             "Stream links will be activated before 1 hr of starting time."
-        ]
+        )
 
     await page.close()
 
-    # ফাইনাল আউটপুট ট্যাগগুলো এসাইন করা (Streaming page link আগের মতোই লিস্ট থাকবে, streamLink আপনার কাস্টম স্ট্রিং হবে)
+    # ফাইনাল আউটপুট ট্যাগগুলো এসাইন করা
     match["Streaming page link"] = streaming_page_links
     match["streamLink"] = final_stream_output
 
