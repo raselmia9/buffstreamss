@@ -171,6 +171,6 @@ if __name__ == "__main__":
 
   output_file = "matches.json"
   with open(output_file, "w", encoding="utf-8") as f:
-    json.dump(data, f, indent=4, ensure_async=False)
+    json.dump(data, f, indent=4, ensure_ascii=False)
 
   print(f"Successfully saved {len(data)} items to {output_file}.")
