@@ -212,9 +212,16 @@ async def scrape_buffstreams():
           continue
         seen_links.add(channelPageLink)
 
-        # প্রতিটি নির্দিষ্ট ম্যাচ কার্ড বা কন্টেইনার আলাদা করা
+        # সুনির্দিষ্টভাবে প্রতিটি ম্যাচের নিজস্ব একক কার্ড বা রো (Row) বের করা
         card = link.find_parent(
-            "div", class_=["card", "item", "match-item", "box"]
+            lambda tag: tag.name in ["div", "li", "article"]
+            and (
+                "card" in tag.get("class", [])
+                or "item" in tag.get("class", [])
+                or "match" in tag.get("class", [])
+                or len(tag.find_all("a", href=lambda h: h and "/game/" in h))
+                == 1
+            )
         )
         if not card:
           card = link.parent if link.parent else link
@@ -264,19 +271,24 @@ async def scrape_buffstreams():
             team1Title = slug.replace("-", " ").title()
             team2Title = ""
 
-        # লোগো তোলার সঠিক লজিক: শুধুমাত্র এই কার্ডের ভেতরের ইমেজগুলো ফিল্টার করা
+        # লোগো তোলার সঠিক ও নিরাপদ লজিক: শুধুমাত্র এই নির্দিষ্ট কার্ডের ভেতরের ইমেজগুলো ফিল্টার করা
         card_imgs = card.find_all("img")
-        team1Logo = ""
-        team2Logo = ""
-
         valid_imgs = []
         for img in card_imgs:
           src = img.get("src", "")
-          if src and not src.endswith(".svg") and "icon" not in src.lower():
+          if (
+              src
+              and not src.endswith(".svg")
+              and "telegram" not in src.lower()
+              and "discord" not in src.lower()
+          ):
             if src.startswith("/"):
               src = "https://www1.buffstreamss.sx" + src
             if src not in valid_imgs:
               valid_imgs.append(src)
+
+        team1Logo = ""
+        team2Logo = ""
 
         if len(valid_imgs) >= 2:
           team1Logo = valid_imgs[0]
