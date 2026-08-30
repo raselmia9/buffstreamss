@@ -1,7 +1,7 @@
 name: Update Match JSON
 
 on:
-  scheduled:
+  schedule:
     - cron: '*/30 * * * *' # প্রতি ৩০ মিনিট পর পর রান হবে
   workflow_dispatch:
 
