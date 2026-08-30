@@ -30,6 +30,11 @@ async def scrape_buffstreams():
       soup = BeautifulSoup(html_content, "html.parser")
 
       seen_links = set()
+
+      # ওয়েবসাইটের মূল কন্টেইনার বা সেকশনগুলো ধরে এক একটি ব্লক হিসেবে স্ক্যান করা
+      # সাধারণত প্রতিটি লিগ বা স্পোর্টসের জন্য আলাদা সেকশন বা র‍্যাপার থাকে
+      # আমরা প্রতিটি গেমের লিংক ধরে পেছনের দিকে গিয়ে তার লিগ হেডিং এবং ভেতরের কার্ড ডেটা তুলব
+
       links = soup.find_all("a", href=True)
 
       for link in links:
@@ -48,29 +53,30 @@ async def scrape_buffstreams():
           continue
         seen_links.add(streamLink)
 
-        # কার্ড বা কন্টেইনার এলিমেন্ট খুঁজে বের করা
+        # ১. নির্দিষ্ট ম্যাচ কার্ড বা আইটেম এলিমেন্ট খুঁজে বের করা
         card = link.find_parent("div", class_=["card", "item", "match-item"])
         if not card:
-          card = link
+          card = link.parent if link.parent else link
 
-        # ১. সঠিক লিগ বা ইভেন্টের নাম খোঁজা (কার্ডের ওপরের সেকশন হেডিং থেকে)
+        # ২. এই কার্ডের একদম ওপরের সেকশন থেকে ইভেন্টের নাম (যেমন: English Premier League) বের করা
         eventTitle = "Live Sports Event"
         curr = card
-        for _ in range(5):
+        for _ in range(6):
           if not curr:
             break
-          # ওপরের দিকে হেডিং বা সেকশন লেবেল খোঁজা
+          # ওপরের দিকে বা আগের ভাইবোন এলিমেন্টে লিগের নাম থাকে
           prev_elem = curr.find_previous(
               ["h1", "h2", "h3", "h4", "div", "span"], class_=True
           )
           if prev_elem:
             t_text = prev_elem.get_text(strip=True)
+            # যদি টেক্সটটি ছোট হয় এবং এর ভেতর ম্যাচ বা টাইমের কথা না থাকে, তবে সেটি ইভেন্ট/লিগ নাম
             if (
                 t_text
-                and len(t_text) < 35
+                and len(t_text) < 40
                 and "Starts" not in t_text
                 and "Live" not in t_text
-                and "1" not in t_text
+                and "01:" not in t_text
             ):
               eventTitle = t_text
               break
@@ -78,7 +84,7 @@ async def scrape_buffstreams():
 
         card_text = card.get_text(separator=" ", strip=True)
 
-        # ২. URL থেকে টিম ১ ও টিম ২ এর নাম আলাদা করা
+        # ৩. ইউআরএল স্লাগ থেকে টিম ১ ও টিম ২ এর নাম আলাদা করা (যেমন: /game/sunderland-vs-fulham)
         slug = href.split("/game/")[-1]
         parts = slug.split("-vs-")
         if len(parts) == 2:
@@ -88,24 +94,12 @@ async def scrape_buffstreams():
           team1Title = "Team 1"
           team2Title = "Team 2"
 
-        # ৩. কার্ডের ভেতর থেকে সুনির্দিষ্টভাবে দুটি আলাদা লোগো সংগ্রহ করা
+        # ৪. কার্ডের ভেতরের নির্দিষ্ট দুটি লোগো সংগ্রহ করা
         imgs = card.find_all("img")
         team1Logo = ""
         team2Logo = ""
 
-        # যদি কার্ডের ভেতর একাধিক ছবি থাকে, তবে প্রথম দুটি ছবি টিমগুলোর লোগো হিসেবে নেব
-        valid_img_sources = []
-        for img in imgs:
-          src = img.get("src", "")
-          if src and src not in valid_img_sources:
-            # যদি লিগের আইকন বা বাইরের লোগো না হয়
-            if "leagues" not in src and "icon" not in src:
-              valid_img_sources.append(src)
-
-        if len(valid_img_sources) >= 2:
-          team1Logo = valid_img_sources[0]
-          team2Logo = valid_img_sources[1]
-        elif len(imgs) >= 2:
+        if len(imgs) >= 2:
           team1Logo = imgs[0].get("src", "")
           team2Logo = imgs[1].get("src", "")
         elif len(imgs) == 1:
@@ -121,7 +115,9 @@ async def scrape_buffstreams():
         if team2Logo.startswith("/"):
           team2Logo = "https://www1.buffstreamss.sx" + team2Logo
 
+        # যেহেতু প্রথম পেজে সঠিক তারিখ পাওয়া যায় না, তাই ডিফল্ট বা বর্তমান সময় রাখা হলো
         matchTime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
         isHot = (
             "live" in card_text.lower()
             or "now" in card_text.lower()
