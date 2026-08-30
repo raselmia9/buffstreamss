@@ -30,11 +30,6 @@ async def scrape_buffstreams():
       soup = BeautifulSoup(html_content, "html.parser")
 
       seen_links = set()
-
-      # ওয়েবসাইটের মূল কন্টেইনার বা সেকশনগুলো ধরে এক একটি ব্লক হিসেবে স্ক্যান করা
-      # সাধারণত প্রতিটি লিগ বা স্পোর্টসের জন্য আলাদা সেকশন বা র‍্যাপার থাকে
-      # আমরা প্রতিটি গেমের লিংক ধরে পেছনের দিকে গিয়ে তার লিগ হেডিং এবং ভেতরের কার্ড ডেটা তুলব
-
       links = soup.find_all("a", href=True)
 
       for link in links:
@@ -53,24 +48,22 @@ async def scrape_buffstreams():
           continue
         seen_links.add(streamLink)
 
-        # ১. নির্দিষ্ট ম্যাচ কার্ড বা আইটেম এলিমেন্ট খুঁজে বের করা
+        # কার্ড বা কন্টেইনার এলিমেন্ট খুঁজে বের করা
         card = link.find_parent("div", class_=["card", "item", "match-item"])
         if not card:
           card = link.parent if link.parent else link
 
-        # ২. এই কার্ডের একদম ওপরের সেকশন থেকে ইভেন্টের নাম (যেমন: English Premier League) বের করা
+        # ১. সঠিক লিগ বা ইভেন্টের নাম (eventTitle) বের করা
         eventTitle = "Live Sports Event"
         curr = card
         for _ in range(6):
           if not curr:
             break
-          # ওপরের দিকে বা আগের ভাইবোন এলিমেন্টে লিগের নাম থাকে
           prev_elem = curr.find_previous(
               ["h1", "h2", "h3", "h4", "div", "span"], class_=True
           )
           if prev_elem:
             t_text = prev_elem.get_text(strip=True)
-            # যদি টেক্সটটি ছোট হয় এবং এর ভেতর ম্যাচ বা টাইমের কথা না থাকে, তবে সেটি ইভেন্ট/লিগ নাম
             if (
                 t_text
                 and len(t_text) < 40
@@ -84,17 +77,29 @@ async def scrape_buffstreams():
 
         card_text = card.get_text(separator=" ", strip=True)
 
-        # ৩. ইউআরএল স্লাগ থেকে টিম ১ ও টিম ২ এর নাম আলাদা করা (যেমন: /game/sunderland-vs-fulham)
+        # ২. URL স্লাগ থেকে টিম নাম নির্ধারণের লজিক (ভার্সেস থাকলে একরকম, না থাকলে আপনার নতুন নিয়ম অনুযায়ী)
         slug = href.split("/game/")[-1]
-        parts = slug.split("-vs-")
-        if len(parts) == 2:
+
+        if "-vs-" in slug:
+          parts = slug.split("-vs-")
           team1Title = parts[0].replace("-", " ").title()
           team2Title = parts[1].replace("-", " ").title()
         else:
-          team1Title = "Team 1"
-          team2Title = "Team 2"
+          # আপনার দেওয়া নিয়ম: স্পেস বা হাইফেন দিয়ে স্প্লিট করে প্রথম ও শেষ আইটেম নেওয়া
+          slug_parts = [
+              p for p in slug.split("-") if p
+          ]  # খালি অংশ বাদ দিয়ে লিস্ট তৈরি
+          if len(slug_parts) >= 2:
+            team1Title = slug_parts[0].title()
+            team2Title = slug_parts[-1].title()
+          elif len(slug_parts) == 1:
+            team1Title = slug_parts[0].title()
+            team2Title = slug_parts[0].title()
+          else:
+            team1Title = "Team 1"
+            team2Title = "Team 2"
 
-        # ৪. কার্ডের ভেতরের নির্দিষ্ট দুটি লোগো সংগ্রহ করা
+        # ৩. কার্ডের ভেতরের লোগো সংগ্রহ করা
         imgs = card.find_all("img")
         team1Logo = ""
         team2Logo = ""
@@ -115,9 +120,7 @@ async def scrape_buffstreams():
         if team2Logo.startswith("/"):
           team2Logo = "https://www1.buffstreamss.sx" + team2Logo
 
-        # যেহেতু প্রথম পেজে সঠিক তারিখ পাওয়া যায় না, তাই ডিফল্ট বা বর্তমান সময় রাখা হলো
         matchTime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
         isHot = (
             "live" in card_text.lower()
             or "now" in card_text.lower()
