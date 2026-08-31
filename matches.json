@@ -1,19 +1,5 @@
 [
     {
-        "eventTitle": "Serie A",
-        "matchTime": "2026-08-31 22:30:00",
-        "team1Logo": "https://v1.1cdnforall.online/storage/130/responsive-images/Lecce___preview_thumbnail_120_120.webp",
-        "team2Logo": "https://v1.1cdnforall.online/storage/48/responsive-images/Roma___preview_thumbnail_120_120.webp",
-        "team1Title": "Lecce",
-        "team2Title": "Roma",
-        "channelPageLink": "https://www1.buffstreamss.sx/game/lecce-vs-roma",
-        "isHot": true,
-        "Streaming page link": [
-            "Stream links will be activated before 1 hr of starting time."
-        ],
-        "streamLink": "Stream links will be activated before 1 hr of starting time."
-    },
-    {
         "eventTitle": "La Liga",
         "matchTime": "2026-08-31 23:30:00",
         "team1Logo": "https://v1.1cdnforall.online/storage/4/responsive-images/Osasuna___preview_thumbnail_120_120.webp",
@@ -30,7 +16,27 @@
             "Premier Sports 1,, https://hitcast.st/totview.php?src=https://trend48.st/event/m-osasuna-vs-getafe-0831",
             "M+ LALIGA TV,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-84.php"
         ],
-        "streamLink": "Premier Sports 1,, https://cdn6.zohanayaan.com:1686/hls/do1.m3u8?md5=qOUt_RaWDnDYGZ4aay4NVw&expires=1788209454|Referer=https://hitcast.st/totwatch.php?value=do1,)M+ LALIGA TV,, https://lb2.strmd.st/secure/kLACsjPQtYsOKhiHlWHVNbOQDTyIvtub/rtmp/stream/BqEFfNRhSz8FDVMD3vPdPi85MJESnLb2gIMPNNm-l5qjmhD1ewcvp6VSlRRsemftA4Ko73O3_PM/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-osasuna-vs-getafe/1,)M+ LALIGA TV,, https://xameleon.phantemlis.top/two/secure/26c28ef9024504590a479ef00adf5ef3/1788215479/premium84/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-84.php"
+        "streamLink": "Premier Sports 1,, https://cdn8.zohanayaan.com:1686/hls/do1.m3u8?md5=wCQAUdPxTnyjQgQwPEj6hA&expires=1788210345|Referer=https://hitcast.st/totwatch.php?value=do1,)M+ LALIGA TV,, https://lb11.strmd.st/secure/YnkIHOJYZWVipBHAtaSqoLuJZefEbLky/rtmp/stream/eZTsFwscCU4Qgojsf0SfnbRm45G9hNqko6m1Y9paes4-x9iJ508OcjNHnLHKIcz6lz9iA-u2GaQ/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-osasuna-vs-getafe/1,)M+ LALIGA TV,, https://xameleon.phantemlis.top/two/secure/bcc84b60066bbe62e2b8349830d39d32/1788216370/premium84/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-84.php"
+    },
+    {
+        "eventTitle": "Serie A",
+        "matchTime": "2026-09-01 00:45:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/135/responsive-images/Atalanta___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/41/responsive-images/Bologna___preview_thumbnail_120_120.webp",
+        "team1Title": "Atalanta",
+        "team2Title": "Bologna",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/atalanta-vs-bologna",
+        "isHot": true,
+        "Streaming page link": [
+            "CBS Sports Golazo,, https://hitcast.st/totwatch.php?value=do7",
+            "CBS Sports Golazo,, https://hitcast.st/totview.php?src=https://unxer123.gozo.st/games/atalanta-vs-bologna/",
+            "CBS Sports Golazo,, https://hitcast.st/totview.php?src=https://streame.center/embed/ch9.php",
+            "Paramount+,, https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-atalanta-vs-bologna/1",
+            "CBS Sports Golazo,, https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=7",
+            "CBS Sports Golazo,, https://hitcast.st/totview.php?src=https://trend48.st/event/m-atalanta-vs-bologna-0831",
+            "Paramount+,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-68.php"
+        ],
+        "streamLink": "CBS Sports Golazo,, https://cdn5.zohanayaan.com:1686/hls/do7.m3u8?md5=lHWFojSYsH_vUMOAA_-oMA&expires=1788210345|Referer=https://hitcast.st/totwatch.php?value=do7,)Paramount+,, https://lb3.strmd.st/secure/csUrCtbNpofnrrPbFduPnUcojjfpmRUZ/rtmp/stream/aCcoTEf4irIgHWuE-r1XwORs66iOhWidMKb6OiCOKPJa_KbdQg6qz7uHQznrfutZ3C8LY60f0qc/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-atalanta-vs-bologna/1,)Paramount+,, https://xameleon.phantemlis.top/two/secure/46341c5f46312775e95b64392ddaf006/1788216372/premium68/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-68.php"
     },
     {
         "eventTitle": "English Premier League",
@@ -54,7 +60,7 @@
             "USA Network FHD,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-343.php",
             "Sky Sports Main Event FHD,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-38.php"
         ],
-        "streamLink": "Sky Sport Premier League,, https://cdn6.zohanayaan.com:1686/hls/nastonvilla.m3u8?md5=C2Rf7lXuRm3Xy_Qb5Xmdsw&expires=1788209444|Referer=https://hitcast.st/totwatch.php?value=nastonvilla,)Sky Sport Premier League,, https://lb13.strmd.st/secure/gOEhjaJOkVKPEIcclADifESzWccwOuHI/rtmp/stream/4UDyQVaCfMfw_KBVXBU-taQUYIcT_XSgp3togVdqsKeX7b9DuJlikz0gy1dvNtHzxw72l7EH6hg/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-aston-villa-vs-arsenal/1,)Sky Sport Premier League,, https://80ejg1.5gkygx509kqv.net:8443/hls/ulgk1vzsw8aqr.m3u8?s=XN9N59H4uRCKZah4ZM7j1w&e=1788226285|Referer=https://hitcast.st/totview.php?src=https://elixx.info/aw/ajaxw.php,)Sky Sport Premier League,, https://80ejg1.5gkygx509kqv.net:8443/hls/yvv81gkwb.m3u8?s=uft7dIDfYTdREIWqmI9ZjQ&e=1788226290|Referer=https://hitcast.st/totview.php?src=https://104game.click/player/1/127,)Hub Premier,, https://xameleon.phantemlis.top/one/secure/ef5765a97bb6fa047dde6a07b4a31567/1788215496/premium10/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-10.php,)USA Network FHD,, https://xameleon.phantemlis.top/one/secure/28e4440658d9b14a3e2720fdcc3d3ba4/1788215501/premium343/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-343.php,)Sky Sports Main Event FHD,, https://xameleon.phantemlis.top/three/secure/c42cb8f122834f38a6387f0007e7ca92/1788215506/premium38/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-38.php"
+        "streamLink": "Sky Sport Premier League,, https://cdn6.zohanayaan.com:1686/hls/nastonvilla.m3u8?md5=QXKAjwG46Wjr0y-bxv8hew&expires=1788210344|Referer=https://hitcast.st/totwatch.php?value=nastonvilla,)Sky Sport Premier League,, https://lb3.strmd.st/secure/WyqogLCfHTktYZowLYqroXdDLXRnwFwJ/rtmp/stream/IGdvbG8Eft6Ju4mCQWqY4sAnFDe22-L2quYYmjv4m5m51_8bxq_DEd-UdU-m2sHLh0J80XUHkk8/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-aston-villa-vs-arsenal/1,)Sky Sport Premier League,, https://8375pd.awqb0f40a9yo.net:8443/hls/ulgk1vzsw8aqr.m3u8?s=iA7MlBWJZpjZMxe46QwmuA&e=1788227172|Referer=https://hitcast.st/totview.php?src=https://elixx.info/aw/ajaxw.php,)Sky Sport Premier League,, https://8375pd.awqb0f40a9yo.net:8443/hls/yvv81gkwb.m3u8?s=uAT4wEj6iGlhbVoZqSGgUA&e=1788227176|Referer=https://hitcast.st/totview.php?src=https://104game.click/player/1/127,)Hub Premier,, https://xameleon.phantemlis.top/one/secure/b7618e654e2a3a3df25f186e264fc4ea/1788216381/premium10/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-10.php,)USA Network FHD,, https://xameleon.phantemlis.top/one/secure/9617c4f6eb704b8d9ce4314d2c9d2f1e/1788216384/premium343/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-343.php,)Sky Sports Main Event FHD,, https://xameleon.phantemlis.top/three/secure/07a367d6ad7ffd001959232e2932e631/1788216389/premium38/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-38.php"
     },
     {
         "eventTitle": "MLB",
