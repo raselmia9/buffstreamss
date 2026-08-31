@@ -40,5 +40,19 @@
             "Stream links will be activated before 1 hr of starting time."
         ],
         "streamLink": "Stream links will be activated before 1 hr of starting time."
+    },
+    {
+        "eventTitle": "UFC",
+        "matchTime": "2026-09-03 00:00:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/1807/responsive-images/UFC___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/1120/responsive-images/live___preview_thumbnail_120_120.webp",
+        "team1Title": "Dana",
+        "team2Title": "Series",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/dana-whites-contender-series",
+        "isHot": true,
+        "Streaming page link": [
+            "Stream links will be activated before 1 hr of starting time."
+        ],
+        "streamLink": "Stream links will be activated before 1 hr of starting time."
     }
 ]
