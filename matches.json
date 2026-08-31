@@ -1,19 +1,5 @@
 [
     {
-        "eventTitle": "La Liga",
-        "matchTime": "2026-09-01 01:30:00",
-        "team1Logo": "https://v1.1cdnforall.online/storage/9/responsive-images/Barcelona___preview_thumbnail_120_120.webp",
-        "team2Logo": "https://v1.1cdnforall.online/storage/128/responsive-images/Rayo-Vallecano___preview_thumbnail_120_120.webp",
-        "team1Title": "Barcelona",
-        "team2Title": "Rayo Vallecano",
-        "channelPageLink": "https://www1.buffstreamss.sx/game/barcelona-vs-rayo-vallecano",
-        "isHot": true,
-        "Streaming page link": [
-            "Stream links will be activated before 1 hr of starting time."
-        ],
-        "streamLink": "Stream links will be activated before 1 hr of starting time."
-    },
-    {
         "eventTitle": "MLB",
         "matchTime": "2026-09-01 04:05:00",
         "team1Logo": "https://v1.1cdnforall.online/storage/692/responsive-images/Atlanta-Braves___preview_thumbnail_120_120.webp",
@@ -28,7 +14,7 @@
             "MLB HD,, https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-san-francisco-giants-vs-atlanta-braves",
             "MLB HD,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-1.php"
         ],
-        "streamLink": "MLB HD,, https://cdn5.zohanayaan.com:1686/hls/mwashingtonnationals.m3u8?md5=Y_a0K7JtO1aKdqI3ykTMKA&expires=1788220253|Referer=https://hitcast.st/totwatch.php?value=mwashingtonnationals,)MLB HD,, https://edgestream3.pro/hls/dazhfiach15.m3u8?st=u1GAf8a5ueEztpefdprhwMizlhndhEgVKKn1dX-vFgU&e=1788226258|Referer=https://hitcast.st/totview.php?src=https://streame.center/embed/ch15.php,)MLB HD,, https://lb11.strmd.st/secure/JvDHKdhdLzDFHImzerIIizikqdmbyxcM/rtmp/stream/-ARiRC1b8oWZJbGt-NgwQmD0RHZeg-y19q-PsKyaueLnJS46d9J1_XKzpgubCsH5sDQYWn1EU_LKa3l3xPiW/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-san-francisco-giants-vs-atlanta-braves,)MLB HD,, https://xameleon.phantemlis.top/one/secure/1a73652530471615243a413860aa9b26/1788226268/premium1/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-1.php"
+        "streamLink": "MLB HD,, https://cdn5.zohanayaan.com:1686/hls/mwashingtonnationals.m3u8?md5=KuhoUdyNxU2JBQtqtuO15A&expires=1788221142|Referer=https://hitcast.st/totwatch.php?value=mwashingtonnationals,)MLB HD,, https://edgestream1.pro/hls/dazhfiach15.m3u8?st=sjRvC-eF69s_gEAAMw8KB_RUx8KNXKU1EVutX4RuJYU&e=1788227149|Referer=https://hitcast.st/totview.php?src=https://streame.center/embed/ch15.php,)MLB HD,, https://lb7.strmd.st/secure/qQkJMkcseRntPwcvflvYSfMBLiaTFMPH/rtmp/stream/MtGBu-vIBLuyznJm1uylnpAmenR4hMnrKKW9DhSbkFxromvLCHgHjyJDncIg1twfu-9_1OsB6VUbrTeNcKPK/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-san-francisco-giants-vs-atlanta-braves,)MLB HD,, https://xameleon.phantemlis.top/one/secure/faea1149ca1524964984fafd6a341088/1788227158/premium1/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-1.php"
     },
     {
         "eventTitle": "WWE",
@@ -45,7 +31,21 @@
             "Netflix PPV FHD,, https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-event-01-wwe-monday-night-raw-ppv-01",
             "Netflix PPV FHD,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-13.php"
         ],
-        "streamLink": "Netflix PPV HD,, https://cdn6.zohanayaan.com:1686/hls/mmevent10.m3u8?md5=sNs1p2fe8CVJ9UovopXnhQ&expires=1788220253|Referer=https://hitcast.st/totwatch.php?value=mmevent10,)Netflix PPV FHD,, https://cdn13.zohanayaan.com:1686/hls/mmevent10.m3u8?md5=nm_gRPmSxM2fTBt8CdSyMw&expires=1788222659|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/golf/779/1,)Netflix PPV FHD,, https://lb11.strmd.st/secure/cMrzkayrkCPSgMuuWpxDTwNxsApBUNEe/delta/stream/live-event_monday-night-raw-live-stream/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-event-01-wwe-monday-night-raw-ppv-01,)Netflix PPV FHD,, https://xameleon.phantemlis.top/one/secure/39f989975017b48becb2369092aae12f/1788226268/premium13/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-13.php"
+        "streamLink": "Netflix PPV HD,, https://cdn6.zohanayaan.com:1686/hls/mmevent10.m3u8?md5=J60hZ1dpg964CAeKdWRgSw&expires=1788221142|Referer=https://hitcast.st/totwatch.php?value=mmevent10,)Netflix PPV FHD,, https://cdn15.zohanayaan.com:1686/hls/mmevent10.m3u8?md5=dhvx1NPAuzn-soJSuMKMtA&expires=1788223549|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/golf/779/1,)Netflix PPV FHD,, https://lb7.strmd.st/secure/RnijcrPQhZgaUNObWxdUnmqBwEOfMQXk/delta/stream/live-event_monday-night-raw-live-stream/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-event-01-wwe-monday-night-raw-ppv-01,)Netflix PPV FHD,, https://xameleon.phantemlis.top/one/secure/54f6e471c3f18371f54f0be67f3865c9/1788227158/premium13/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-13.php"
+    },
+    {
+        "eventTitle": "Coppa Italia",
+        "matchTime": "2026-09-01 22:00:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/1269/responsive-images/Cremonese___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/112/responsive-images/Parma___preview_thumbnail_120_120.webp",
+        "team1Title": "Cremonese",
+        "team2Title": "Parma",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/cremonese-vs-parma",
+        "isHot": true,
+        "Streaming page link": [
+            "Stream links will be activated before 1 hr of starting time."
+        ],
+        "streamLink": "Stream links will be activated before 1 hr of starting time."
     },
     {
         "eventTitle": "UFC",
@@ -55,6 +55,20 @@
         "team1Title": "Dana",
         "team2Title": "Series",
         "channelPageLink": "https://www1.buffstreamss.sx/game/dana-whites-contender-series",
+        "isHot": true,
+        "Streaming page link": [
+            "Stream links will be activated before 1 hr of starting time."
+        ],
+        "streamLink": "Stream links will be activated before 1 hr of starting time."
+    },
+    {
+        "eventTitle": "La Liga",
+        "matchTime": "2026-09-04 01:00:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/133/responsive-images/Real-Sociedad___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/15/responsive-images/Celta-Vigo___preview_thumbnail_120_120.webp",
+        "team1Title": "Real Sociedad",
+        "team2Title": "Celta Vigo",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/real-sociedad-vs-celta-vigo",
         "isHot": true,
         "Streaming page link": [
             "Stream links will be activated before 1 hr of starting time."
