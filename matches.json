@@ -1,60 +1,5 @@
 [
     {
-        "eventTitle": "English Championship",
-        "matchTime": "2026-09-02 00:45:00",
-        "team1Logo": "https://v1.1cdnforall.online/storage/5/responsive-images/West-Ham-United___preview_thumbnail_120_120.webp",
-        "team2Logo": "https://v1.1cdnforall.online/storage/1813/responsive-images/Wolverhampton-Wanderers___preview_thumbnail_120_120.webp",
-        "team1Title": "West Ham United",
-        "team2Title": "Wolverhampton Wanderers",
-        "channelPageLink": "https://www1.buffstreamss.sx/game/west-ham-united-vs-wolverhampton-wanderers",
-        "isHot": true,
-        "Streaming page link": [
-            "Sky Sports+,, https://hitcast.st/totwatch.php?value=do34",
-            "Sky Sports+,, https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-west-ham-united-vs-wolverhampton-wanderers/1",
-            "Sky Sports+,, https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=34",
-            "Sky Sports+,, https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-west-ham-united-vs-wolverhampton-wanderers",
-            "Sky Sports+,, https://hitcast.st/totview.php?src=https://elixx.info/aw/everton.php",
-            "Sky Sports+,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-69.php"
-        ],
-        "streamLink": "Sky Sports+,, https://cdn6.zohanayaan.com:1686/hls/do34.m3u8?md5=-edOqnOWbaw80AgqhtT4Tw&expires=1788297639|Referer=https://hitcast.st/totwatch.php?value=do34,)Sky Sports+,, https://lb10.strmd.st/secure/mjbqJtNiSwgoXSgIbXTlbtIXriXcbSfz/rtmp/stream/4d6lVBFMXmMuO11suSzVT3dpCIYUE-erY-8iE0KNkD_WdT7pwj7-qjWdPxBPthbT6d80EeFZHtGU/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-west-ham-united-vs-wolverhampton-wanderers/1,)Sky Sports+,, https://lb11.strmd.st/secure/XBHvNwbXMEdmmvqIAyOorvKtcdxhhOAw/rtmp/stream/4d6lVBFMXmMuO11suSzVT3dpCIYUE-erY-8iE0KNkD_WdT7pwj7-qjWdPxBPthbT6d80EeFZHtGU/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-west-ham-united-vs-wolverhampton-wanderers,)Sky Sports+,, https://j523s3.a737cozfwjmm.net:8443/hls/acgg75tlvrxeh.m3u8?s=Z1pdMIMJde37nMOO-IqFsg&e=1788314461|Referer=https://hitcast.st/totview.php?src=https://elixx.info/aw/everton.php,)Sky Sports+,, https://xameleon.phantemlis.top/five/secure/ff74f618f4192d1d2ef775bdafc93da4/1788303665/premium69/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-69.php"
-    },
-    {
-        "eventTitle": "DFB Pokal",
-        "matchTime": "2026-09-02 00:45:00",
-        "team1Logo": "https://v1.1cdnforall.online/storage/771/responsive-images/Hamburg___preview_thumbnail_120_120.webp",
-        "team2Logo": "https://v1.1cdnforall.online/storage/39/responsive-images/Borussia-Dortmund___preview_thumbnail_120_120.webp",
-        "team1Title": "Hamburg",
-        "team2Title": "Borussia Dortmund",
-        "channelPageLink": "https://www1.buffstreamss.sx/game/hamburg-vs-borussia-dortmund",
-        "isHot": true,
-        "Streaming page link": [
-            "Sky Sport MIX,, https://hitcast.st/totview.php?src=https://streame.center/embed/ch8.php",
-            "Sky Sport MIX,, https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-hebc-hamburg-vs-borussia-dortmund/1",
-            "Sky Sport MIX,, https://hitcast.st/totview.php?src=https://trend48.st/event/m-hebc-vs-borussia-dortmund-0901"
-        ],
-        "streamLink": "Sky Sport MIX,, https://edgestream6.pro/hls/ueyeztrazb4.m3u8?st=NdN-Vm_C0u_LNSW5Km0lisCnb_f77mfUCHruwkafbiY&e=1788303640|Referer=https://hitcast.st/totview.php?src=https://streame.center/embed/ch8.php,)Sky Sport MIX,, https://lb10.strmd.st/secure/MjnESEHkwKXYAxSDRidYMBgBJrqewoyk/rtmp/stream/UTqTAaGLTK6YONY6F1gV7KZ1eP0FtRuh0KJ-QcdpGeppPS_90BRkuw9QqSsWtOSRR0cQk4m8Wv1o/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-hebc-hamburg-vs-borussia-dortmund/1"
-    },
-    {
-        "eventTitle": "Coppa Italia",
-        "matchTime": "2026-09-02 01:00:00",
-        "team1Logo": "https://v1.1cdnforall.online/storage/113/responsive-images/Torino___preview_thumbnail_120_120.webp",
-        "team2Logo": "https://v1.1cdnforall.online/storage/165/responsive-images/Monza___preview_thumbnail_120_120.webp",
-        "team1Title": "Torino",
-        "team2Title": "Monza",
-        "channelPageLink": "https://www1.buffstreamss.sx/game/torino-vs-monza",
-        "isHot": true,
-        "Streaming page link": [
-            "Premier Sports 1,, https://hitcast.st/totwatch.php?value=do1",
-            "Premier Sports 1,, https://hitcast.st/totview.php?src=https://streame.center/embed/ch9.php",
-            "Premier Sports 1,, https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-torino-vs-monza/1",
-            "Premier Sports 1,, https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=1",
-            "Premier Sports 1,, https://hitcast.st/totview.php?src=https://trend48.st/event/m-torino-vs-monza-0901",
-            "Premier Sports 1,, https://hitcast.st/totview.php?src=https://elixx.info/aw/evalencia.php",
-            "Premier Sports 1,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-771.php"
-        ],
-        "streamLink": "Premier Sports 1,, https://cdn6.zohanayaan.com:1686/hls/do1.m3u8?md5=ThjuWSY3iY2Z3qzXGiPW7w&expires=1788297639|Referer=https://hitcast.st/totwatch.php?value=do1,)Premier Sports 1,, https://edgestream6.pro/hls/syaLqucEne4k.m3u8?st=kFYuBnHzWF6s1IrPmlMMsyahunN_modUNTkFP48yMko&e=1788303645|Referer=https://hitcast.st/totview.php?src=https://streame.center/embed/ch9.php,)Premier Sports 1,, https://lb2.strmd.st/secure/eubPNRHhpxZDYsrhAiLWIimUWOSlJWvd/rtmp/stream/SQhZ5GtJrS1mylIP1ehbaPJdv2hbmN3cCe-yf0mOjQlKEjEAlXso8iDRH_Y51s2FLLyNVeDpo_bo/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-torino-vs-monza/1,)Premier Sports 1,, https://hls.hockey.do/secure_hls.php?path=9ae3de4b40a6ecfdd03fc90be82c4535%2Findex.m3u8&e=1788294654&sig=ZIM4Ol_kjQ0A_drzM9q2ckX8IbQpBlDlU2PS-BfcUpQ&v=1788292854-1906|Referer=https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=1,)Premier Sports 1,, https://j523s3.a737cozfwjmm.net:8443/hls/ithh1xe7c01n2.m3u8?s=T9qEKPU47X-MxADypwdaSw&e=1788314464|Referer=https://hitcast.st/totview.php?src=https://elixx.info/aw/evalencia.php,)Premier Sports 1,, https://xameleon.phantemlis.top/five/secure/063ebe7bbe11f15cc8465a6b79c4f55a/1788303668/premium771/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-771.php"
-    },
-    {
         "eventTitle": "UFC",
         "matchTime": "2026-09-02 02:00:00",
         "team1Logo": "https://v1.1cdnforall.online/storage/1807/responsive-images/UFC___preview_thumbnail_120_120.webp",
@@ -70,7 +15,21 @@
             "UFC HD,, https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-dana-white-s-contender-series",
             "UFC FHD,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-55.php"
         ],
-        "streamLink": "UFC HD,, https://cdn10.zohanayaan.com:1686/hls/mevent1.m3u8?md5=6s4FQKbqRyBX_ee1EPt9BA&expires=1788297639|Referer=https://hitcast.st/totwatch.php?value=mevent1,)UFC HD,, https://edgestream3.pro/hls/zeuryuegn48.m3u8?st=m29x-6nxtXP8WMigjmdIP8F9gLMGC5goCfsESHycMhU&e=1788303644|Referer=https://hitcast.st/totview.php?src=https://streame.center/embed/ch48.php,)UFC HD,, https://lb2.strmd.st/secure/VbNWIIbyGXowRaPBuFxIkBafYgJwczci/rtmp/stream/9Y7on9DHDOtzbadjB9IAKhS04qre7B624E3irSSqHEYtEWu3PYE70zGfSkQfE98Z64lhWQms/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-dana-white-s-contender-series/1,)UFC HD,, https://lb11.strmd.st/secure/DTJmEzcfMMtiSzrQjgrnyFHbvcABsVfl/rtmp/stream/9Y7on9DHDOtzbadjB9IAKhS04qre7B624E3irSSqHEYtEWu3PYE70zGfSkQfE98Z64lhWQms/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-dana-white-s-contender-series,)UFC FHD,, https://xameleon.phantemlis.top/five/secure/a5383da2f0ab15d6cee4db2477380c83/1788303658/premium55/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-55.php"
+        "streamLink": "UFC HD,, https://cdn8.zohanayaan.com:1686/hls/mevent1.m3u8?md5=6FrlVI6TAAQLCIsbudWoKg&expires=1788307351|Referer=https://hitcast.st/totwatch.php?value=mevent1,)UFC HD,, https://edgestream6.pro/hls/zeuryuegn48.m3u8?st=Ftsej8-w1paKjkHdsye_qp-gewv4GJFt2pV-Q_Lvioc&e=1788313357|Referer=https://hitcast.st/totview.php?src=https://streame.center/embed/ch48.php,)UFC HD,, https://lb7.strmd.st/secure/DrDmyrOUPsVMKqRMhtJIjssPxHltzsNc/rtmp/stream/2ILSzx5guN3TZD13a82CoM9kd_FkGyAKtttvgWRgX8WDWArulRux2Qs7y1utPeuWopR6DzbI/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-dana-white-s-contender-series/1,)UFC HD,, https://lb10.strmd.st/secure/QFNpamHNScbhsvqXMIbJDcufypUlxHSE/rtmp/stream/2ILSzx5guN3TZD13a82CoM9kd_FkGyAKtttvgWRgX8WDWArulRux2Qs7y1utPeuWopR6DzbI/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-dana-white-s-contender-series,)UFC FHD,, https://xameleon.phantemlis.top/five/secure/a4dd58461f08cfda66dc4e86af2692cf/1788313372/premium55/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-55.php"
+    },
+    {
+        "eventTitle": "DFB Pokal",
+        "matchTime": "2026-09-03 00:45:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/1843/responsive-images/Osnabrück___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/34/responsive-images/Bayern-Munich___preview_thumbnail_120_120.webp",
+        "team1Title": "Osnabruck",
+        "team2Title": "Bayern Munich",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/osnabruck-vs-bayern-munich",
+        "isHot": true,
+        "Streaming page link": [
+            "Stream links will be activated before 1 hr of starting time."
+        ],
+        "streamLink": "Stream links will be activated before 1 hr of starting time."
     },
     {
         "eventTitle": "La Liga",
