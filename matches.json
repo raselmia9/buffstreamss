@@ -15,7 +15,21 @@
             "UFC HD,, https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-dana-white-s-contender-series",
             "UFC FHD,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-55.php"
         ],
-        "streamLink": "UFC HD,, https://cdn8.zohanayaan.com:1686/hls/mevent1.m3u8?md5=6FrlVI6TAAQLCIsbudWoKg&expires=1788307351|Referer=https://hitcast.st/totwatch.php?value=mevent1,)UFC HD,, https://edgestream6.pro/hls/zeuryuegn48.m3u8?st=Ftsej8-w1paKjkHdsye_qp-gewv4GJFt2pV-Q_Lvioc&e=1788313357|Referer=https://hitcast.st/totview.php?src=https://streame.center/embed/ch48.php,)UFC HD,, https://lb7.strmd.st/secure/DrDmyrOUPsVMKqRMhtJIjssPxHltzsNc/rtmp/stream/2ILSzx5guN3TZD13a82CoM9kd_FkGyAKtttvgWRgX8WDWArulRux2Qs7y1utPeuWopR6DzbI/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-dana-white-s-contender-series/1,)UFC HD,, https://lb10.strmd.st/secure/QFNpamHNScbhsvqXMIbJDcufypUlxHSE/rtmp/stream/2ILSzx5guN3TZD13a82CoM9kd_FkGyAKtttvgWRgX8WDWArulRux2Qs7y1utPeuWopR6DzbI/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-dana-white-s-contender-series,)UFC FHD,, https://xameleon.phantemlis.top/five/secure/a4dd58461f08cfda66dc4e86af2692cf/1788313372/premium55/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-55.php"
+        "streamLink": "UFC HD,, https://cdn10.zohanayaan.com:1686/hls/mevent1.m3u8?md5=dHCsZb1hXPEYvYluYUIgrw&expires=1788314643|Referer=https://hitcast.st/totwatch.php?value=mevent1,)UFC HD,, https://edgestream1.pro/hls/zeuryuegn48.m3u8?st=mP-th5xzfXXBnt6mLWDwPEf9yX6EgVDvuRfd8EzbIMw&e=1788320648|Referer=https://hitcast.st/totview.php?src=https://streame.center/embed/ch48.php,)UFC HD,, https://lb10.strmd.st/secure/KqqWmPxlscswUiywVStVIVTCxeDqHhYN/rtmp/stream/3eNhCKMRTXkAG5BSGv2v68ePkWIxlDYQL5jraDQJmqApym4uF6jhsmc6_Yr0MGFXRLxnHA5g/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-dana-white-s-contender-series/1,)UFC HD,, https://lb10.strmd.st/secure/eKyNMAIUWBeXGOLTmyUKiaaZnoEwjySR/rtmp/stream/3eNhCKMRTXkAG5BSGv2v68ePkWIxlDYQL5jraDQJmqApym4uF6jhsmc6_Yr0MGFXRLxnHA5g/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-dana-white-s-contender-series,)UFC FHD,, https://xameleon.phantemlis.top/five/secure/befa6cf600477f65430feb248951a91f/1788320662/premium55/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-55.php"
+    },
+    {
+        "eventTitle": "Coppa Italia",
+        "matchTime": "2026-09-02 19:00:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/1258/responsive-images/Sassuolo___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/1282/responsive-images/Frosinone___preview_thumbnail_120_120.webp",
+        "team1Title": "Sassuolo",
+        "team2Title": "Frosinone",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/sassuolo-vs-frosinone",
+        "isHot": true,
+        "Streaming page link": [
+            "Stream links will be activated before 1 hr of starting time."
+        ],
+        "streamLink": "Stream links will be activated before 1 hr of starting time."
     },
     {
         "eventTitle": "DFB Pokal",
@@ -25,6 +39,20 @@
         "team1Title": "Osnabruck",
         "team2Title": "Bayern Munich",
         "channelPageLink": "https://www1.buffstreamss.sx/game/osnabruck-vs-bayern-munich",
+        "isHot": true,
+        "Streaming page link": [
+            "Stream links will be activated before 1 hr of starting time."
+        ],
+        "streamLink": "Stream links will be activated before 1 hr of starting time."
+    },
+    {
+        "eventTitle": "English Championship",
+        "matchTime": "2026-09-03 00:45:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/162/responsive-images/West-Bromwich-Albion___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/394/responsive-images/Charlton-Athletic___preview_thumbnail_120_120.webp",
+        "team1Title": "West Bromwich Albion",
+        "team2Title": "Charlton Athletic",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/west-bromwich-albion-vs-charlton-athletic",
         "isHot": true,
         "Streaming page link": [
             "Stream links will be activated before 1 hr of starting time."
