@@ -1,61 +1,5 @@
 [
     {
-        "eventTitle": "Ligue 1",
-        "matchTime": "2026-09-04 00:45:00",
-        "team1Logo": "https://v1.1cdnforall.online/storage/239/responsive-images/Toulouse___preview_thumbnail_120_120.webp",
-        "team2Logo": "https://v1.1cdnforall.online/storage/42/responsive-images/Lille___preview_thumbnail_120_120.webp",
-        "team1Title": "Toulouse",
-        "team2Title": "Lille",
-        "channelPageLink": "https://www1.buffstreamss.sx/game/toulouse-vs-lille",
-        "isHot": true,
-        "Streaming page link": [
-            "beIN SPORTS USA,, https://hitcast.st/totwatch.php?value=do39",
-            "beIN SPORTS USA,, https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-toulouse-vs-lille/1",
-            "beIN SPORTS USA,, https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=39",
-            "beIN SPORTS USA,, https://hitcast.st/totview.php?src=https://trend48.st/event/m-toulouse-vs-lille-0903",
-            "beIN SPORTS USA,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-425.php"
-        ],
-        "streamLink": "beIN SPORTS USA,, https://cdn5.zohanayaan.com:1686/hls/do39.m3u8?md5=VFVcbv6UyPjRUwbg9sgOzg&expires=1788471989|Referer=https://hitcast.st/totwatch.php?value=do39,)beIN SPORTS USA,, https://lb6.strmd.st/secure/axCupokbeiXpGFifDfdnjfCbriSWFLXA/rtmp/stream/Wd0D5sbpQ1hDBPWHWmvjLJeJUeJ3jNcYIf7PwheHIDjWkTFO-n_CstR6RLLJgZA-fEk0j10j4ys/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-toulouse-vs-lille/1,)beIN SPORTS USA,, https://hls.hockey.do/secure_hls.php?path=5f58ccc896c81d5fefdf94d70070c622%2Findex.m3u8&e=1788469023&sig=yqy6ovtn60HX9muqvsNek3glPYyQwhl-jgBt-oLJDxI&v=1788467223-1283|Referer=https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=39,)beIN SPORTS USA,, https://xameleon.phantemlis.top/three/secure/40a80396f02a00cebaa348415b7defad/1788478032/premium425/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-425.php"
-    },
-    {
-        "eventTitle": "Coppa Italia",
-        "matchTime": "2026-09-04 01:00:00",
-        "team1Logo": "https://v1.1cdnforall.online/storage/60/responsive-images/image-(4)___preview_thumbnail_120_120.webp",
-        "team2Logo": "https://v1.1cdnforall.online/storage/61/responsive-images/image-(5)___preview_thumbnail_120_120.webp",
-        "team1Title": "Cagliari",
-        "team2Title": "Hellas Verona",
-        "channelPageLink": "https://www1.buffstreamss.sx/game/cagliari-vs-hellas-verona",
-        "isHot": true,
-        "Streaming page link": [
-            "Paramount+,, https://hitcast.st/totwatch.php?value=do9",
-            "Paramount+,, https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-cagliari-vs-hellas-verona/1",
-            "Paramount+,, https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=9",
-            "Paramount+,, https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-cagliari-vs-hellas-verona",
-            "Paramount+,, https://hitcast.st/totview.php?src=https://elixx.info/aw/roma.php",
-            "CBS Sports Golazo,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-910.php"
-        ],
-        "streamLink": "Paramount+,, https://cdn6.zohanayaan.com:1686/hls/do9.m3u8?md5=wUDeQOuKna_3UpPkW2qzBQ&expires=1788472013|Referer=https://hitcast.st/totwatch.php?value=do9,)Paramount+,, https://lb6.strmd.st/secure/vGGpiXXwGOmKiXmLTtwPyDpeVVOtoWtY/rtmp/stream/kJmYif2X_Y446vsSzJk2BOrKNXARm5q6SDn8Uz6qQnCPda_voQERIMWJv54CTXdywv2_lDaSYxUL/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-cagliari-vs-hellas-verona/1,)Paramount+,, https://hls.hockey.do/secure_hls.php?path=01dcaf29f853f0ca15226bbdb28b5e82%2Findex.m3u8&e=1788469024&sig=-Hzia9suKo8e4eZ84WxpDCSvvl3JLpyY31bMBoUKohA&v=1788467224-1074|Referer=https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=9,)Paramount+,, https://lb10.strmd.st/secure/DTyDZhLlLRAIGCtjSySPhDWRULNbTUGe/rtmp/stream/kJmYif2X_Y446vsSzJk2BOrKNXARm5q6SDn8Uz6qQnCPda_voQERIMWJv54CTXdywv2_lDaSYxUL/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-cagliari-vs-hellas-verona,)CBS Sports Golazo,, https://xameleon.phantemlis.top/three/secure/829efdfd9ad855c390cd46c8fbca4108/1788478038/premium910/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-910.php"
-    },
-    {
-        "eventTitle": "La Liga",
-        "matchTime": "2026-09-04 01:00:00",
-        "team1Logo": "https://v1.1cdnforall.online/storage/133/responsive-images/Real-Sociedad___preview_thumbnail_120_120.webp",
-        "team2Logo": "https://v1.1cdnforall.online/storage/15/responsive-images/Celta-Vigo___preview_thumbnail_120_120.webp",
-        "team1Title": "Real Sociedad",
-        "team2Title": "Celta Vigo",
-        "channelPageLink": "https://www1.buffstreamss.sx/game/real-sociedad-vs-celta-vigo",
-        "isHot": true,
-        "Streaming page link": [
-            "Premier Sports 2,, https://hitcast.st/totwatch.php?value=do2",
-            "Premier Sports 2,, https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-real-sociedad-vs-celta-vigo/1",
-            "Premier Sports 2,, https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=2",
-            "Premier Sports 2,, https://hitcast.st/totview.php?src=https://trend48.st/event/m-real-sociedad-vs-celta-de-vigo-0903",
-            "Premier Sports 2,, https://hitcast.st/totview.php?src=https://elixx.info/aw/apsg.php",
-            "M+ LALIGA TV,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-84.php"
-        ],
-        "streamLink": "Premier Sports 2,, https://cdn2.zohanayaan.com:1686/hls/do2.m3u8?md5=jdaLwfpkiQZ6mTXoSRHdqA&expires=1788472004|Referer=https://hitcast.st/totwatch.php?value=do2,)Premier Sports 2,, https://lb6.strmd.st/secure/HwHFqkdgsvVHJUoTjOajHJbhVpMYuvVM/rtmp/stream/hZbd5SZzt_8UfMA4uvyCnmsq2xwngXSkrF1GYv4wV-fjsVrzsWlJZJ7ec_Uf22zgeGVT2ZCf0ug/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-real-sociedad-vs-celta-vigo/1,)Premier Sports 2,, https://hls.hockey.do/secure_hls.php?path=f0e34dbfd8cd7a28da4a9cf3ad4b0fd3%2Findex.m3u8&e=1788469023&sig=fVqM1K9LOVMG9yjiCKWJANXqt64HW0x2hcud7ctk8iw&v=1788467223-7881|Referer=https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=2,)M+ LALIGA TV,, https://xameleon.phantemlis.top/two/secure/61e05024105d5b7118447d982d64705c/1788478036/premium84/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-84.php"
-    },
-    {
         "eventTitle": "Serie A",
         "matchTime": "2026-09-05 00:45:00",
         "team1Logo": "https://v1.1cdnforall.online/storage/107/responsive-images/Genoa___preview_thumbnail_120_120.webp",
@@ -77,6 +21,20 @@
         "team1Title": "Ipswich Town",
         "team2Title": "Liverpool",
         "channelPageLink": "https://www1.buffstreamss.sx/game/ipswich-town-vs-liverpool",
+        "isHot": true,
+        "Streaming page link": [
+            "Stream links will be activated before 1 hr of starting time."
+        ],
+        "streamLink": "Stream links will be activated before 1 hr of starting time."
+    },
+    {
+        "eventTitle": "La Liga",
+        "matchTime": "2026-09-05 01:00:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/134/responsive-images/Real-Betis___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/3/responsive-images/Real-Madrid___preview_thumbnail_120_120.webp",
+        "team1Title": "Real Betis",
+        "team2Title": "Real Madrid",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/real-betis-vs-real-madrid",
         "isHot": true,
         "Streaming page link": [
             "Stream links will be activated before 1 hr of starting time."
