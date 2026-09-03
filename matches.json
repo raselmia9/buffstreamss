@@ -1,21 +1,31 @@
 [
     {
-        "eventTitle": "UFC",
-        "matchTime": "2026-09-02 02:00:00",
-        "team1Logo": "https://v1.1cdnforall.online/storage/1807/responsive-images/UFC___preview_thumbnail_120_120.webp",
-        "team2Logo": "https://v1.1cdnforall.online/storage/1120/responsive-images/live___preview_thumbnail_120_120.webp",
-        "team1Title": "Dana",
-        "team2Title": "Series",
-        "channelPageLink": "https://www1.buffstreamss.sx/game/dana-whites-contender-series",
+        "eventTitle": "Coppa Italia",
+        "matchTime": "2026-09-03 22:00:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/1265/responsive-images/Mantova___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/1250/responsive-images/Palermo___preview_thumbnail_120_120.webp",
+        "team1Title": "Palermo",
+        "team2Title": "Mantova",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/palermo-vs-mantova",
         "isHot": true,
         "Streaming page link": [
-            "UFC HD,, https://hitcast.st/totwatch.php?value=mevent1",
-            "UFC HD,, https://hitcast.st/totview.php?src=https://streame.center/embed/ch48.php",
-            "UFC HD,, https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-dana-white-s-contender-series/1",
-            "UFC HD,, https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-dana-white-s-contender-series",
-            "UFC FHD,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-55.php"
+            "Stream links will be activated before 1 hr of starting time."
         ],
-        "streamLink": "UFC HD,, https://cdn7.zohanayaan.com:1686/hls/mevent1.m3u8?md5=09yYR0oIKrWpWOYh8QzndQ&expires=1788393895|Referer=https://hitcast.st/totwatch.php?value=mevent1,)UFC HD,, https://edgestream1.pro/hls/zeuryuegn48.m3u8?st=fCc4qc2ztXvt0CbWSD1FHEm3ZFWX5UMhBJq5MDzQyK0&e=1788399903|Referer=https://hitcast.st/totview.php?src=https://streame.center/embed/ch48.php,)UFC HD,, https://lb6.strmd.st/secure/wBViqodIRUARyIKFoTkRgROlAckLGSXv/admin/stream/ppv-dana-white-s-contender-series/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-dana-white-s-contender-series/1,)UFC FHD,, https://xameleon.phantemlis.top/five/secure/38825245bc15a47b1f385ce45de34204/1788399917/premium55/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-55.php"
+        "streamLink": "Stream links will be activated before 1 hr of starting time."
+    },
+    {
+        "eventTitle": "Ligue 1",
+        "matchTime": "2026-09-04 00:45:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/239/responsive-images/Toulouse___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/42/responsive-images/Lille___preview_thumbnail_120_120.webp",
+        "team1Title": "Toulouse",
+        "team2Title": "Lille",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/toulouse-vs-lille",
+        "isHot": true,
+        "Streaming page link": [
+            "Stream links will be activated before 1 hr of starting time."
+        ],
+        "streamLink": "Stream links will be activated before 1 hr of starting time."
     },
     {
         "eventTitle": "La Liga",
