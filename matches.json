@@ -1,63 +1,5 @@
 [
     {
-        "eventTitle": "English Championship",
-        "matchTime": "2026-09-09 00:45:00",
-        "team1Logo": "https://v1.1cdnforall.online/storage/1/responsive-images/Cardiff-City___preview_thumbnail_120_120.webp",
-        "team2Logo": "https://v1.1cdnforall.online/storage/376/responsive-images/Stoke-City___preview_thumbnail_120_120.webp",
-        "team1Title": "Cardiff City",
-        "team2Title": "Stoke City",
-        "channelPageLink": "https://www1.buffstreamss.sx/game/cardiff-city-vs-stoke-city",
-        "isHot": true,
-        "Streaming page link": [
-            "Sky Sports+,, https://hitcast.st/totwatch.php?value=do33",
-            "Sky Sports+,, https://hitcast.st/totview.php?src=https://vivtops.st/channel19",
-            "Sky Sports+,, https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=33",
-            "Sky Sports+,, https://hitcast.st/totview.php?src=https://trend48.st/event/live_championship_cardiff-stoke-live-streaming-614288880",
-            "Sky Sports+,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-153.php"
-        ],
-        "streamLink": "Sky Sports+,, https://cdn3.zohanayaan.com:1686/hls/do33.m3u8?md5=71x-xFGhz8hIq_JHIWq_LQ&expires=1788907062|Referer=https://hitcast.st/totwatch.php?value=do33,)Sky Sports+,, https://hls.hockey.do/secure_hls.php?path=f6a214cf886d35a5591087d6a8ca8d58%2Findex.m3u8&e=1788904072&sig=QjpPF4NfpXMlu23nRM2heKPu-aiFD9nsl0wYlDtZJ0s&v=1788902272-4950|Referer=https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=33,)Sky Sports+,, https://xameleon.phantemlis.top/four/secure/d7e7abb25c9fc0a456dd5f2c3b71d298/1788913081/premium153/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-153.php"
-    },
-    {
-        "eventTitle": "EFL Cup",
-        "matchTime": "2026-09-09 00:45:00",
-        "team1Logo": "https://v1.1cdnforall.online/storage/89/responsive-images/Bournemouth___preview_thumbnail_120_120.webp",
-        "team2Logo": "https://v1.1cdnforall.online/storage/373/responsive-images/Lincoln-City___preview_thumbnail_120_120.webp",
-        "team1Title": "Bournemouth",
-        "team2Title": "Lincoln City",
-        "channelPageLink": "https://www1.buffstreamss.sx/game/bournemouth-vs-lincoln-city",
-        "isHot": true,
-        "Streaming page link": [
-            "beIN Sports MAX 5,, https://hitcast.st/totwatch.php?value=do55",
-            "Sky Sports+,, https://hitcast.st/totview.php?src=https://vivtops.st/channel10",
-            "beIN Sports MAX 5,, https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-afc-bournemouth-vs-lincoln-city/1",
-            "beIN Sports MAX 5,, https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=55",
-            "Sky Sports+,, https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-afc-bournemouth-vs-lincoln-city",
-            "Sky Sports+,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-159.php"
-        ],
-        "streamLink": "beIN Sports MAX 5,, https://cdn8.zohanayaan.com:1686/hls/do55.m3u8?md5=bZ1cea75fK6mz_dRI5vEKw&expires=1788907062|Referer=https://hitcast.st/totwatch.php?value=do55,)beIN Sports MAX 5,, https://lb3.strmd.st/secure/KSOyFqQAuKMfBUIYzcFoquHRHVjmmGRT/rtmp/stream/YhmUrl8I4ZIFKiOH3c_unyqxnf8EyqbjuDnIKyPe57nhchiGmqrnztgfMFZbaYSPw7K_9_6L4wtD/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-afc-bournemouth-vs-lincoln-city/1,)beIN Sports MAX 5,, https://hls.hockey.do/secure_hls.php?path=608704c8443f8a2aa15804973bebbd84%2Findex.m3u8&e=1788904076&sig=AUOpMB13tSv6MheesUJaK_oDq29nlMLPwZIlatQYcvY&v=1788902276-8909|Referer=https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=55,)Sky Sports+,, https://xameleon.phantemlis.top/four/secure/3da5ad5e2121301ef4c8ada6affbcfe6/1788913084/premium159/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-159.php"
-    },
-    {
-        "eventTitle": "UEFA Champions League",
-        "matchTime": "2026-09-09 01:00:00",
-        "team1Logo": "https://v1.1cdnforall.online/storage/42/responsive-images/Lille___preview_thumbnail_120_120.webp",
-        "team2Logo": "https://v1.1cdnforall.online/storage/134/responsive-images/Real-Betis___preview_thumbnail_120_120.webp",
-        "team1Title": "Lille",
-        "team2Title": "Real Betis",
-        "channelPageLink": "https://www1.buffstreamss.sx/game/lille-vs-real-betis",
-        "isHot": true,
-        "Streaming page link": [
-            "TNT Sports 3,, https://hitcast.st/totwatch.php?value=mevent12",
-            "TNT Sports 3,, https://hitcast.st/totview.php?src=https://streame.center/embed/ch3.php",
-            "TNT Sports 3,, https://hitcast.st/totview.php?src=https://vivtops.st/channel3",
-            "TNT Sports 3,, https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-lille-vs-real-betis/1",
-            "TNT Sports 3,, https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=3",
-            "TNT Sports 3,, https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-lille-vs-real-betis",
-            "TNT Sports 3,, https://hitcast.st/totview.php?src=https://elixx.info/aw/amilan.php",
-            "TNT Sports 3,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-33.php"
-        ],
-        "streamLink": "TNT Sports 3,, https://cdn3.zohanayaan.com:1686/hls/mevent12.m3u8?md5=RtbvOPwRU5Fw4FxsGvk5Pg&expires=1788907062|Referer=https://hitcast.st/totwatch.php?value=mevent12,)TNT Sports 3,, https://edgestream6.pro/hls/b0h5fNwDKH.m3u8?st=kgRMJiYNiZ6Yec6JdcpRa4Svpr9s-hlSs-0CdauuW_M&e=1788913067|Referer=https://hitcast.st/totview.php?src=https://streame.center/embed/ch3.php,)TNT Sports 3,, https://lb1.strmd.st/secure/srAsxJoFXauBuTErOsQSwjKnKUNLqxHF/rtmp/stream/Y6gol9FNnA6ZpdS_kHce-MEGGRs4m0UJXatqWYinfDsjGuRmRFUx0dDR9PwsGcXa55U4qQHTlcJEEQ/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-lille-vs-real-betis/1,)TNT Sports 3,, https://hls.hockey.do/secure_hls.php?path=efcf0daf38c7d00d886c3002cea356e1%2Findex.m3u8&e=1788904080&sig=g3cLqhvfxMizXMhg20sBtEA5iAs-TeJRnnJ3rVF8yl8&v=1788902280-3847|Referer=https://hitcast.st/totview.php?src=https://s3.vertex.st/ch?id=3,)TNT Sports 3,, https://b9x39g.a737cozfwjmm.net:8443/hls/2vrrwa6dke0c2.m3u8?s=quoQiUxgNuFCvcZOMlLC9A&e=1788923889|Referer=https://hitcast.st/totview.php?src=https://elixx.info/aw/amilan.php,)TNT Sports 3,, https://xameleon.phantemlis.top/one/secure/415b9e7759356f7d89a73d758975cfab/1788913093/premium33/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-33.php"
-    },
-    {
         "eventTitle": "UFC",
         "matchTime": "2026-09-09 02:00:00",
         "team1Logo": "https://v1.1cdnforall.online/storage/1807/responsive-images/UFC___preview_thumbnail_120_120.webp",
@@ -74,7 +16,7 @@
             "UFC FHD,, https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-dana-white-s-contender-series",
             "UFC FHD,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-55.php"
         ],
-        "streamLink": "UFC HD,, https://cdn6.zohanayaan.com:1686/hls/mevent1.m3u8?md5=tS2Eoq96Cg3CIb9GS6yIow&expires=1788907062|Referer=https://hitcast.st/totwatch.php?value=mevent1,)UFC HD,, https://edgestream6.pro/hls/zeuryuegn48.m3u8?st=LutQ8lhE_iPrrO8BFXOc0hkXioOwd0kSoNENPESjB-Y&e=1788913067|Referer=https://hitcast.st/totview.php?src=https://streame.center/embed/ch48.php,)UFC HD,, https://lb1.strmd.st/secure/FWIZBdWxlShCkxRgOVnHVBlpCfZttmyv/rtmp/stream/Z9FizCCWvrhIJ1S7Szf4N88xb21DWjs599lWH5QCqS2CAVxO3zpApa-ae1TTSpMehXb-JQZu/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-dana-white-s-contender-series/1,)UFC FHD,, https://xameleon.phantemlis.top/five/secure/41012c87ff9810ea580c707a324b3740/1788913085/premium55/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-55.php"
+        "streamLink": "UFC HD,, https://cdn6.zohanayaan.com:1686/hls/mevent1.m3u8?md5=QI9M5OuNabLBdSbFkO_o4g&expires=1788914987|Referer=https://hitcast.st/totwatch.php?value=mevent1,)UFC HD,, https://edgestream6.pro/hls/zeuryuegn48.m3u8?st=i7CFm1KeMzx09RO73FisAh9w9OhSIgSnVeAkVlxnSZc&e=1788920993|Referer=https://hitcast.st/totview.php?src=https://streame.center/embed/ch48.php,)UFC HD,, https://lb1.strmd.st/secure/VxejPtfEVwAaUaMlCVTjQsLlXDpnvJoE/rtmp/stream/qup8mWjWX_gFfnCzXcdcbb5drFPPpntM0u4ZJ1m9vpqtifiTZQ-h7Vhuh4j-LOmBZLykto8y/1/playlist.m3u8|Referer=https://hitcast.st/totview.php?src=https://embed.st/embed/admin/ppv-dana-white-s-contender-series/1,)UFC FHD,, https://xameleon.phantemlis.top/five/secure/7319e05d4caf6b9fb3e9c3ab6d9067bc/1788921011/premium55/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-55.php"
     },
     {
         "eventTitle": "MLB",
@@ -84,6 +26,65 @@
         "team1Title": "Baltimore Orioles",
         "team2Title": "Cleveland Guardians",
         "channelPageLink": "https://www1.buffstreamss.sx/game/baltimore-orioles-vs-cleveland-guardians",
+        "isHot": true,
+        "Streaming page link": [
+            "MLB HD,, https://hitcast.st/totwatch.php?value=mbaltimoreorioles",
+            "MLB HD,, https://hitcast.st/totview.php?src=https://streame.center/embed/ch15.php",
+            "MLB HD,, https://hitcast.st/totview.php?src=https://trend48.st/event/ppv-cleveland-guardians-vs-baltimore-orioles",
+            "MLB HD,, https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-1.php"
+        ],
+        "streamLink": "MLB HD,, https://cdn9.zohanayaan.com:1686/hls/mbaltimoreorioles.m3u8?md5=4GBCSzclNjA8vJfgz--trg&expires=1788914987|Referer=https://hitcast.st/totwatch.php?value=mbaltimoreorioles,)MLB HD,, https://edgestream6.pro/hls/dazhfiach15.m3u8?st=plieMYNnIm6f3xUIfpIRAntXLKzo7GvJEBDSRfsP_rU&e=1788920993|Referer=https://hitcast.st/totview.php?src=https://streame.center/embed/ch15.php,)MLB HD,, https://xameleon.phantemlis.top/one/secure/fa81470823da36fc2660c6bbaf65f02a/1788921003/premium1/index.m3u8|Referer=https://hitcast.st/totview.php?src=https://daddylive1.cx/my/stream-1.php"
+    },
+    {
+        "eventTitle": "UEFA Champions League",
+        "matchTime": "2026-09-09 22:45:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/78/responsive-images/Stuttgart___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/1822/responsive-images/Viking___preview_thumbnail_120_120.webp",
+        "team1Title": "Stuttgart",
+        "team2Title": "Viking",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/stuttgart-vs-viking",
+        "isHot": true,
+        "Streaming page link": [
+            "Stream links will be activated before 1 hr of starting time."
+        ],
+        "streamLink": "Stream links will be activated before 1 hr of starting time."
+    },
+    {
+        "eventTitle": "Saudi-Arabian Pro League",
+        "matchTime": "2026-09-10 00:00:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/447/responsive-images/Al-Nassr___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/1836/responsive-images/Abha___preview_thumbnail_120_120.webp",
+        "team1Title": "Al Nassr",
+        "team2Title": "Abha",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/al-nassr-vs-abha",
+        "isHot": true,
+        "Streaming page link": [
+            "Stream links will be activated before 1 hr of starting time."
+        ],
+        "streamLink": "Stream links will be activated before 1 hr of starting time."
+    },
+    {
+        "eventTitle": "English Championship",
+        "matchTime": "2026-09-10 00:45:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/92/responsive-images/Norwich-City___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/382/responsive-images/Birmingham-City___preview_thumbnail_120_120.webp",
+        "team1Title": "Norwich City",
+        "team2Title": "Birmingham City",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/norwich-city-vs-birmingham-city",
+        "isHot": true,
+        "Streaming page link": [
+            "Stream links will be activated before 1 hr of starting time."
+        ],
+        "streamLink": "Stream links will be activated before 1 hr of starting time."
+    },
+    {
+        "eventTitle": "EFL Cup",
+        "matchTime": "2026-09-10 01:00:00",
+        "team1Logo": "https://v1.1cdnforall.online/storage/10/responsive-images/Chelsea___preview_thumbnail_120_120.webp",
+        "team2Logo": "https://v1.1cdnforall.online/storage/145/responsive-images/Leeds-United___preview_thumbnail_120_120.webp",
+        "team1Title": "Chelsea",
+        "team2Title": "Leeds United",
+        "channelPageLink": "https://www1.buffstreamss.sx/game/chelsea-vs-leeds-united",
         "isHot": true,
         "Streaming page link": [
             "Stream links will be activated before 1 hr of starting time."
